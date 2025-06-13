@@ -1,0 +1,445 @@
+{
+    "medication_precertification_request": {
+        "page_1": {
+            "start_of_treatment": {
+                "start_date": "05/22/2024"
+            },
+            "continuation_of_therapy": {
+                "date_of_last_treatment": "05/23/2024"
+            },
+            "precertification_requested_by": {
+                "phone": "615-343-1176",
+                "fax": "615-343-1219"
+            }
+        },
+        "page_2": {
+            "patient_information": {
+                "first_name": "Shakh",
+                "last_name": "Abdulla",
+                "dob": "04/01/2001",
+                "address": "425 Sherman Ave APT D",
+                "city": "Nashville",
+                "state": "TN",
+                "zip": "37995",
+                "home_phone": "865-395-3958",
+                "work_phone": "",
+                "cell_phone": "865-395-0481",
+                "email": "",
+                "current_weight": {
+                    "lbs": "",
+                    "kgs": ""
+                },
+                "height": {
+                    "inches": "",
+                    "cms": ""
+                },
+                "allergies": "No Known Allergies"
+            },
+            "insurance_information": {
+                "member_id": "LAJM14345116",
+                "other_coverage": {
+                    "yes": "",
+                    "no": ""
+                },
+                "group_number": "435000",
+                "other_id": "",
+                "carrier_name": "BC TENNCARE",
+                "insured": "ABDULLA, SHAKH"
+            },
+            "prescriber_information": {
+                "first_name": "Hao",
+                "last_name": "Gu",
+                "qualification": {
+                    "md": "MD",
+                    "do": "",
+                    "np": "",
+                    "pa": ""
+                },
+                "address": "3320 Montgomery Dr",
+                "city": "Nashville",
+                "state": "TN",
+                "zip": "37361",
+                "phone": "614-936-0065",
+                "fax": "",
+                "st_lic": "",
+                "npi": "1154611523",
+                "dea": "",
+                "upin": "",
+                "provider_email": "",
+                "office_contact_name": "",
+                "office_contact_phone": ""
+            },
+            "dispensing_provider_administration_information": {
+                "place_of_administration": {
+                    "self_administered": "",
+                    "physicians_office": "",
+                    "home": "",
+                    "outpatient_dialysis_center": "",
+                    "outpatient_infusion_center": "Yes",
+                    "retail_pharmacy": "",
+                    "specialty_pharmacy": "",
+                    "home_infusion_center": "",
+                    "mail_order": "",
+                    "other": ""
+                },
+                "dispensing_provider_pharmacy": "",
+                "agency_name": "",
+                "administration_code": "",
+                "address": "",
+                "city": "",
+                "state": "",
+                "zip": "",
+                "phone": "",
+                "fax": "",
+                "tin": "",
+                "pin": "",
+                "npi": ""
+            },
+            "product_information": {
+                "requested_product": {
+                    "riabni": "",
+                    "rituxan": "",
+                    "ruxience": "",
+                    "truxima": "Yes"
+                },
+                "dose": "694 mg",
+                "directions_for_use": "IVPB",
+                "hcpcs_code": ""
+            },
+            "diagnosis_information": {
+                "primary_icd_code": "G35",
+                "other_icd_code": ""
+            },
+            "clinical_information": {
+                "prior_therapy_within_last_365_days": {
+                    "yes": "",
+                    "no": "Yes"
+                },
+                "trial_and_failure_of_biosimilars": {
+                    "ruxience": "",
+                    "truxima": "",
+                    "date_of_failure": "",
+                    "nature_of_failure": ""
+                },
+                "adverse_reaction_to_biosimilars": {
+                    "ruxience": "",
+                    "truxima": "",
+                    "date_of_reaction": "",
+                    "nature_of_reaction": ""
+                },
+                "contraindications_or_medical_reasons": {
+                    "ruxience": "",
+                    "truxima": ""
+                }
+            }
+        },
+        "page_3": {
+            "clinical_information_continued": {
+                "trial_and_failure_of_other_drugs": {
+                    "inflectra": "",
+                    "renflexis": "",
+                    "simponi_aria": "",
+                    "date_of_failure": "",
+                    "nature_of_failure": ""
+                },
+                "adverse_reaction_to_other_drugs": {
+                    "inflectra": "",
+                    "renflexis": "",
+                    "simponi_aria": "",
+                    "date_of_reaction": "",
+                    "nature_of_reaction": ""
+                },
+                "trial_and_failure_of_another_set_of_drugs": {
+                    "enbrel": "",
+                    "humira": "",
+                    "idacio": "",
+                    "rinvoq": "",
+                    "tyenne_sc": "",
+                    "xeljanz_xr": "",
+                    "date_of_failure": "",
+                    "nature_of_failure": ""
+                },
+                "adverse_reaction_to_another_set_of_drugs": {
+                    "enbrel": "",
+                    "humira": "",
+                    "idacio": "",
+                    "rinvoq": "",
+                    "tyenne_sc": "",
+                    "xeljanz_xr": "",
+                    "date_of_reaction": "",
+                    "nature_of_reaction": ""
+                },
+                "contraindications_or_medical_reasons_for_other_drugs": {
+                    "inflectra": "",
+                    "renflexis": "",
+                    "simponi_aria": ""
+                },
+                "contraindications_or_medical_reasons_for_another_set_of_drugs": {
+                    "enbrel": "",
+                    "humira": "",
+                    "idacio": "",
+                    "rinvoq": "",
+                    "tyenne_sc": "",
+                    "xeljanz_xr": ""
+                },
+                "concomitant_use_with_other_drugs": {
+                    "yes": "",
+                    "no": ""
+                },
+                "acute_lymphoid_leukemia": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "induction_consolidation_therapy": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "autoimmune_hemolytic_anemia": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "anca_associated_vasculitides": {
+                    "wegener_granulomatosis": "",
+                    "churg_strauss_syndrome": "",
+                    "microscopic_polyangiitis": "",
+                    "pauci_immune_glomerulonephritis": "",
+                    "concomitant_use_with_glucocorticoids": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "autoimmune_blistering_diseases": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "specific_disease": {
+                        "pemphigus_vulgaris": "",
+                        "pemphigus_folliaceus": "",
+                        "bullous_pemphigoid": "",
+                        "cicatricial_pemphigoid": "",
+                        "epidermolysis_bullosa_acquisita": "",
+                        "paraneoplastic_pemphigus": "",
+                        "none_of_the_above": ""
+                    }
+                },
+                "b_cell_lymphomas": {
+                    "specific_type": {
+                        "aids_related_b_cell_lymphoma": "",
+                        "burkitt_lymphoma": "",
+                        "diffuse_large_b_cell_lymphoma": "",
+                        "follicular_lymphoma": "",
+                        "gastric_malt_lymphoma": "",
+                        "high_grade_b_cell_lymphoma": "",
+                        "mantle_cell_lymphoma": "",
+                        "nodal_marginal_zone_lymphoma": "",
+                        "nongastric_malt_lymphoma": "",
+                        "primary_cutaneous_b_cell_lymphomas": "",
+                        "splenic_marginal_zone_lymphoma": "",
+                        "other": ""
+                    }
+                }
+            }
+        },
+        "page_4": {
+            "clinical_information_continued": {
+                "castlemans_disease": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "central_nervous_system_lymphomas": {
+                    "specific_type": {
+                        "leptomeningeal_metastases_from_lymphoma": "",
+                        "primary_cns_lymphoma": "",
+                        "none_of_the_above": ""
+                    }
+                },
+                "chronic_or_small_lymphocytic_leukemia": {
+                    "specific_type": {
+                        "chronic_lymphocytic_leukemia": "",
+                        "small_lymphocytic_leukemia": "",
+                        "none_of_the_above": ""
+                    }
+                },
+                "cryoglobulinemia": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "ineffective_treatment": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "graft_vs_host_disease": {
+                    "last_resort_treatment": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "hairy_cell_leukemia": {
+                    "specific_type": {
+                        "relapsed_hairy_cell_leukemia": "",
+                        "refractory_hairy_cell_leukemia": "",
+                        "none_of_the_above": ""
+                    }
+                },
+                "heart_and_solid_organ_transplant": {
+                    "documented_use": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "specific_type": {
+                        "heart_transplant_recipient": "",
+                        "other_solid_organ_transplant_recipient": ""
+                    }
+                },
+                "immune_checkpoint_inhibitor_related_encephalitis": {
+                    "specific_drug": {
+                        "bavencio": "",
+                        "imfinzi": "",
+                        "keytruda": "",
+                        "opdivo": "",
+                        "tecentriq": "",
+                        "yervoy": "",
+                        "other": ""
+                    }
+                }
+            }
+        },
+        "page_5": {
+            "clinical_information_continued": {
+                "rheumatoid_arthritis": {
+                    "severity": {
+                        "mild": "",
+                        "moderate": "",
+                        "severe": ""
+                    },
+                    "active_disease": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "combination_with_methotrexate": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "ineffective_not_tolerated_or_contraindicated": {
+                        "yes": "",
+                        "no": "",
+                        "specific_reason": {
+                            "ineffective": "",
+                            "not_tolerated": "",
+                            "contraindicated": ""
+                        }
+                    },
+                    "ineffective_conventional_dmard": {
+                        "yes": "",
+                        "no": "",
+                        "specific_dmard": {
+                            "azathioprine": "",
+                            "cyclosporine": "",
+                            "hydroxychloroquine": "",
+                            "leflunomide": "",
+                            "sulfasalazine": ""
+                        }
+                    }
+                },
+                "sjogrens_syndrome": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "ineffective_treatment": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "medications_used": [
+                        {
+                            "medication": "",
+                            "dates": "_____/_____/_____"
+                        },
+                        {
+                            "medication": "",
+                            "dates": "_____/_____/_____"
+                        }
+                    ]
+                },
+                "thrombotic_thrombocytopenic_purpura": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "waldenstroms_macroglobulinemia": {
+                    "documented_diagnosis": {
+                        "yes": "",
+                        "no": ""
+                    }
+                },
+                "continuation_request": {
+                    "result_of_samples": {
+                        "yes": "",
+                        "no": ""
+                    },
+                    "length_of_time_on_rituxan": ""
+                }
+            }
+        },
+        "left_blank": [
+            "The following fields were left blank because the information was not provided in the document:",
+            "The 'current_weight' field in the 'patient_information' section on page 2.",
+            "The 'height' field in the 'patient_information' section on page 2.",
+            "The 'other_coverage' field in the 'insurance_information' section on page 2.",
+            "The 'office_contact_name' field in the 'prescriber_information' section on page 2.",
+            "The 'office_contact_phone' field in the 'prescriber_information' section on page 2.",
+            "The 'dispensing_provider_pharmacy' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'agency_name' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'administration_code' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'address' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'city' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'state' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'zip' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'phone' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'fax' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'tin' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'pin' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'npi' field in the 'dispensing_provider_administration_information' section on page 2.",
+            "The 'hcpcs_code' field in the 'product_information' section on page 2.",
+            "The 'other_icd_code' field in the 'diagnosis_information' section on page 2.",
+            "The 'trial_and_failure_of_biosimilars' fields in the 'clinical_information' section on page 2.",
+            "The 'adverse_reaction_to_biosimilars' fields in the 'clinical_information' section on page 2.",
+            "The 'contraindications_or_medical_reasons' fields in the 'clinical_information' section on page 2.",
+            "The 'trial_and_failure_of_other_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'adverse_reaction_to_other_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'trial_and_failure_of_another_set_of_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'adverse_reaction_to_another_set_of_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'contraindications_or_medical_reasons_for_other_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'contraindications_or_medical_reasons_for_another_set_of_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'concomitant_use_with_other_drugs' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'acute_lymphoid_leukemia' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'autoimmune_hemolytic_anemia' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'anca_associated_vasculitides' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'autoimmune_blistering_diseases' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'b_cell_lymphomas' fields in the 'clinical_information_continued' section on page 3.",
+            "The 'castlemans_disease' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'central_nervous_system_lymphomas' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'chronic_or_small_lymphocytic_leukemia' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'cryoglobulinemia' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'graft_vs_host_disease' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'hairy_cell_leukemia' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'heart_and_solid_organ_transplant' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'immune_checkpoint_inhibitor_related_encephalitis' fields in the 'clinical_information_continued' section on page 4.",
+            "The 'rheumatoid_arthritis' fields in the 'clinical_information_continued' section on page 5.",
+            "The 'sjogrens_syndrome' fields in the 'clinical_information_continued' section on page 5.",
+            "The 'thrombotic_thrombocytopenic_purpura' fields in the 'clinical_information_continued' section on page 5.",
+            "The 'waldenstroms_macroglobulinemia' fields in the 'clinical_information_continued' section on page 5.",
+            "The 'continuation_request' fields in the 'clinical_information_continued' section on page 5."
+        ]
+    }
+}

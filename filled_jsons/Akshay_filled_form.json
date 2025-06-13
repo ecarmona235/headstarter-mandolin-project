@@ -1,0 +1,449 @@
+{
+    "input_fields": [
+        {
+            "label": "Start of treatment: Start date",
+            "type": "date",
+            "format": "MM/DD/YYYY",
+            "value": "05/29/2023"
+        },
+        {
+            "label": "Continuation of therapy, Date of last treatment",
+            "type": "date",
+            "format": "MM/DD/YYYY",
+            "value": ""
+        },
+        {
+            "label": "Precertification Requested By",
+            "type": "text",
+            "value": "Timothy Adam, MD"
+        },
+        {
+            "label": "Phone",
+            "type": "text",
+            "value": "203-818-3060"
+        },
+        {
+            "label": "Fax",
+            "type": "text",
+            "value": "203-818-3061"
+        },
+        {
+            "label": "Patient First Name",
+            "type": "text",
+            "value": "Akshay"
+        },
+        {
+            "label": "Patient Last Name",
+            "type": "text",
+            "value": "Chaudhari"
+        },
+        {
+            "label": "Patient DOB",
+            "type": "date",
+            "format": "MM/DD/YYYY",
+            "value": "02/17/1987"
+        },
+        {
+            "label": "Patient Address",
+            "type": "text",
+            "value": "1460 El Camino Real"
+        },
+        {
+            "label": "Patient City",
+            "type": "text",
+            "value": "Arlington"
+        },
+        {
+            "label": "Patient State",
+            "type": "text",
+            "value": "VA"
+        },
+        {
+            "label": "Patient ZIP",
+            "type": "text",
+            "value": "22207"
+        },
+        {
+            "label": "Patient Home Phone",
+            "type": "text",
+            "value": "570-599-6973"
+        },
+        {
+            "label": "Patient Work Phone",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Patient Cell Phone",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Patient Email",
+            "type": "email",
+            "value": ""
+        },
+        {
+            "label": "Patient Current Weight",
+            "type": "number",
+            "units": [
+                "lbs"
+            ],
+            "value": 190
+        },
+        {
+            "label": "Patient Height",
+            "type": "number",
+            "units": [
+                "inches"
+            ],
+            "value": 73
+        },
+        {
+            "label": "Allergies",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Aetna Member ID #",
+            "type": "text",
+            "value": "350410732018"
+        },
+        {
+            "label": "Does patient have other coverage?",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Group #",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Other Coverage ID#",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Carrier Name",
+            "type": "text",
+            "value": "Aetna Better Health of Virginia"
+        },
+        {
+            "label": "Medicare",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Medicare ID #",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Medicaid",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Medicaid ID #",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Prescriber First Name",
+            "type": "text",
+            "value": "Timothy"
+        },
+        {
+            "label": "Prescriber Last Name",
+            "type": "text",
+            "value": "Adam"
+        },
+        {
+            "label": "Prescriber Type",
+            "type": "enum",
+            "options": [
+                "M.D."
+            ],
+            "value": "M.D."
+        },
+        {
+            "label": "Prescriber Address",
+            "type": "text",
+            "value": "2755 College Ave Ste. 100"
+        },
+        {
+            "label": "Prescriber City",
+            "type": "text",
+            "value": "Leesburg"
+        },
+        {
+            "label": "Prescriber State",
+            "type": "text",
+            "value": "VA"
+        },
+        {
+            "label": "Prescriber ZIP",
+            "type": "text",
+            "value": "20176"
+        },
+        {
+            "label": "Prescriber Phone",
+            "type": "text",
+            "value": "203-818-3060"
+        },
+        {
+            "label": "Prescriber Fax",
+            "type": "text",
+            "value": "203-818-3061"
+        },
+        {
+            "label": "Prescriber St Lic #",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Prescriber NPI #",
+            "type": "text",
+            "value": "1321124163"
+        },
+        {
+            "label": "Prescriber DEA #",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Prescriber UPIN",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Provider Email",
+            "type": "email",
+            "value": ""
+        },
+        {
+            "label": "Office Contact Name",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Office Contact Phone",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Specialty",
+            "type": "enum",
+            "options": [
+                "Gastroenterologist"
+            ],
+            "value": "Gastroenterologist"
+        },
+        {
+            "label": "Place of Administration",
+            "type": "enum",
+            "options": [
+                "Physician's Office"
+            ],
+            "value": "Physician's Office"
+        },
+        {
+            "label": "Dispensing Provider/Pharmacy",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Center Name",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Name",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Agency Name",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Agency Phone",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Agency Fax",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Administration code(s) (CPT)",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "TIN",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "PIN",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Address",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Request is for",
+            "type": "text",
+            "value": "Crohn's Disease Induction Phase"
+        },
+        {
+            "label": "Dose",
+            "type": "text",
+            "value": "Skyrizi 600mg IV at week 0, week 4 and week 8"
+        },
+        {
+            "label": "Frequency",
+            "type": "text",
+            "value": "1YR Refills"
+        },
+        {
+            "label": "Primary ICD Code",
+            "type": "text",
+            "value": "K50.111"
+        },
+        {
+            "label": "Secondary ICD Code",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Other ICD Code",
+            "type": "text",
+            "value": ""
+        },
+        {
+            "label": "Will the requested drug be used in combination with any other biologic or targeted synthetic drug?",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Has the patient ever received a biologic or targeted synthetic drug associated with an increased risk of tuberculosis (TB)?",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Has the patient had a tuberculosis (TB) test within 6 months of initiating therapy?",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "TB Test Type",
+            "type": "enum",
+            "options": [
+                "TB Skin Test"
+            ],
+            "value": "TB Skin Test"
+        },
+        {
+            "label": "TB Test Results",
+            "type": "enum",
+            "options": [
+                "negative"
+            ],
+            "value": "negative"
+        },
+        {
+            "label": "TB Status",
+            "type": "enum",
+            "options": [
+                "latent TB and treatment for latent TB has not been initiated"
+            ],
+            "value": "latent TB and treatment for latent TB has not been initiated"
+        },
+        {
+            "label": "Has the patient been diagnosed with moderately to severely active Crohn's disease (CD)?",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Is the requested drug being prescribed by or in consultation with a gastroenterologist?",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Is the request for initiation of therapy with the intravenous loading dose?",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Is the patient currently receiving the requested drug?",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Loading dose at weeks 0, 4 and 8",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Maintenance dose",
+            "type": "boolean",
+            "value": true
+        },
+        {
+            "label": "Has the patient received 12 weeks of therapy or less (i.e., still receiving the loading dose schedule)?",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "label": "Request Completed By",
+            "type": "text",
+            "value": "Timothy Adam, MD"
+        },
+        {
+            "label": "Date",
+            "type": "date",
+            "format": "MM/DD/YYYY",
+            "value": "05/30/2023"
+        }
+    ],
+    "left_blank": [
+        "The following fields were left blank because the information was not provided in the document:",
+        "Continuation of therapy, Date of last treatment",
+        "Patient Email",
+        "Patient Work Phone",
+        "Patient Cell Phone",
+        "Allergies",
+        "Group #",
+        "Other Coverage ID#",
+        "Medicare ID #",
+        "Medicaid ID #",
+        "Prescriber St Lic #",
+        "Prescriber DEA #",
+        "Prescriber UPIN",
+        "Provider Email",
+        "Office Contact Name",
+        "Office Contact Phone",
+        "Dispensing Provider/Pharmacy",
+        "Center Name",
+        "Name",
+        "Agency Name",
+        "Agency Phone",
+        "Agency Fax",
+        "Administration code(s) (CPT)",
+        "TIN",
+        "PIN",
+        "Address",
+        "Secondary ICD Code",
+        "Other ICD Code",
+        "Request is for",
+        "Frequency"
+    ]
+}

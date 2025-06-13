@@ -3,63 +3,38 @@
 import json
 import os
 # import time
-from mistralai import Mistral
+# import extract_pa_form
+# import fill_pa_json 
+# import extract_form
+from fillpdf import fillpdfs
 
 
-MISRAL_API_KEY = os.environ["MISTRAL_API_KEY"]
-MODEL = "mistral-small-latest"
-CLIENT = Mistral(api_key=MISRAL_API_KEY)
-
-
-def fill_pa_json_from_referral(pdf_file: str)-> json:
+def fill_pdf_form(pdf_file: str, json_filled_form: str):
     """_summary_
 
     Args:
         pdf_file (str): _description_
-
-    Returns:
-        json: _description_
+        json_filled_form (str): _description_
     """
-    return pdf_file
+    # Load JSON data
+    with open(json_filled_form, "r") as json_file:
+        data_dict = json.load(json_file)  # JSON keys should match PDF field names
+
+    # Fill the PDF form
+    fillpdfs.write_fillable_pdf(pdf_file, "1_filled_form.pdf", data_dict)
+
+    # Optional: Flatten the PDF to make fields non-editable
+    fillpdfs.write_fillable_pdf("form.pdf", "flattened_form.pdf", data_dict, flatten=True)
+    
 
 
-def extract_pa_form(pdf_file: str) -> json:
-    """_summary_
 
-    Args:
-        pdf_file (_type_): _description_
 
-    Returns:
-        json: _description_
-    """
-    print("Uploading pdf")
-    uploaded_pdf = CLIENT.files.upload(
-        file={
-            "file_name": pdf_file,
-            "content": open(file=pdf_file, mode="rb"),
-        },
-        purpose="ocr",
-    )
-    print("Signing pdf")
-    signed_url = CLIENT.files.get_signed_url(file_id=uploaded_pdf.id)
-    print("sending prompt")
-    # pylint: disable=line-too-long
-    messages = [
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "text",
-                    "text": "Extract all input fields from document and return a json. Ensure it is formatted so that on a follow up question you can use it to extract the information from a larger document that will be sent to you after this.",
-                },
-                {"type": "document_url", "document_url": signed_url.url},
-            ],
-        }
-    ]
 
-    chat_response = CLIENT.chat.complete(model=MODEL, messages=messages)
-    print("Response", chat_response.choices[0].message.content)
-    return chat_response.model_dump_json()
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -84,13 +59,22 @@ if __name__ == "__main__":
     #     print("Saving PA form for: ", cur_patient)
     #     with open(f"{cur_patient}{CUR_FORM}.json", "w", encoding="UTF-8") as json_file:
     #         json.dump(json_response, json_file)  # type: ignore
-
     # for referral_package in referral__packages:
     #     cur_patient = referral_package.split("/")[1]
-    #     CUR_FORM = "refereral_package"
-    #     json_response = extract_pa_form(pdf_file=referral_package)
+    #     CUR_FORM = "First_attempt"
+    #     json_response = fill_pa_json_from_referral(
+    #         pdf_file=referral_package, pa_json=f"{cur_patient}PA.json"
+    #     )
     #     time.sleep(2)
-    #     # # Save to a JSON file
-    #     print("Saving PA filled out for: ", cur_patient)
-    #     with open(f"{cur_patient}{CUR_FORM}.json", "w", encoding="UTF-8") as json_file:
-    #         json.dump(json_response, json_file)  # type: ignore
+    #     # Save to a JSON file
+    #     print("Saving first try at input fields filled out for: ", cur_patient)
+    #     with open(f"{cur_patient}_{CUR_FORM}.json", "w", encoding="UTF-8") as json_file:
+    #         json.dump(json_response, json_file, indent=4)  # type: ignore
+    #
+    #
+    # extract_form("Adbulla_First_attempt.json")
+    # extract_form("Akshay_First_attempt.json")
+    # extract_form("Amy_First_attempt.json")
+    
+    
+    
