@@ -7,9 +7,7 @@ MODEL = "mistral-small-latest"
 CLIENT = Mistral(api_key=MISRAL_API_KEY)
 
 
-def fill_pa_json_from_referral(
-    pdf_file: str, pa_map: dict, first_response: dict
-) -> json:
+def fill_pa_json_from_referral(pdf_file: str, first_response: str) -> json:
     """_summary_
 
     Args:
@@ -29,6 +27,7 @@ def fill_pa_json_from_referral(
 
     print("Signing pdf")
     signed_url = CLIENT.files.get_signed_url(file_id=uploaded_pdf.id)
+
     print("sending prompt")
     # pylint: disable=line-too-long
     messages = [
@@ -54,9 +53,8 @@ def fill_pa_json_from_referral(
                 },
                 {
                     "type": "text",
-                    "text": "Review the completed input fields for correctness, then format the input fields to be mapped like the json below in a section tittle form.In the json have another section with the tittle left_blank: '{' input field tittle left blank : Reason why it was left blank '}' ",
+                    "text": "Review the completed input fields for correctness.In the json have another section with the tittle left_blank: '{' input field tittle left blank : Reason why it was left blank '}' ",
                 },
-                {"type": "text", "text": f"{json.dumps(pa_map)}"},
             ],
         }
     ]
@@ -65,7 +63,7 @@ def fill_pa_json_from_referral(
     print(
         "Response sent",
     )
-    return chat_response.choices[0].message.content.model_dump_json()
+    return chat_response.model_dump_json()
 
 
 if __name__ == "__main__":

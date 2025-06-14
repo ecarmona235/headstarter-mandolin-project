@@ -8,7 +8,8 @@ def extract_map(pdf_file: str):
         pdf_file (str): _description_
         json_filled_form (str): _description_
     """
-    reader = PdfReader(pdf_file)
+
+    reader = PdfReader(f"{pdf_file}")
     # writer = PdfWriter()
     fields = reader.get_fields()
-    return fields
+    return fields or {}

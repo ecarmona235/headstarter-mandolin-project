@@ -2,14 +2,12 @@ from mistralai import Mistral
 import os
 import json
 
-import extract_fields
-
 MISRAL_API_KEY = os.environ["MISTRAL_API_KEY"]
 MODEL = "mistral-small-latest"
 CLIENT = Mistral(api_key=MISRAL_API_KEY)
 
 
-def map_pa_form(pdf_file: str, extracted_fields: dict) -> json:
+def map_static_pa_form(pdf_file: str) -> json:
     """_summary_
 
     Args:
@@ -36,16 +34,15 @@ def map_pa_form(pdf_file: str, extracted_fields: dict) -> json:
             "content": [
                 {
                     "type": "text",
-                    "text": "You are given an input filed map in the form of a json and the original pdf of which the map was extracted from, check map for correctness, if any input fields are missing in the map correct them and format the map for you to be able to fill it in the next request. Maintain the input map as it will be used to fill in the form. return your response in a json that will be returned to you in the next request. Format the json however it will be best for you to read and fill it in on the next request.",
+                    "text": "analyze a PDF document and extract all input fields along with their coordinates. Your task is to return a structured JSON map containing: **Field Name** (`name`): The label or identifier of the input field.*Field Type** (`type`): The type of input (e.g., text box, checkbox, dropdown). **Coordinates** (`x`, `y`): The position of the field on the page.**Field Dimensions** (`width`, `height`): The size of the field. **Page Number** (`page`): The page where the field is located. **Value** (' ') : Empty field to fill in value. This The value fill will be filled by you on a later response when you are given another document to extract the information from.",
                 },
-                {"type": "text", "text": f"{json.dumps(extract_fields)}"},
                 {"type": "document_url", "document_url": signed_url.url},
             ],
         }
     ]
 
     chat_response = CLIENT.chat.complete(model=MODEL, messages=messages)
-    print("Response", chat_response.choices[0].message.content)
+    print("Response")
     return chat_response.model_dump_json()
 
 
