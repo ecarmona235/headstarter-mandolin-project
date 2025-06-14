@@ -36,7 +36,7 @@ def map_pa_form(pdf_file: str, extracted_fields: str) -> json:
             "content": [
                 {
                     "type": "text",
-                    "text": "You are given an input filed map in the form of a json and the original pdf of which the map was extracted from, check map for correctness, if any input fields are missing correct it, on the follow up response you will be filling in the values. Maintain the input map as it will be used to fill in the form at a later time. Return your response in a json that will be returned to you in the next request. Format the json however it will be best for you to read and fill it in on the next request but maintain the map.",
+                    "text": "You are given an input filed map in the form of a json and the original pdf of which the map was extracted from, check map for correctness, if any input fields are missing correct it but ensure you are, on the follow up response you will be filling in the values. Maintain the input map as it will be used to fill in the form at a later time. Return your response in a json that will be returned to you in the next request. Format the json however it will be best for you to read and fill it in on the next request but maintain the map.",
                 },
                 {
                     "type": "text",

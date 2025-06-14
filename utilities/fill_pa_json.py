@@ -53,7 +53,7 @@ def fill_pa_json_from_referral(pdf_file: str, first_response: str) -> json:
                 },
                 {
                     "type": "text",
-                    "text": "Review the completed input fields for correctness.In the json have another section with the tittle left_blank: '{' input field tittle left blank : Reason why it was left blank '}' ",
+                    "text": "Review the completed input fields for correctness, if corrections are format them as such: *Field Name** (`name`): The label or identifier of the input field.*Field Type** (`type`): The type of input (e.g., text box, checkbox, dropdown). **Coordinates** (`x`, `y`): The position of the field on the page.**Field Dimensions** (`width`, `height`): The size of the field. **Page Number** (`page`): The page where the field is located. **Value** (' ') : Empty field to fill in value. In the json have another section with the key left_blank: '{' name of field left place: Reason why it was left blank and location'}' ",
                 },
             ],
         }

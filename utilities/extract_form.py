@@ -1,19 +1,6 @@
+import ast
 import json
-import re
-
-
-def extract_json(text: str):
-    """Extracts JSON from a string that contains extra text before the JSON starts.
-
-    Args:
-        text (str): String containing JSON with extra text.
-    """
-    json_match = re.search(r"\{.*", text, re.DOTALL)
-    if json_match:
-        json_data = json_match.group(0)  # Extract only the JSON part
-        return json.loads(json_data)  # Convert string to dictionary
-    else:
-        return text  # Return original text if no JSON is found
+from json_repair import repair_json
 
 
 def extract_form(file_to_print: str):
@@ -35,67 +22,74 @@ def extract_form(file_to_print: str):
         if extracted_data is None:
             extracted_data = {"form": None}
         if isinstance(json_data, dict):
+            if "message" in json_data and "content" in json_data["message"]:
+                content = (
+                    json_data["message"]["content"].split("```json")[1].split("```")
+                )
+                try:  # predefined and exisiting
+                    extracted_data["form"] = content[0].split('"left_blank":')[0] # predefined
+                    extracted_data["left_blank"] = content[0].split('"left_blank":')[1] # # predefined and exisiting
+                    # print(extracted_data["form"])
+                    possible = extracted_data["form"].split('"fields":')
+                    if len(possible) >1:  # existing
+                        # print(possible[0])
+                        extracted_data["form"] = possible[1]
+                        print("possible")
+                        extracted_data["form"] = repair_json(extracted_data["form"])
+                        extracted_data["left_blank"] = repair_json(extracted_data["left_blank"])
+                        with open(
+                        f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
+                        ) as json_file:
+                            json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
+                        with open(
+                            f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
+                        ) as json_file:
+                            json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore 
+                        return
+                    else: # predefined
+                        extracted_data["form"] = repair_json(extracted_data["form"])
+                        extracted_data["left_blank"] = repair_json(extracted_data["left_blank"])
+                        with open(
+                        f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
+                        ) as json_file:
+                            json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
+                        with open(
+                            f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
+                        ) as json_file:
+                            json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore 
+                        return
+                #     with open(
+                #     f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
+                #     ) as json_file:
+                #         json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
+                #     with open(
+                #         f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
+                #     ) as json_file:
+                #         json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore
+                except: # static
+                    print("In except 1")
+                    extracted_data["form"] = json_data["message"]["content"].split("```json")[1].split("```")[0]
+                    extracted_data["left_blank"] = json_data["message"]["content"].split("```json")[2].split("```")[0]
+                    with open(
+                    f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
+                    ) as json_file:
+                        json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
+                    with open(
+                        f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
+                    ) as json_file:
+                        json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore
+                    return 
+                    
+                #     return
+                # try:  # static case
+                #     extracted_data["form"] = json_data["message"]["content"].split("```json")[1].split("```")[0]
+                #     extracted_data["left_blank"] = json_data["message"]["content"].split("```json")[2].split("```")[0]
+
             for key, value in json_data.items():
-                if (
-                    key == "content"
-                    and isinstance(value, str)
-                    and "Here is the" in value
-                ):
-                    # Predifined 
-                    value = extract_json(value.split("```json")[1])
-                    extracted_data["form"] = value
-                    json_to_dump = extracted_data.get("form")["pages"]
-                    left_blank = extracted_data["form"].get("left_blank")
-                    if json_to_dump and left_blank:
-                        with open(
-                            f"{file_to_print.split("_")[0]}_filled_form.json",
-                            "w",
-                            encoding="UTF-8",
-                        ) as file:
-                            json.dump(json_to_dump, file, indent=4)
-                            
-                        with open(
-                            f"{file_to_print.split("_")[0]}_left_blank.json",
-                            "w",
-                            encoding="UTF-8",
-                        ) as file:
-                            json.dump(left_blank, file, indent=4)
+                iterate_json(value, indent + 4, extracted_data)  # Recursively go deeper
 
-                iterate_json(value, indent + 4)  # Recursively go deeper
-
-        elif isinstance(json_data, list): # exisiting
+        elif isinstance(json_data, list):
             for index, item in enumerate(json_data):
-                if type(item) is dict:
-                    extracted_data["form"] = item["message"]["content"].split("```json")[1].split("```")[0]
-                    try:
-                        
-                        extracted_data["form"] = extract_json(extracted_data["form"])
-                        left_blank = extracted_data["form"].pop("left_blank")
-                                            
-                        extracted_data["left_blank"] = left_blank
-                        with open(
-                                f"{file_to_print.split("_")[0]}_left_blank.json",
-                                "w",
-                                encoding="UTF-8",
-                            ) as file:
-                                json.dump(extracted_data["left_blank"], file, indent=4)
-                    except: # static
-                        extracted_data["form"] = json.loads(item["message"]["content"].split("```json")[1].split('```')[0].split(',\n"left_blank"')[0].replace('"', '\"'))
-                        with open(
-                                f"{file_to_print.split("_")[0]}_filled_form.json",
-                                "w",
-                                encoding="UTF-8",
-                            ) as file:
-                                json.dump(extracted_data["form"], file, indent=4)
-                        extracted_data["left_blank"] = json.loads(item["message"]["content"].split("```json")[1].split('```')[0].split(',\n"left_blank":')[1].replace('"', '\"'))
-                        print(extracted_data["left_blank"])
-                        with open(
-                                f"{file_to_print.split("_")[0]}_left_blank.json",
-                                "w",
-                                encoding="UTF-8",
-                            ) as file:
-                                json.dump(extracted_data["left_blank"], file, indent=4)
-                        print("\n")
                 iterate_json(item, indent + 4)
 
     iterate_json(data)  # Start recursive iteration
