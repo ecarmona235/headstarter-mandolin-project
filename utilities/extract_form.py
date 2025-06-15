@@ -1,4 +1,3 @@
-import ast
 import json
 from json_repair import repair_json
 
@@ -26,65 +25,28 @@ def extract_form(file_to_print: str):
                 content = (
                     json_data["message"]["content"].split("```json")[1].split("```")
                 )
-                try:  # predefined and exisiting
-                    extracted_data["form"] = content[0].split('"left_blank":')[0] # predefined
-                    extracted_data["left_blank"] = content[0].split('"left_blank":')[1] # # predefined and exisiting
-                    # print(extracted_data["form"])
-                    possible = extracted_data["form"].split('"fields":')
-                    if len(possible) >1:  # existing
-                        # print(possible[0])
-                        extracted_data["form"] = possible[1]
-                        print("possible")
-                        extracted_data["form"] = repair_json(extracted_data["form"])
-                        extracted_data["left_blank"] = repair_json(extracted_data["left_blank"])
-                        with open(
-                        f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
-                        ) as json_file:
-                            json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
-                        with open(
-                            f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
-                        ) as json_file:
-                            json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore 
-                        return
-                    else: # predefined
-                        extracted_data["form"] = repair_json(extracted_data["form"])
-                        extracted_data["left_blank"] = repair_json(extracted_data["left_blank"])
-                        with open(
-                        f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
-                        ) as json_file:
-                            json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
-                        with open(
-                            f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
-                        ) as json_file:
-                            json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore 
-                        return
-                #     with open(
-                #     f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
-                #     ) as json_file:
-                #         json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
-                #     with open(
-                #         f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
-                #     ) as json_file:
-                #         json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore
-                except: # static
-                    print("In except 1")
-                    extracted_data["form"] = json_data["message"]["content"].split("```json")[1].split("```")[0]
-                    extracted_data["left_blank"] = json_data["message"]["content"].split("```json")[2].split("```")[0]
-                    with open(
-                    f"{file_to_print.split("_")[0]}_filled_form.json", "w", encoding="UTF-8"
-                    ) as json_file:
-                        json.dump(json.loads(extracted_data["form"]), json_file, default=str)  # type: ignore
-                    with open(
-                        f"{file_to_print.split("_")[0]}_left_blank.json", "w", encoding="UTF-8"
-                    ) as json_file:
-                        json.dump(json.loads(extracted_data["left_blank"]), json_file, default=str)  # type: ignore
-                    return 
-                    
-                #     return
-                # try:  # static case
-                #     extracted_data["form"] = json_data["message"]["content"].split("```json")[1].split("```")[0]
-                #     extracted_data["left_blank"] = json_data["message"]["content"].split("```json")[2].split("```")[0]
+                repaired_data = json.loads(repair_json(content[0]))
+                if type(repaired_data) is list:
+                    temp = content[0].split("left_blank")
+                    extracted_data["left_blank"] = json.loads(repair_json(temp[1]))
+                    extracted_data["form"] = json.loads(repair_json(temp[0]))
+                else:
+                    extracted_data["left_blank"] = repaired_data.pop("left_blank")
+                    extracted_data["form"] = repaired_data
+                with open(
+                    f"{file_to_print.split("_")[0]}_filled_form.json",
+                    "w",
+                    encoding="UTF-8",
+                ) as json_file:
+                    json.dump(extracted_data["form"], json_file, default=str)  # type: ignore
+                with open(
+                    f"{file_to_print.split("_")[0]}_left_blank.json",
+                    "w",
+                    encoding="UTF-8",
+                ) as json_file:
+                    json.dump(extracted_data["left_blank"], json_file, default=str)  # type: ignore
 
+            
             for key, value in json_data.items():
                 iterate_json(value, indent + 4, extracted_data)  # Recursively go deeper
 

@@ -3,6 +3,8 @@
 import json
 from dotenv import load_dotenv
 import os
+from utilities.fill_pa_static_json import fill_pa_static_json_from_referral
+from utilities.fill_out_pdfs import fill_out_pdfs
 from utilities.extract_fields import extract_map
 from utilities.extract_form import extract_form
 from utilities.fill_pa_json import fill_pa_json_from_referral
@@ -26,6 +28,8 @@ def controller(input_folder, output_folder):
         first_response = {}
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
+        # if cur_patient != "Adbulla":
+        #     continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
         if os.path.isdir(subfolder_path):  # Ensure it's a subfolder
@@ -67,7 +71,7 @@ def controller(input_folder, output_folder):
             #         pdf_file=f"{input_folder}/{cur_patient}/{pa_form}"
             #     )
             #     time.sleep(1)
-            #     filled_input_fields = fill_pa_json_from_referral(
+            #     filled_input_fields = fill_pa_static_json_from_referral(
             #         pdf_file=f"{input_folder}/{cur_patient}/{referral_pdf}",
             #         first_response=first_response,
             #     )
@@ -80,10 +84,13 @@ def controller(input_folder, output_folder):
             #         json.dump(filled_input_fields, json_file)  # type: ignore
 
             # time.sleep(1)
-
-            # extract_form(f"{output_folder}/{cur_patient}/{cur_patient}_finalForm.json")
+            # # # May use parrallelism here if to speed it up
+            # extract_form(f"{output_folder}/{cur_patient}/{cur_patient}_finalForm.json") # tested and working!
             # write pdfs
-            # TODO: fill in fill_pdfs left
+            fill_out_pdfs(
+                f"{input_folder}/{cur_patient}/{pa_form}",
+                f"{output_folder}/{cur_patient}/{cur_patient}_filled_form.json",
+            )
 
     # write MarkDown
 
