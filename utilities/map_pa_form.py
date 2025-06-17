@@ -1,3 +1,4 @@
+from httpx import Client
 from mistralai import Mistral
 import os
 import json
@@ -8,7 +9,7 @@ MODEL = "mistral-small-latest"
 CLIENT = Mistral(api_key=MISRAL_API_KEY)
 
 
-def map_pa_form(pdf_file: str, extracted_fields: str) -> json:
+def map_pa_form(pdf_file: str, referral: str, extracted: str) -> json:
     """_summary_
 
     Args:
@@ -17,38 +18,47 @@ def map_pa_form(pdf_file: str, extracted_fields: str) -> json:
     Returns:
         json: _description_
     """
-    print("Uploading pdf")
-    uploaded_pdf = CLIENT.files.upload(
+    print("Uploading pa form")
+    pa_form = CLIENT.files.upload(
         file={
-            "file_name": pdf_file,
+            "file_name": referral,
             "content": open(file=pdf_file, mode="rb"),
         },
         purpose="ocr",
     )
+    signed_pa_form = CLIENT.files.get_signed_url(file_id=pa_form.id)
 
-    print("Signing pdf")
-    signed_url = CLIENT.files.get_signed_url(file_id=uploaded_pdf.id)
+    up_referral_pdf = CLIENT.files.upload(
+        file={
+            "file_name": referral,
+            "content": open(file=referral, mode="rb"),
+        },
+        purpose="ocr",
+    )
+
+    signed_referral_pdf = CLIENT.files.get_signed_url(file_id=up_referral_pdf.id)
     print("sending prompt")
+    with open(extracted, "r") as f:
+        map_str = f.read()
     # pylint: disable=line-too-long
     messages = [
         {
+            "role": "system",
+            "content": 'You are given:\n1. A Preapproval Form PDF that must be filled using extracted data.\n2. A Referral Packet PDF, which contains the visible source data needed to populate the form.\n3. A field map extracted from the Preapproval Form using PyPDF, provided as a JSON structure.\n\nYour goal is to generate a fully populated JSON field map to be passed into a PyPDF pipeline for form filling. This map should preserve the structure of the input field map and include visual overlay instructions for fields that are missing from the map.\n\n PRESERVE STRUCTURE\n- Keep the structure of all fields in the input map intact—do not modify or delete any existing keys (e.g., `/T`, `/FT`, `/TU`, `/Ff`, `/AA`, `/_States_`, `/Kids`, etc.).\n- Do not combine or collapse multi-part fields (e.g., MM/DD/YYYY components must remain separate).\n\n MAP VALUES FROM SOURCE\nFor each field object in the map:\n- Try to match its `/TU` (tooltip) exactly (case-sensitive) with a label in the Referral Packet. If matched, set the field’s `/V` value accordingly.\n- If `/TU` doesn’t match, try matching its `/T`.\n- If no confident match is found, set `/V` to `""` and log it under `"left_blank"`.\n\n REPORT MISSING VALUES\nAt the end of your output, append:\n```json\n"left_blank": {\n  "<field_key>": {\n    "/TU": "<that field’s TU>",\n    "reason": "reason for why its left blank"\n, "field description" : "Description of field },\n  ...\n}\n```\nInclude every field from the map with a blank `/V`.\n\n ADD VISUAL OVERLAY FIELDS\nIf you discover any data in the Referral Packet that is not linked to a field in the map, append a new object to a top-level `"missing_fields"` array. This array contains instructions for text overlay to simulate a filled form field:\n```json\n"missing_fields": [\n  {\n    "field": "description or label of missing field",\n    "type": "text",\n    "x": <number>,\n    "y": <number>,\n    "width": <number>,\n    "height": <number>,\n    "page": <number>,\n    "value": "John Doe"\n  },\n  ...\n]\n```\nOnly include fields truly absent from the PyPDF map.\n\n FINAL OUTPUT\nReturn one single valid JSON object:\n- Preserving all original map structure\n- With `/V` values populated for matched fields\n- With `"left_blank"` for unmatched ones\n- With `"missing_fields"` for new visual-only overlays\n\nNo markdown, no commentary—return valid JSON only.',
+        },
+        {
             "role": "user",
-            "content": [
-                {
-                    "type": "text",
-                    "text": "You are provided with:\n\n1. A JSON object representing a field map extracted from a PDF using PyPDF.\n2. The original PDF document from which this map was generated.\n\nYour goals:\n- Review the input map for accuracy and completeness.\n- If any visible form fields are missing, detect them using OCR and append them to the map.\n\nFor each field (existing or newly added):\n- Add a `/d` key containing a concise, human-readable description of the field, inferred from `/TU`, `/T`, or its visual context.\n- If the field is a checkbox or radio button (`\"/FT\": \"/Btn\"`), make the description action-oriented (e.g., “Check if patient is diabetic”).\n- If the field exists only visually but has no interactive field properties (e.g. a label and a line), treat it as a non-interactive field and append it using OCR-detected position.\n  - Include these keys:\n```json\n\"/position\": {\n  \"x\": <number>,\n  \"y\": <number>,\n  \"width\": <number>,\n  \"height\": <number>,\n  \"page\": <number>\n}\n```\n  - You may omit interactive-only keys like `/FT` or `/Ff` for visual-only fields.\n\n Requirements:\n- Do **not** modify existing field keys (like `/T`, `/FT`, `/Ff`, `/TU`, `/V`).\n- Do **not** rename or remove fields.\n- Add only `/d` and `/position` where necessary.\n\n Return:\n- A single valid JSON object representing the updated field map with descriptions.\n- Do not return explanations, markdown formatting, or commentary—**JSON only**."
-                },
-                {
-                    "type": "text",
-                    "text": f"{json.dumps(extracted_fields, default=str)}",
-                },
-                {"type": "document_url", "document_url": signed_url.url},
-            ],
-        }
+            "content": "Use these two forms"
+            + f"- form A: file‐ID {signed_pa_form}\n"
+            + f"- form B: file‐ID {signed_referral_pdf}\n"
+        },
+        {"role": "user",
+            "content": f"Here is the JSON map: + {map_str}"}
+
     ]
 
     chat_response = CLIENT.chat.complete(model=MODEL, messages=messages)
-    print("Response", chat_response.choices[0].message.content)
+    print("Response sent")
     return chat_response.model_dump_json()
 
 

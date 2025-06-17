@@ -46,7 +46,6 @@ def extract_form(file_to_print: str):
                 ) as json_file:
                     json.dump(extracted_data["left_blank"], json_file, default=str)  # type: ignore
 
-            
             for key, value in json_data.items():
                 iterate_json(value, indent + 4, extracted_data)  # Recursively go deeper
 
