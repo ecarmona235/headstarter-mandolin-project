@@ -4,21 +4,32 @@ import json
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-from utilities.fill_pa_static_json import fill_pa_static_json_from_referral
-from utilities.fill_out_pdfs import fill_out_pdfs
+from google import genai
+import asyncio
+import logging
+from pydantic import BaseModel, Field
 from utilities.extract_fields import extract_map
-from utilities.extract_form import extract_form
-from utilities.map_pa_form import map_pa_form
-from utilities.map_static_pa_form import map_static_pa_form
-import time
+
+# from utilities.fill_pa_static_json import fill_pa_static_json_from_referral
+# from utilities.fill_out_pdfs import prepare_filled_pdf_fields
+
+# from utilities.extract_form import extract_form
+# from utilities.map_pa_form import map_pa_form
+# from utilities.map_static_pa_form import map_static_pa_form
+# import time
 
 
 load_dotenv()
 INPUT_FOLDER = os.getenv("INPUT_FOLDER")
 OUTPUT_FOLDER = os.getenv("OUTPUT_FOLDER")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s -%(message)s"
+)
+logger = logging.getLogger(__name__)
 
 
 def controller(input_folder, output_folder):
+
     input_folder = input_folder
     output_folder = output_folder
     for subfolder in os.listdir("Input Data"):
@@ -28,7 +39,7 @@ def controller(input_folder, output_folder):
         first_response = {}
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
-        if cur_patient != "Adbulla":
+        if cur_patient == "Amy":
             continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
@@ -41,63 +52,7 @@ def controller(input_folder, output_folder):
                         pa_form = file_name
                     elif "referral" in file_name:
                         referral_pdf = file_name
-            # extract_fields = extract_map(f"{input_folder}/{cur_patient}/{pa_form}")
-            # if len(extract_fields) > 0:  # Predefined and Exisiting PDF types
-            #     lean_map = {
-            #         k: {
-            #             subk: v
-            #             for subk, v in field.items()
-            #             if subk in ("/TU", "/T", "/V", "/FT", "/Ff")
-            #         }
-            #         for k, field in extract_fields.items()
-            #     }
-            #     output_path = Path(f"temp_files/{cur_patient}_extracted.json")
-            #     with output_path.open(
-            #         "w",
-            #         encoding="utf-8",
-            #     ) as f:
-            #         f.write(json.dumps(lean_map, default=str))  # type: ignore   # Formats mishapened
-            #     first_response = map_pa_form(
-            #         pdf_file=f"{input_folder}/{cur_patient}/{pa_form}",
-            #         extracted=str(output_path),
-            #         referral=f"{input_folder}/{cur_patient}/{referral_pdf}",
-            #     )
-            #     if os.path.exists(f"temp_files/{cur_patient}_extracted.json"):
-            #         os.remove(f"temp_files/{cur_patient}_extracted.json")
-            #     with open(
-            #         f"{output_folder}/{cur_patient}/{cur_patient}_finalForm.json",
-            #         "w",
-            #         encoding="UTF-8",
-            #     ) as json_file:
-            #         json.dump(first_response, json_file, default=str, indent=2)  # type: ignore
-
-            # else:  # static pdfs.
-            #     first_response = map_static_pa_form(
-            #         pdf_file=f"{input_folder}/{cur_patient}/{pa_form}"
-            #     )
-
-            #     filled_input_fields = fill_pa_static_json_from_referral(
-            #         pdf_file=f"{input_folder}/{cur_patient}/{referral_pdf}",
-            #         first_response=first_response,
-            #     )
-
-            #     with open(
-            #         f"{output_folder}/{cur_patient}/{cur_patient}_finalForm.json",
-            #         "w",
-            #         encoding="UTF-8",
-            #     ) as json_file:
-            #         json.dump(filled_input_fields, json_file)  # type: ignore
-
-            # time.sleep(4)
-            # # May use parrallelism here if to speed it up
-            # extract_form(
-            #     f"{output_folder}/{cur_patient}/{cur_patient}_finalForm.json"
-            # )  # tested and working!
-            # write pdfs
-        fill_out_pdfs(
-            f"{input_folder}/{cur_patient}/{pa_form}",
-            f"{output_folder}/{cur_patient}/{cur_patient}_filled_form.json",
-        )
+        print(extract_map(f"{input_folder}/{cur_patient}/{pa_form}"))
 
     # write MarkDown
 
