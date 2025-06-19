@@ -12,7 +12,6 @@ GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 MODEL = "gemini-2.5-flash"
 CLIENT = client = genai.Client(api_key=GEMINI_API_KEY)
 
-    
 
 async def format_map(prompt: str, pdf_file: str) -> json:
     """_summary_

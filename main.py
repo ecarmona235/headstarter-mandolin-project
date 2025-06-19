@@ -8,7 +8,6 @@ import asyncio
 import logging
 from pydantic import BaseModel, Field
 from utilities.extract_fields import extract_map
-# from gemini_queries import format_map
 
 
 load_dotenv()
@@ -27,8 +26,6 @@ def controller(input_folder, output_folder):
     for subfolder in os.listdir("Input Data"):
         pa_form = ""
         referral_pdf = ""
-        extract_fields = ""
-        first_response = {}
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
         if cur_patient != "Akshay":
@@ -47,6 +44,13 @@ def controller(input_folder, output_folder):
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
         extracted_map = extract_map(pa_path)
+        # call async task loop
+        # will call get prompt in order
+        # call gemini and mistral
+        #   extract to fill and left blank
+        #   write pdf
+        #   Write text or mark up
+        # complete after every patient
         print(extracted_map)
         # if len(extracted_map) > 0:
         #     format_map(pdf_file=pa_path, prompt="prompt")
