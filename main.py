@@ -4,17 +4,18 @@ import json
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-from google import genai
 import asyncio
 import logging
 from pydantic import BaseModel, Field
+import gemini_queries
 from utilities.extract_fields import extract_map
+from gemini_queries import gemini_loop_async
 
 # from utilities.fill_pa_static_json import fill_pa_static_json_from_referral
 # from utilities.fill_out_pdfs import prepare_filled_pdf_fields
 
 # from utilities.extract_form import extract_form
-# from utilities.map_pa_form import map_pa_form
+
 # from utilities.map_static_pa_form import map_static_pa_form
 # import time
 
@@ -52,7 +53,11 @@ def controller(input_folder, output_folder):
                         pa_form = file_name
                     elif "referral" in file_name:
                         referral_pdf = file_name
-        print(extract_map(f"{input_folder}/{cur_patient}/{pa_form}"))
+        pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
+        referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
+        extracted_map = extract_map(pa_path)
+        if len(extracted_map) > 0:
+            gemini_loop_async(pdf_file=pa_path, map=extracted_map)
 
     # write MarkDown
 
