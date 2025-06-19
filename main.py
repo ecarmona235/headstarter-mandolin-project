@@ -7,17 +7,8 @@ import os
 import asyncio
 import logging
 from pydantic import BaseModel, Field
-import gemini_queries
 from utilities.extract_fields import extract_map
-from gemini_queries import gemini_loop_async
-
-# from utilities.fill_pa_static_json import fill_pa_static_json_from_referral
-# from utilities.fill_out_pdfs import prepare_filled_pdf_fields
-
-# from utilities.extract_form import extract_form
-
-# from utilities.map_static_pa_form import map_static_pa_form
-# import time
+# from gemini_queries import format_map
 
 
 load_dotenv()
@@ -40,7 +31,7 @@ def controller(input_folder, output_folder):
         first_response = {}
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
-        if cur_patient == "Amy":
+        if cur_patient != "Akshay":
             continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
@@ -56,8 +47,9 @@ def controller(input_folder, output_folder):
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
         extracted_map = extract_map(pa_path)
-        if len(extracted_map) > 0:
-            gemini_loop_async(pdf_file=pa_path, map=extracted_map)
+        print(extracted_map)
+        # if len(extracted_map) > 0:
+        #     format_map(pdf_file=pa_path, prompt="prompt")
 
     # write MarkDown
 
