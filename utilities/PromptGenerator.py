@@ -1,7 +1,7 @@
 def prompt_generator(prompt_selected: str, args: dict):
     """Generates all prompts needed to run script
     Args:
-        prompt_selected (str): prompt to generate, options: ['pa_prompt', 'referral_prompt','fill_in_map']
+        prompt_selected (str): prompt to generate, options: ['referral_prompt','fill_in_map']
         args (dict): Dictionary contains all necessary arguments
         {
             extracted_fields : dictionary containing the extracted fields from fitz
@@ -71,37 +71,6 @@ def prompt_generator(prompt_selected: str, args: dict):
         <PA_Form_Data/>
         """
 
-    def referral_mistral_prompt():
-        return f"""You are an expert medical document processing assistant specializing in extracting information from referral packets that contain necessary information to fill out a prior authorization form. You will be given the referral form and using OCR extract all medical data that is found on the documents with all relevant context. 
-        <Given Input>
-            1.  Uploaded and signed pdf, Referral Packet
-        <Given Input/>
-        <Required Processing>
-            Ensure to analyze for following:
-                1. Start of Treatment or Continuation of therapy
-                2. Patient Information
-                3. Insurance Information
-                4. Prescriber Information
-                5. Dispensing and Administration Information
-                6. Product Infroamtion
-                7. Diagnosis information
-                8. All clinical information present in document
-                9. All prior treatments attempted, if stopped state reason why it was stopped
-            Ensure to include all relevant dates.
-        <Required Processing/> 
-        <Output Requirements>
-            Return a JSON containing all extracted information. 
-            Example object structure:
-                {{
-                    "extracted_information": "Paragraphs of all information extracted".
-                }}
-        </Output Requirements>   
-        <Critical Requirements>
-            - All data extracted and returned must be present in the original document. 
-            - DO NOT HALLUCINATE INFORMATION.
-            - Only output valid JSON.
-        </Critical Requirements.>
-        """
 
     def fill_in_map_gemini(referral_json: dict, map_json: dict):
         # TODO prompt to fill in map with gemini using information extracted from mistral (may have to keep an eye on tokens when passing all info)
@@ -112,8 +81,6 @@ def prompt_generator(prompt_selected: str, args: dict):
             print("Forgot something in args dict")
             return ""
         return pa_gemini_prompt(extracted_fields=args["extracted_fields"])
-    if prompt_selected == "referral_prompt":
-        return referral_mistral_prompt()
     if prompt_selected == "fill_in_map":
         if "extracted_referral" not in args or "map_json" not in args:
             print("Forgot something in args dict")

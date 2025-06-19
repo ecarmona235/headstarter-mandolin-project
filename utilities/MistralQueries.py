@@ -9,7 +9,7 @@ MODEL = "mistral-ocr-latest"
 CLIENT = Mistral(api_key=MISTRAL_API_KEY)
 
 
-async def Referral_Information_Extraction(prompt: str, referral: str) -> json:
+async def Referral_Information_Extraction(referral: str) -> json:
     """_summary_
 
     Args:
@@ -29,12 +29,11 @@ async def Referral_Information_Extraction(prompt: str, referral: str) -> json:
         None,
         lambda: CLIENT.ocr.process(
             model=MODEL,
-            document=DocumentURLChunk(document_url=signed_referral_url),
-            prompt=prompt,
-            include_image_base64=True,
+            document=DocumentURLChunk(document_url=signed_referral_url.url),
+            include_image_base64=False,
         ),
     )
-    return response.model_dump()
+    return  "\n\n".join(page["markdown"] for page in response.model_dump()["pages"])
 
 
 if __name__ == "__main__":

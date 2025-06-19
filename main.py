@@ -7,7 +7,7 @@ import os
 import asyncio
 import logging
 from pydantic import BaseModel, Field
-from utilities.extract_fields import extract_map
+from utilities.ProcessPatient import process_patient
 
 
 load_dotenv()
@@ -23,6 +23,7 @@ def controller(input_folder, output_folder):
 
     input_folder = input_folder
     output_folder = output_folder
+    tasks = []
     for subfolder in os.listdir("Input Data"):
         pa_form = ""
         referral_pdf = ""
@@ -43,7 +44,11 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        extracted_map = extract_map(pa_path)
+        asyncio.run(
+            process_patient(
+                patient=cur_patient, pa_path=pa_path, referral_path=referral_path
+            )
+        )
         # call async task loop
         # will call get prompt in order
         # call gemini and mistral
@@ -51,9 +56,6 @@ def controller(input_folder, output_folder):
         #   write pdf
         #   Write text or mark up
         # complete after every patient
-        print(extracted_map)
-        # if len(extracted_map) > 0:
-        #     format_map(pdf_file=pa_path, prompt="prompt")
 
     # write MarkDown
 
