@@ -9,7 +9,7 @@ MODEL = "mistral-ocr-latest"
 CLIENT = Mistral(api_key=MISTRAL_API_KEY)
 
 
-async def Referral_Information_Extraction(referral: str) -> json:
+async def referral_information_extraction(referral: str) -> str:
     """_summary_
 
     Args:
@@ -34,6 +34,37 @@ async def Referral_Information_Extraction(referral: str) -> json:
         ),
     )
     return "\n\n".join(page["markdown"] for page in response.model_dump()["pages"])
+
+
+ 
+async def ocr_of_static_pdfs(pa_path: str) -> json:
+    """_summary_
+
+    Args:
+        pdf_file (_type_):PA form pdf
+
+    Returns:
+        json : containing a list of referralPages[InformationPerPage]
+    """
+    loop = asyncio.get_event_loop()
+
+    with open(pa_path, "rb") as f:
+        uploaded_pa_pdf = CLIENT.files.upload(
+            file={"file_name": "PA_Form", "content": f.read()}, purpose="ocr"
+        )
+    signed_pa_url = CLIENT.files.get_signed_url(file_id=uploaded_pa_pdf.id)
+    response = await loop.run_in_executor(
+        None,
+        lambda: CLIENT.ocr.process(
+            model=MODEL,
+            document=DocumentURLChunk(document_url=signed_pa_url.url),
+            output_format="json",
+            include_layout=True,
+            include_image_base64=False,
+        ),
+    )
+    print(response)
+
 
 
 if __name__ == "__main__":

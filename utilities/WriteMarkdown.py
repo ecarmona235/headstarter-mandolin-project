@@ -1,5 +1,4 @@
 from pathlib import Path
-import json
 
 def dict_to_markdown(left_blank: list, md_path: str) -> None:
     stripped = {}

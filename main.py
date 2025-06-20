@@ -7,6 +7,7 @@ import os
 import asyncio
 import logging
 from pydantic import BaseModel, Field
+from utilities.ExtractFields import extract_map
 from utilities.ProcessPatient import process_patient
 from utilities.FillOutPdfs import prepare_filled_pdf_fields
 from utilities.WriteMarkdown import dict_to_markdown
@@ -31,7 +32,7 @@ def controller(input_folder, output_folder):
         referral_pdf = ""
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
-        if cur_patient == "Amy":
+        if cur_patient != "Amy":
             continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
@@ -46,27 +47,27 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        # structured_data = asyncio.run(
-        #     process_patient(
-        #         patient=cur_patient, pa_path=pa_path, referral_path=referral_path
-        #     )
-        # )
-        # print("Writting JSON")
-        # with open(f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "w") as f:
-        #     json.dump(structured_data, f, indent=4)
+        structured_data = asyncio.run(
+            process_patient(
+                patient=cur_patient, pa_path=pa_path, referral_path=referral_path
+            )
+        )
+        print("Writting JSON")
+        with open(f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "w") as f:
+            json.dump(structured_data, f, indent=4)
 
-        with open(
-            f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "r"
-        ) as f:
-            all_data = json.load(f)[0]
-        fields = all_data["fields"]
-        left_blank = all_data["left_blank"]
+        # with open(
+        #     f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "r"
+        # ) as f:
+        #     all_data = json.load(f)[0]
+        # fields = all_data["fields"]
+        # left_blank = all_data["left_blank"]
         # prepare_filled_pdf_fields(
         #     filled_out_map=fields,
         #     out_path=f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.pdf",
         #     pa_path=pa_path,
         # )
-        dict_to_markdown(left_blank=left_blank, md_path=f"{output_folder}/{cur_patient}/{cur_patient}_left_blank.md")
+        # dict_to_markdown(left_blank=left_blank, md_path=f"{output_folder}/{cur_patient}/{cur_patient}_left_blank.md")
 
 
 
