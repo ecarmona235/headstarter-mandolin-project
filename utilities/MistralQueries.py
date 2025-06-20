@@ -33,7 +33,7 @@ async def Referral_Information_Extraction(referral: str) -> json:
             include_image_base64=False,
         ),
     )
-    return  "\n\n".join(page["markdown"] for page in response.model_dump()["pages"])
+    return "\n\n".join(page["markdown"] for page in response.model_dump()["pages"])
 
 
 if __name__ == "__main__":

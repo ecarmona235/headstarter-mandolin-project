@@ -1,16 +1,14 @@
-import asyncio
-import pathlib
-from google import genai
-from google.genai import types
 import os
 import json
+import pathlib
+import asyncio
 
-from pydantic import BaseModel
-
+from google import genai
+from google.genai import types
 
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 MODEL = "gemini-2.5-flash"
-CLIENT = client = genai.Client(api_key=GEMINI_API_KEY)
+L_CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 
 
 async def format_map(prompt: str, pdf_file: str) -> json:
@@ -26,7 +24,7 @@ async def format_map(prompt: str, pdf_file: str) -> json:
     loop = asyncio.get_event_loop()
     response = await loop.run_in_executor(
         None,
-        lambda: CLIENT.models.generate_content(
+        lambda: L_CLIENT.models.generate_content(
             model=MODEL,
             contents=[
                 types.Part.from_bytes(

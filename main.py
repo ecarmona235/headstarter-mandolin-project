@@ -8,6 +8,7 @@ import asyncio
 import logging
 from pydantic import BaseModel, Field
 from utilities.ProcessPatient import process_patient
+from utilities.FillOutPdfs import prepare_filled_pdf_fields
 
 
 load_dotenv()
@@ -29,7 +30,7 @@ def controller(input_folder, output_folder):
         referral_pdf = ""
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
-        if cur_patient != "Akshay":
+        if cur_patient == "Amy":
             continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
@@ -44,18 +45,16 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        asyncio.run(
+        structured_data = asyncio.run(
             process_patient(
                 patient=cur_patient, pa_path=pa_path, referral_path=referral_path
             )
         )
-        # call async task loop
-        # will call get prompt in order
-        # call gemini and mistral
-        #   extract to fill and left blank
-        #   write pdf
-        #   Write text or mark up
-        # complete after every patient
+        print("Writting JSON")
+        prepare_filled_pdf_fields(
+            structured_data=structured_data,
+            out_path=f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json",
+        )
 
     # write MarkDown
 

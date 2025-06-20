@@ -45,7 +45,7 @@ def prompt_generator(prompt_selected: str, args: dict):
                 - page: Page number in the form
                 - field_label: Original field label text
                 - question: The explicit question being asked by the field
-                - context: Rich contextdual description (Max 25 words)
+                - context: Rich contextual description (Max 25 words)
                 
             Example object structure:
                 {{
@@ -71,10 +71,46 @@ def prompt_generator(prompt_selected: str, args: dict):
         <PA_Form_Data/>
         """
 
-
-    def fill_in_map_gemini(referral_json: dict, map_json: dict):
-        # TODO prompt to fill in map with gemini using information extracted from mistral (may have to keep an eye on tokens when passing all info)
-        pass
+    def fill_in_map_gemini(referral_markdown: str, map_json: dict):
+        return f"""You are an expert medical document processing assistant specializing in Prior Authorization (PA) form analysis and medical documentation. You given a list of PA form fields with their associated context and questions. Your task is to thoroughly analyze a string containing the ocr extracted information from the referral packet and extract all the relevant information to accurately fill out the PA form.         
+    
+        <Extracted Referral Packet>
+            {referral_markdown}
+        <Extracted Referral Packet/>
+        
+        
+        <PA Form fields>
+            {map_json}
+        <PA Form fields/>
+        <Guidelines>
+            Please follow the below guidelines:
+                1. Carefully review each field in the pa form and understand its requirements.
+                2. Match extracted information to the corresponding PA form fields.
+                3. If the information is missing or unclear leave the answer as an empty string.
+                    - indicate the field that was left empty in the JSON object left_blank along with its reason for being left empty. 
+                4. Use exact values and terminology from source documents when possible. 
+        <Guidelines/>
+        <Output Requirements>
+            Return a JSON array containing two object: 
+                - Fields: array of fields only containing -- name, page, field_lable, answer in the following format
+                
+            Example fields object structure:
+                {{
+                    "name": "CB1",
+                    "page" : 2,
+                    "field_label" : "Start of Treatment"
+                    "Answer" : "Answer to the question based on the extracted referral package" or ""
+                }}
+            Example left_blank object structure:
+                {{
+                    "name": "CB1",
+                    "page" : 2,
+                    "context" : "Original context information".
+                    "reason" : "Reason why it was left blank".
+                }}
+        </Output Requirements>   
+        Note: Ensure strict adherence to this format. Do not include any additional fields or commentary outside the JSON
+        """
 
     if prompt_selected == "pa_prompt":
         if "extracted_fields" not in args:
@@ -86,7 +122,7 @@ def prompt_generator(prompt_selected: str, args: dict):
             print("Forgot something in args dict")
             return ""
         return fill_in_map_gemini(
-            referral_json=args["extracted_referral"], map_json=args["map_json"]
+            referral_markdown=args["extracted_referral"], map_json=args["map_json"]
         )
     else:
         print("Wrong or no prompt option entered")

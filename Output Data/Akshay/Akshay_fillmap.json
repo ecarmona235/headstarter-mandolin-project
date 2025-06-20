@@ -1,0 +1,1010 @@
+[
+    {
+        "fields": [
+            {
+                "name": "Indicate CB.1",
+                "page": 1,
+                "field_lable": "Start of treatment:",
+                "answer": "Yes"
+            },
+            {
+                "name": "Indicate T.2",
+                "page": 1,
+                "field_lable": "Start date (MM)",
+                "answer": "05"
+            },
+            {
+                "name": "Indicate T.3",
+                "page": 1,
+                "field_lable": "Start date (DD)",
+                "answer": "30"
+            },
+            {
+                "name": "Indicate T.4",
+                "page": 1,
+                "field_lable": "Start date (YYYY)",
+                "answer": "2023"
+            },
+            {
+                "name": "Indicate CB.5",
+                "page": 1,
+                "field_lable": "Continuation of therapy",
+                "answer": "No"
+            },
+            {
+                "name": "Request by T",
+                "page": 1,
+                "field_lable": "Precertification Requested By:",
+                "answer": ""
+            },
+            {
+                "name": "Phone T",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": ""
+            },
+            {
+                "name": "Fax T",
+                "page": 1,
+                "field_lable": "Fax:",
+                "answer": "203-818-3061"
+            },
+            {
+                "name": "T11",
+                "page": 1,
+                "field_lable": "Patient First Name",
+                "answer": "Akshay"
+            },
+            {
+                "name": "T12",
+                "page": 1,
+                "field_lable": "Patient Last Name",
+                "answer": "Chaudhari H"
+            },
+            {
+                "name": "T13",
+                "page": 1,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "02/17/1987"
+            },
+            {
+                "name": "T14",
+                "page": 1,
+                "field_lable": "Address:",
+                "answer": "1460 El Camino Real"
+            },
+            {
+                "name": "T15",
+                "page": 1,
+                "field_lable": "City:",
+                "answer": "Arlington"
+            },
+            {
+                "name": "T16",
+                "page": 1,
+                "field_lable": "State:",
+                "answer": "VA"
+            },
+            {
+                "name": "T17",
+                "page": 1,
+                "field_lable": "ZIP:",
+                "answer": "22407"
+            },
+            {
+                "name": "T18",
+                "page": 1,
+                "field_lable": "Home Phone:",
+                "answer": "570-599-6973"
+            },
+            {
+                "name": "T19",
+                "page": 1,
+                "field_lable": "Work Phone:",
+                "answer": ""
+            },
+            {
+                "name": "T20",
+                "page": 1,
+                "field_lable": "Cell Phone:",
+                "answer": ""
+            },
+            {
+                "name": "T21",
+                "page": 1,
+                "field_lable": "Email:",
+                "answer": ""
+            },
+            {
+                "name": "T21B",
+                "page": 1,
+                "field_lable": "lbs",
+                "answer": "190"
+            },
+            {
+                "name": "T21C",
+                "page": 1,
+                "field_lable": "kgs",
+                "answer": "86.18"
+            },
+            {
+                "name": "T21D",
+                "page": 1,
+                "field_lable": "inches",
+                "answer": "73"
+            },
+            {
+                "name": "T21E",
+                "page": 1,
+                "field_lable": "cms",
+                "answer": ""
+            },
+            {
+                "name": "T21F",
+                "page": 1,
+                "field_lable": "Allergies:",
+                "answer": "Catheterized Allergy"
+            },
+            {
+                "name": "Insurance Info T.1",
+                "page": 1,
+                "field_lable": "Aetna Member ID #:",
+                "answer": "350410732018"
+            },
+            {
+                "name": "Insurance Info CB.4",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "Insurance Info CB.5",
+                "page": 1,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "Insurance Info T.2",
+                "page": 1,
+                "field_lable": "Group #:",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info T.6",
+                "page": 1,
+                "field_lable": "If yes, provide ID#:",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info T.7",
+                "page": 1,
+                "field_lable": "Carrier Name:",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info T.3",
+                "page": 1,
+                "field_lable": "Insured:",
+                "answer": "Akshay, Chaudhari H"
+            },
+            {
+                "name": "Insurance Info T.8",
+                "page": 1,
+                "field_lable": "Insured:",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info CB.9",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info CB.10",
+                "page": 1,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info T.11",
+                "page": 1,
+                "field_lable": "If yes, provide ID #:",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info CB.12",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info CB.13",
+                "page": 1,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "Insurance Info T.14",
+                "page": 1,
+                "field_lable": "If yes, provide ID #:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.1",
+                "page": 1,
+                "field_lable": "First Name:",
+                "answer": "Timothy"
+            },
+            {
+                "name": "Presc Info T.7",
+                "page": 1,
+                "field_lable": "Address:",
+                "answer": "2755 College Ave Ste. 100"
+            },
+            {
+                "name": "Presc Info T.11",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": "203-818-3060"
+            },
+            {
+                "name": "Presc Info T.12",
+                "page": 1,
+                "field_lable": "Fax:",
+                "answer": "203-818-3061"
+            },
+            {
+                "name": "Presc Info T.17",
+                "page": 1,
+                "field_lable": "Provider Email:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.2",
+                "page": 1,
+                "field_lable": "Last Name:",
+                "answer": "Adam"
+            },
+            {
+                "name": "Presc Info CB.3",
+                "page": 1,
+                "field_lable": "M.D.",
+                "answer": "Yes"
+            },
+            {
+                "name": "Presc Info CB.4",
+                "page": 1,
+                "field_lable": "D.O.",
+                "answer": "No"
+            },
+            {
+                "name": "Presc Info CB.5",
+                "page": 1,
+                "field_lable": "N.P.",
+                "answer": "No"
+            },
+            {
+                "name": "Presc Info CB.6",
+                "page": 1,
+                "field_lable": "P.A.",
+                "answer": "No"
+            },
+            {
+                "name": "Presc Info T.8",
+                "page": 1,
+                "field_lable": "City:",
+                "answer": "Lessburg"
+            },
+            {
+                "name": "Presc Info T.9",
+                "page": 1,
+                "field_lable": "State:",
+                "answer": "VA"
+            },
+            {
+                "name": "Presc Info T.10",
+                "page": 1,
+                "field_lable": "ZIP:",
+                "answer": "20176"
+            },
+            {
+                "name": "Presc Info T.13",
+                "page": 1,
+                "field_lable": "St Lic #:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.14",
+                "page": 1,
+                "field_lable": "NPI #:",
+                "answer": "1321124163"
+            },
+            {
+                "name": "Presc Info T.15",
+                "page": 1,
+                "field_lable": "DEA #:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.16",
+                "page": 1,
+                "field_lable": "UPIN:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.18",
+                "page": 1,
+                "field_lable": "Office Contact Name:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info T.19",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": ""
+            },
+            {
+                "name": "Presc Info CB.20",
+                "page": 1,
+                "field_lable": "Gastroenterologist",
+                "answer": "Yes"
+            },
+            {
+                "name": "Presc Info CB.21",
+                "page": 1,
+                "field_lable": "Other:",
+                "answer": "No"
+            },
+            {
+                "name": "Presc Info T.23",
+                "page": 1,
+                "field_lable": "Other:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.1",
+                "page": 1,
+                "field_lable": "Self-administered",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.2",
+                "page": 1,
+                "field_lable": "Physician\u2019s Office",
+                "answer": "Yes"
+            },
+            {
+                "name": "Provider Admin CB.3",
+                "page": 1,
+                "field_lable": "Outpatient Infusion Center",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.4",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.5",
+                "page": 1,
+                "field_lable": "Center Name:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.6",
+                "page": 1,
+                "field_lable": "Home Infusion Center",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.7",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.8",
+                "page": 1,
+                "field_lable": "Agency Name:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.9.0",
+                "page": 1,
+                "field_lable": "Administration code(s)",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin T.10.0.0",
+                "page": 1,
+                "field_lable": "CPT:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.10.1.0",
+                "page": 1,
+                "field_lable": "Address:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.11",
+                "page": 1,
+                "field_lable": "Physician\u2019s Office",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.12",
+                "page": 1,
+                "field_lable": "Retail Pharmacy",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.13",
+                "page": 1,
+                "field_lable": "Specialty Pharmacy",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.14",
+                "page": 1,
+                "field_lable": "Other",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin T.17.0",
+                "page": 1,
+                "field_lable": "Name:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.17.1",
+                "page": 1,
+                "field_lable": "Address:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.18",
+                "page": 1,
+                "field_lable": "Phone:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.19",
+                "page": 1,
+                "field_lable": "Fax:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.20",
+                "page": 1,
+                "field_lable": "TIN:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.21",
+                "page": 1,
+                "field_lable": "PIN:",
+                "answer": ""
+            },
+            {
+                "name": "Product T.1",
+                "page": 1,
+                "field_lable": "Dose:",
+                "answer": "Induction: 600mg IV; Maintenance: 360mg SQ"
+            },
+            {
+                "name": "Product T.2",
+                "page": 1,
+                "field_lable": "Frequency:",
+                "answer": "Induction: Week 0, 4, 8; Maintenance: Every 8 weeks"
+            },
+            {
+                "name": "Diagnosis T.1",
+                "page": 1,
+                "field_lable": "Primary ICD Code:",
+                "answer": "K50.111"
+            },
+            {
+                "name": "Diagnosis T.2",
+                "page": 1,
+                "field_lable": "Secondary ICD Code:",
+                "answer": ""
+            },
+            {
+                "name": "Diagnosis T.3",
+                "page": 1,
+                "field_lable": "Other ICD Code:",
+                "answer": ""
+            },
+            {
+                "name": "Clinical CB.0",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.1",
+                "page": 1,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.2",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.3",
+                "page": 1,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.4",
+                "page": 1,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.5",
+                "page": 1,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.6",
+                "page": 1,
+                "field_lable": "PPD test",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.7",
+                "page": 1,
+                "field_lable": "interferon-release assay (IGRA)",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.8",
+                "page": 1,
+                "field_lable": "chest x-ray",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.9",
+                "page": 1,
+                "field_lable": "positive",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.10",
+                "page": 1,
+                "field_lable": "negative",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.11",
+                "page": 1,
+                "field_lable": "unknown",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.12",
+                "page": 1,
+                "field_lable": "latent TB and treatment for latent TB has been initiated",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.13",
+                "page": 1,
+                "field_lable": "latent TB and treatment for latent TB has been completed",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.14",
+                "page": 1,
+                "field_lable": "latent TB and treatment for latent TB has not been initiated",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.15",
+                "page": 1,
+                "field_lable": "active TB",
+                "answer": "No"
+            },
+            {
+                "name": "T11",
+                "page": 2,
+                "field_lable": "Patient First Name",
+                "answer": "Akshay"
+            },
+            {
+                "name": "T12",
+                "page": 2,
+                "field_lable": "Patient Last Name",
+                "answer": "Chaudhari H"
+            },
+            {
+                "name": "T18",
+                "page": 2,
+                "field_lable": "Patient Phone",
+                "answer": "570-599-6973"
+            },
+            {
+                "name": "T13",
+                "page": 2,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "02/17/1987"
+            },
+            {
+                "name": "Clinical CB.19",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.20",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.21",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.22a",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.23a",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.24a",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.25",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical CB.26",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical T.16",
+                "page": 2,
+                "field_lable": "Please indicate loading dose at weeks 0, 4 and 8:",
+                "answer": "600mg IV"
+            },
+            {
+                "name": "Clinical T.17",
+                "page": 2,
+                "field_lable": "Please indicate maintenance dose:",
+                "answer": "360mg SQ"
+            },
+            {
+                "name": "Clinical T.18",
+                "page": 2,
+                "field_lable": "weeks",
+                "answer": "8"
+            },
+            {
+                "name": "Clinical CB.27",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "Clinical CB.28a",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "Clinical T.42",
+                "page": 2,
+                "field_lable": "Date: (MM)",
+                "answer": "05"
+            },
+            {
+                "name": "Clinical T.43",
+                "page": 2,
+                "field_lable": "Date: (DD)",
+                "answer": "30"
+            },
+            {
+                "name": "Clinical T.44",
+                "page": 2,
+                "field_lable": "Date: (YYYY)",
+                "answer": "2023"
+            }
+        ],
+        "left_blank": [
+            {
+                "name": "Indicate T.6",
+                "page": 1,
+                "context": "Therapy Status New Start Continuing Therapy: Last Dose:",
+                "reason": "This request is for a new start of therapy, so a last treatment date is not applicable."
+            },
+            {
+                "name": "Indicate T.7",
+                "page": 1,
+                "context": "Therapy Status New Start Continuing Therapy: Last Dose:",
+                "reason": "This request is for a new start of therapy, so a last treatment date is not applicable."
+            },
+            {
+                "name": "Indicate T.8",
+                "page": 1,
+                "context": "Therapy Status New Start Continuing Therapy: Last Dose:",
+                "reason": "This request is for a new start of therapy, so a last treatment date is not applicable."
+            },
+            {
+                "name": "Request by T",
+                "page": 1,
+                "context": "One Health Partners",
+                "reason": "The document provides the company 'One Health Partners' as the sender of the referral, but not a specific person's name for 'Precertification Requested By'."
+            },
+            {
+                "name": "Phone T",
+                "page": 1,
+                "context": "One Health Partners",
+                "reason": "No specific phone number is provided for 'One Health Partners' acting as the requestor, only a general fax referral number to them and a provider phone number."
+            },
+            {
+                "name": "T19",
+                "page": 1,
+                "context": "Home: 570-599-6973",
+                "reason": "The patient's work phone number is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "T20",
+                "page": 1,
+                "context": "Home: 570-599-6973",
+                "reason": "The patient's cell phone number is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "T21",
+                "page": 1,
+                "context": "Email: intake@thealth.com",
+                "reason": "An email address for the intake department is provided, but not a specific email address for the patient."
+            },
+            {
+                "name": "T21E",
+                "page": 1,
+                "context": "Ht: 73 in",
+                "reason": "The patient's height is provided in inches, but not in centimeters."
+            },
+            {
+                "name": "Insurance Info T.2",
+                "page": 1,
+                "context": "Insurance: Aetna Better Health of Virginia Payer ID: 155VA Policy #: 350410732018",
+                "reason": "The insurance group number is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Insurance Info T.6",
+                "page": 1,
+                "context": "Insurance: Aetna Better Health of Virginia",
+                "reason": "The document indicates the patient has Aetna as primary insurance and does not mention any other health insurance coverage, rendering this field not applicable."
+            },
+            {
+                "name": "Insurance Info T.7",
+                "page": 1,
+                "context": "Insurance: Aetna Better Health of Virginia",
+                "reason": "The document indicates the patient has Aetna as primary insurance and does not mention any other health insurance coverage, rendering this field not applicable."
+            },
+            {
+                "name": "Insurance Info T.8",
+                "page": 1,
+                "context": "Insurance: Aetna Better Health of Virginia",
+                "reason": "The document indicates the patient has Aetna as primary insurance and does not mention any other health insurance coverage, rendering this field not applicable."
+            },
+            {
+                "name": "Insurance Info CB.9",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not provide information regarding the patient's Medicare coverage status."
+            },
+            {
+                "name": "Insurance Info CB.10",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not provide information regarding the patient's Medicare coverage status."
+            },
+            {
+                "name": "Insurance Info T.11",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not indicate Medicare coverage, so the Medicare ID number is not applicable."
+            },
+            {
+                "name": "Insurance Info CB.12",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not provide information regarding the patient's Medicaid coverage status."
+            },
+            {
+                "name": "Insurance Info CB.13",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not provide information regarding the patient's Medicaid coverage status."
+            },
+            {
+                "name": "Insurance Info T.14",
+                "page": 1,
+                "context": "Primary Insurance: Aetna Better Health of Virginia",
+                "reason": "The referral packet does not indicate Medicaid coverage, so the Medicaid ID number is not applicable."
+            },
+            {
+                "name": "Presc Info T.13",
+                "page": 1,
+                "context": "Ordering Provider: Timothy Adam, MD Provider NPI: 1321124163",
+                "reason": "The prescriber's state license number is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Presc Info T.15",
+                "page": 1,
+                "context": "Ordering Provider: Timothy Adam, MD",
+                "reason": "The prescriber's DEA number is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Presc Info T.16",
+                "page": 1,
+                "context": "Ordering Provider: Timothy Adam, MD",
+                "reason": "The prescriber's UPIN is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Presc Info T.17",
+                "page": 1,
+                "context": "Email: intake@thealth.com",
+                "reason": "The prescriber's specific email address is not provided, only a general intake email."
+            },
+            {
+                "name": "Presc Info T.18",
+                "page": 1,
+                "context": "PROVIDER INFORMATION Ordering Provider: Timothy Adam, MD",
+                "reason": "The name of an office contact person for the prescriber is not explicitly provided."
+            },
+            {
+                "name": "Presc Info T.19",
+                "page": 1,
+                "context": "PROVIDER INFORMATION Ordering Provider: Timothy Adam, MD",
+                "reason": "The phone number of an office contact person for the prescriber is not explicitly provided."
+            },
+            {
+                "name": "Presc Info T.23",
+                "page": 1,
+                "context": "Gastroenterologist",
+                "reason": "The prescriber's specialty is identified as Gastroenterologist, so 'Other' is not applicable and a specification is not needed."
+            },
+            {
+                "name": "Provider Admin CB.3",
+                "page": 1,
+                "context": "Administer Skyrizi 600mg IV at week 0, week 4 and week 8 per protocol.",
+                "reason": "While an outpatient infusion center is a possible site for IV administration, the document does not explicitly state it as the chosen administration site."
+            },
+            {
+                "name": "Provider Admin T.4",
+                "page": 1,
+                "context": "Administer Skyrizi 600mg IV at week 0, week 4 and week 8 per protocol.",
+                "reason": "The phone number of an outpatient infusion center is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.5",
+                "page": 1,
+                "context": "Administer Skyrizi 600mg IV at week 0, week 4 and week 8 per protocol.",
+                "reason": "The name of an outpatient infusion center is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin CB.6",
+                "page": 1,
+                "context": "Administer Skyrizi: 360mg SQ at week 12 and every 8 weeks thereafter.",
+                "reason": "While home infusion is a possible site for SQ administration, the document does not explicitly state it as the chosen administration site."
+            },
+            {
+                "name": "Provider Admin T.7",
+                "page": 1,
+                "context": "Administer Skyrizi: 360mg SQ at week 12 and every 8 weeks thereafter.",
+                "reason": "The phone number of a home infusion center/agency is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.8",
+                "page": 1,
+                "context": "Administer Skyrizi: 360mg SQ at week 12 and every 8 weeks thereafter.",
+                "reason": "The name of a home infusion center agency is not explicitly provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.10.0.0",
+                "page": 1,
+                "context": "Administer Skyrizi 600mg IV at week 0, week 4 and week 8 per protocol.",
+                "reason": "No specific administration CPT code(s) are provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.10.1.0",
+                "page": 1,
+                "context": "Administer Skyrizi 600mg IV at week 0, week 4 and week 8 per protocol.",
+                "reason": "The specific address of the administration site is not explicitly provided, though the prescriber's office address is available."
+            },
+            {
+                "name": "Provider Admin CB.11",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The document specifies administration details but does not explicitly state where the medication will be dispensed from."
+            },
+            {
+                "name": "Provider Admin CB.12",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The document specifies administration details but does not explicitly state where the medication will be dispensed from."
+            },
+            {
+                "name": "Provider Admin CB.13",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The document specifies administration details but does not explicitly state where the medication will be dispensed from a specialty pharmacy."
+            },
+            {
+                "name": "Provider Admin T.17.0",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The name of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Provider Admin T.17.1",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The address of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Provider Admin T.18",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The phone number of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Provider Admin T.19",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The fax number of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Provider Admin T.20",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The Tax Identification Number (TIN) of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Provider Admin T.21",
+                "page": 1,
+                "context": "MEDICATION ORDER [x] Crohn's Disease Induction Phase: Administer Skyrizi",
+                "reason": "The Provider Identification Number (PIN) of the dispensing provider or pharmacy is not explicitly provided."
+            },
+            {
+                "name": "Diagnosis T.2",
+                "page": 1,
+                "context": "ICC-10 Code: 190 ICC-10 Code: 190 ICC-10 Code: 190 ICC-10 Code: 190",
+                "reason": "The codes '190' appear multiple times without clear context as secondary diagnoses for Crohn's disease, and may be OCR artifacts or irrelevant. The primary ICD code K50.111 is clearly stated."
+            },
+            {
+                "name": "Diagnosis T.3",
+                "page": 1,
+                "context": "ICC-10 Code: 190 ICC-10 Code: 190 ICC-10 Code: 190 ICC-10 Code: 190",
+                "reason": "The codes '190' appear multiple times without clear context as additional diagnoses for Crohn's disease, and may be OCR artifacts or irrelevant."
+            }
+        ]
+    }
+]

@@ -1,0 +1,2240 @@
+[
+    {
+        "fields": [
+            {
+                "name": "CB1",
+                "page": 2,
+                "field_lable": "Start of treatment",
+                "answer": "No"
+            },
+            {
+                "name": "T2",
+                "page": 2,
+                "field_lable": "Start date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T3",
+                "page": 2,
+                "field_lable": "Start date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T4",
+                "page": 2,
+                "field_lable": "Start date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "CB5",
+                "page": 2,
+                "field_lable": "Continuation of therapy",
+                "answer": "Yes"
+            },
+            {
+                "name": "T6",
+                "page": 2,
+                "field_lable": "Date of last treatment: (MM)",
+                "answer": "05"
+            },
+            {
+                "name": "T7",
+                "page": 2,
+                "field_lable": "Date of last treatment: (DD)",
+                "answer": "23"
+            },
+            {
+                "name": "T8",
+                "page": 2,
+                "field_lable": "Date of last treatment: (YYYY)",
+                "answer": "2024"
+            },
+            {
+                "name": "T9",
+                "page": 2,
+                "field_lable": "Precertification Requested By:",
+                "answer": "Erran Rostami, BSN, RN"
+            },
+            {
+                "name": "T10",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "615-343-1176"
+            },
+            {
+                "name": "T11",
+                "page": 2,
+                "field_lable": "Fax:",
+                "answer": "615-343-1219"
+            },
+            {
+                "name": "T12",
+                "page": 2,
+                "field_lable": "Patient First Name",
+                "answer": "Shakh"
+            },
+            {
+                "name": "T13",
+                "page": 2,
+                "field_lable": "Patient Last Name",
+                "answer": "Abdulla"
+            },
+            {
+                "name": "T14",
+                "page": 2,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "04/01/2001"
+            },
+            {
+                "name": "T15",
+                "page": 2,
+                "field_lable": "Address:",
+                "answer": "425 Sherman Ave APT D"
+            },
+            {
+                "name": "T16",
+                "page": 2,
+                "field_lable": "City:",
+                "answer": "Nashville"
+            },
+            {
+                "name": "T17",
+                "page": 2,
+                "field_lable": "State:",
+                "answer": "TN"
+            },
+            {
+                "name": "T18",
+                "page": 2,
+                "field_lable": "ZIP:",
+                "answer": "37995"
+            },
+            {
+                "name": "T19",
+                "page": 2,
+                "field_lable": "Patient Phone",
+                "answer": "865-395-3958"
+            },
+            {
+                "name": "T20",
+                "page": 2,
+                "field_lable": "Work Phone:",
+                "answer": ""
+            },
+            {
+                "name": "T21",
+                "page": 2,
+                "field_lable": "Cell Phone:",
+                "answer": "865-395-0481"
+            },
+            {
+                "name": "T22",
+                "page": 2,
+                "field_lable": "E-mail:",
+                "answer": ""
+            },
+            {
+                "name": "T24",
+                "page": 2,
+                "field_lable": "lbs",
+                "answer": ""
+            },
+            {
+                "name": "T25",
+                "page": 2,
+                "field_lable": "kgs",
+                "answer": ""
+            },
+            {
+                "name": "T26",
+                "page": 2,
+                "field_lable": "inches",
+                "answer": ""
+            },
+            {
+                "name": "T27",
+                "page": 2,
+                "field_lable": "cms",
+                "answer": ""
+            },
+            {
+                "name": "T23",
+                "page": 2,
+                "field_lable": "Allergies:",
+                "answer": "No Known Allergies"
+            },
+            {
+                "name": "T28",
+                "page": 2,
+                "field_lable": "Member ID #:",
+                "answer": "LAJM14345116"
+            },
+            {
+                "name": "T29",
+                "page": 2,
+                "field_lable": "Group #:",
+                "answer": "435000"
+            },
+            {
+                "name": "T30",
+                "page": 2,
+                "field_lable": "Insured:",
+                "answer": "ABDULLA, SHAKH"
+            },
+            {
+                "name": "CB31",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB32",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "T33",
+                "page": 2,
+                "field_lable": "If yes, provide ID#:",
+                "answer": ""
+            },
+            {
+                "name": "T34",
+                "page": 2,
+                "field_lable": "Carrier Name:",
+                "answer": ""
+            },
+            {
+                "name": "T35",
+                "page": 2,
+                "field_lable": "Insured:",
+                "answer": ""
+            },
+            {
+                "name": "T42",
+                "page": 2,
+                "field_lable": "First Name:",
+                "answer": "Hao H"
+            },
+            {
+                "name": "T43",
+                "page": 2,
+                "field_lable": "Last Name:",
+                "answer": "Gu"
+            },
+            {
+                "name": "CB44",
+                "page": 2,
+                "field_lable": "M.D.",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB45",
+                "page": 2,
+                "field_lable": "D.O.",
+                "answer": "No"
+            },
+            {
+                "name": "CB46",
+                "page": 2,
+                "field_lable": "N.P.",
+                "answer": "No"
+            },
+            {
+                "name": "CB47",
+                "page": 2,
+                "field_lable": "P.A.",
+                "answer": "No"
+            },
+            {
+                "name": "T48",
+                "page": 2,
+                "field_lable": "Address:",
+                "answer": "3320 Montgomery Dr"
+            },
+            {
+                "name": "T49",
+                "page": 2,
+                "field_lable": "City:",
+                "answer": "NASHVILLE"
+            },
+            {
+                "name": "T50",
+                "page": 2,
+                "field_lable": "State:",
+                "answer": "TN"
+            },
+            {
+                "name": "T51",
+                "page": 2,
+                "field_lable": "ZIP:",
+                "answer": "37361"
+            },
+            {
+                "name": "T52",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "614-936-0065"
+            },
+            {
+                "name": "T53",
+                "page": 2,
+                "field_lable": "Fax:",
+                "answer": "615-562-4820"
+            },
+            {
+                "name": "T54",
+                "page": 2,
+                "field_lable": "St Lic #:",
+                "answer": ""
+            },
+            {
+                "name": "T55",
+                "page": 2,
+                "field_lable": "NPI #:",
+                "answer": "1154611523"
+            },
+            {
+                "name": "T56",
+                "page": 2,
+                "field_lable": "DEA #:",
+                "answer": ""
+            },
+            {
+                "name": "T57",
+                "page": 2,
+                "field_lable": "UPIN:",
+                "answer": ""
+            },
+            {
+                "name": "T58.0",
+                "page": 2,
+                "field_lable": "Provider Email:",
+                "answer": ""
+            },
+            {
+                "name": "T58.1",
+                "page": 2,
+                "field_lable": "Office Contact Name:",
+                "answer": "Erran Rostami, BSN, RN"
+            },
+            {
+                "name": "T59",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "615-343-1176"
+            },
+            {
+                "name": "Provider Admin CB.1",
+                "page": 2,
+                "field_lable": "Self-administered",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.2",
+                "page": 2,
+                "field_lable": "Physician\u2019s Office",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.3",
+                "page": 2,
+                "field_lable": "Home",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.4",
+                "page": 2,
+                "field_lable": "Outpatient Infusion Center",
+                "answer": "Yes"
+            },
+            {
+                "name": "Provider Admin T.5",
+                "page": 2,
+                "field_lable": "Name:",
+                "answer": "Golden Gate Infusion Center"
+            },
+            {
+                "name": "Provider Admin CB.7",
+                "page": 2,
+                "field_lable": "Home Infusion Center",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin T.6",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "614-295-7655"
+            },
+            {
+                "name": "Provider Admin T.8",
+                "page": 2,
+                "field_lable": "Agency Name:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.10",
+                "page": 2,
+                "field_lable": "Administration code(s)",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin T.9",
+                "page": 2,
+                "field_lable": "CPT:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.11A",
+                "page": 2,
+                "field_lable": "Address:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.13",
+                "page": 2,
+                "field_lable": "City:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.14",
+                "page": 2,
+                "field_lable": "State:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.15",
+                "page": 2,
+                "field_lable": "ZIP:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.16",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "614-295-7655"
+            },
+            {
+                "name": "Provider Admin T.17A",
+                "page": 2,
+                "field_lable": "Fax:",
+                "answer": "614-225-3355"
+            },
+            {
+                "name": "Provider Admin T.18",
+                "page": 2,
+                "field_lable": "TIN:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.19",
+                "page": 2,
+                "field_lable": "PIN:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.20",
+                "page": 2,
+                "field_lable": "NPI:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin CB.21",
+                "page": 2,
+                "field_lable": "Outpatient Dialysis Center",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.22",
+                "page": 2,
+                "field_lable": "Physician\u2019s Office",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.23.0.0",
+                "page": 2,
+                "field_lable": "Retail Pharmacy",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.24.0.0",
+                "page": 2,
+                "field_lable": "Specialty Pharmacy",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.25",
+                "page": 2,
+                "field_lable": "Mail Order",
+                "answer": "No"
+            },
+            {
+                "name": "Provider Admin CB.26",
+                "page": 2,
+                "field_lable": "Other:",
+                "answer": "Yes"
+            },
+            {
+                "name": "Provider Admin T.27",
+                "page": 2,
+                "field_lable": "Other:",
+                "answer": "Infusion Center"
+            },
+            {
+                "name": "Provider Admin T.28",
+                "page": 2,
+                "field_lable": "Name:",
+                "answer": "Golden Gate Infusion Center"
+            },
+            {
+                "name": "Provider Admin T.29a",
+                "page": 2,
+                "field_lable": "Address:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.30a",
+                "page": 2,
+                "field_lable": "City:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.31",
+                "page": 2,
+                "field_lable": "State:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.32",
+                "page": 2,
+                "field_lable": "ZIP:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.33",
+                "page": 2,
+                "field_lable": "Phone:",
+                "answer": "614-295-7655"
+            },
+            {
+                "name": "Provider Admin T.34",
+                "page": 2,
+                "field_lable": "Fax:",
+                "answer": "614-225-3355"
+            },
+            {
+                "name": "Provider Admin T.35",
+                "page": 2,
+                "field_lable": "TIN:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.36",
+                "page": 2,
+                "field_lable": "PIN:",
+                "answer": ""
+            },
+            {
+                "name": "Provider Admin T.37",
+                "page": 2,
+                "field_lable": "NPI:",
+                "answer": ""
+            },
+            {
+                "name": "CB60",
+                "page": 2,
+                "field_lable": "Riabni (rituximab-arrx)",
+                "answer": "No"
+            },
+            {
+                "name": "CB61",
+                "page": 2,
+                "field_lable": "Rituxan (rituximab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB62",
+                "page": 2,
+                "field_lable": "Ruxience (rituximab-pvvr)",
+                "answer": "No"
+            },
+            {
+                "name": "CB63",
+                "page": 2,
+                "field_lable": "Truxima (rituximab-abbs)",
+                "answer": "Yes"
+            },
+            {
+                "name": "T64",
+                "page": 2,
+                "field_lable": "Dose:",
+                "answer": "694 mg"
+            },
+            {
+                "name": "T65",
+                "page": 2,
+                "field_lable": "Directions for Use:",
+                "answer": "Initial Dose: IVPB Every 2 weeks, Starting 30 minutes after treatment start time; Subsequent infusions: initiate at 100mg/hr, increase by 100mg/hr every 30 min; Max Rate 400mg/hr"
+            },
+            {
+                "name": "T66",
+                "page": 2,
+                "field_lable": "HCPCS Code:",
+                "answer": ""
+            },
+            {
+                "name": "T67",
+                "page": 2,
+                "field_lable": "Primary ICD Code:",
+                "answer": "G35"
+            },
+            {
+                "name": "CB68",
+                "page": 2,
+                "field_lable": "Other ICD Code:",
+                "answer": "No"
+            },
+            {
+                "name": "T69",
+                "page": 2,
+                "field_lable": "Other ICD Code:",
+                "answer": ""
+            },
+            {
+                "name": "CB70",
+                "page": 2,
+                "field_lable": "Yes",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB71",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "No"
+            },
+            {
+                "name": "CB72",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB73",
+                "page": 2,
+                "field_lable": "Ruxience (rituximab-pvvr)",
+                "answer": "No"
+            },
+            {
+                "name": "CB74",
+                "page": 2,
+                "field_lable": "Truxima (rituximab-abbs)",
+                "answer": "No"
+            },
+            {
+                "name": "T75",
+                "page": 2,
+                "field_lable": "When was the member\u2019s trial and failure of the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T76",
+                "page": 2,
+                "field_lable": "Please describe the nature of the failure of the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "CB77",
+                "page": 2,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB78",
+                "page": 2,
+                "field_lable": "Ruxience (rituximab-pvvr)",
+                "answer": "No"
+            },
+            {
+                "name": "CB79",
+                "page": 2,
+                "field_lable": "Truxima (rituximab-abbs)",
+                "answer": "No"
+            },
+            {
+                "name": "T80",
+                "page": 2,
+                "field_lable": "When was the member\u2019s adverse reaction to the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T81",
+                "page": 2,
+                "field_lable": "Please describe the nature of the adverse reaction to the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "T84",
+                "page": 2,
+                "field_lable": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred biosimilar products when indicated for the patient\u2019s diagnosis?",
+                "answer": ""
+            },
+            {
+                "name": "CB82",
+                "page": 2,
+                "field_lable": "Ruxience (rituximab-pvvr)",
+                "answer": "No"
+            },
+            {
+                "name": "CB83",
+                "page": 2,
+                "field_lable": "Truxima (rituximab-abbs)",
+                "answer": "No"
+            },
+            {
+                "name": "T12",
+                "page": 3,
+                "field_lable": "Patient First Name",
+                "answer": "Shakh"
+            },
+            {
+                "name": "T13",
+                "page": 3,
+                "field_lable": "Patient Last Name",
+                "answer": "Abdulla"
+            },
+            {
+                "name": "T19",
+                "page": 3,
+                "field_lable": "Patient Phone",
+                "answer": "865-395-3958"
+            },
+            {
+                "name": "T14",
+                "page": 3,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "04/01/2001"
+            },
+            {
+                "name": "CB86",
+                "page": 3,
+                "field_lable": "Inflectra (infliximab-dyyb)",
+                "answer": "No"
+            },
+            {
+                "name": "CB87",
+                "page": 3,
+                "field_lable": "Renflexis (infliximab-abda)",
+                "answer": "No"
+            },
+            {
+                "name": "CB88",
+                "page": 3,
+                "field_lable": "Simponi Aria (golimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "T89",
+                "page": 3,
+                "field_lable": "When was the member\u2019s trial and failure of the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T90",
+                "page": 3,
+                "field_lable": "Please describe the nature of the failure of the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "CB85",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB92",
+                "page": 3,
+                "field_lable": "Inflectra (infliximab-dyyb)",
+                "answer": "No"
+            },
+            {
+                "name": "CB93",
+                "page": 3,
+                "field_lable": "Renflexis (infliximab-abda)",
+                "answer": "No"
+            },
+            {
+                "name": "CB94",
+                "page": 3,
+                "field_lable": "Simponi Aria (golimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "T95",
+                "page": 3,
+                "field_lable": "When was the member\u2019s adverse reaction to the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T96a",
+                "page": 3,
+                "field_lable": "Please describe the nature of the adverse reaction to the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "CB91",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB98a",
+                "page": 3,
+                "field_lable": "Enbrel (etanercept)",
+                "answer": "No"
+            },
+            {
+                "name": "CB99a",
+                "page": 3,
+                "field_lable": "Humira (adalimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB100a",
+                "page": 3,
+                "field_lable": "Idacio (adalimumab-aacf)",
+                "answer": "No"
+            },
+            {
+                "name": "CB101a",
+                "page": 3,
+                "field_lable": "Rinvoq (upadacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "CB102a",
+                "page": 3,
+                "field_lable": "Tyenne SC (tocilizumab-aazg)",
+                "answer": "No"
+            },
+            {
+                "name": "CB103a",
+                "page": 3,
+                "field_lable": "Xeljanz/Xeljanz XR (tofacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "T104",
+                "page": 3,
+                "field_lable": "When was the member\u2019s trial and failure of the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T105",
+                "page": 3,
+                "field_lable": "Please describe the nature of the failure of the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "CB97",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB107z",
+                "page": 3,
+                "field_lable": "Enbrel (etanercept)",
+                "answer": "No"
+            },
+            {
+                "name": "CB108z",
+                "page": 3,
+                "field_lable": "Humira (adalimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB109z",
+                "page": 3,
+                "field_lable": "Idacio (adalimumab-aacf)",
+                "answer": "No"
+            },
+            {
+                "name": "CB110z",
+                "page": 3,
+                "field_lable": "Rinvoq (upadacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "CB111z",
+                "page": 3,
+                "field_lable": "Tyenne SC (tocilizumab-aazg)",
+                "answer": "No"
+            },
+            {
+                "name": "CB112z",
+                "page": 3,
+                "field_lable": "Xeljanz/Xeljanz XR (tofacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "T113",
+                "page": 3,
+                "field_lable": "When was the member\u2019s adverse reaction to the preferred drug?",
+                "answer": ""
+            },
+            {
+                "name": "T114",
+                "page": 3,
+                "field_lable": "Please describe the nature of the adverse reaction to the preferred drug",
+                "answer": ""
+            },
+            {
+                "name": "CB106z",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "T118",
+                "page": 3,
+                "field_lable": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient\u2019s diagnosis?",
+                "answer": ""
+            },
+            {
+                "name": "CB115z",
+                "page": 3,
+                "field_lable": "Inflectra (infliximab-dyyb)",
+                "answer": "No"
+            },
+            {
+                "name": "CB116z",
+                "page": 3,
+                "field_lable": "Renflexis (infliximab-abda)",
+                "answer": "No"
+            },
+            {
+                "name": "CB117z",
+                "page": 3,
+                "field_lable": "Simponi Aria (golimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "T125",
+                "page": 3,
+                "field_lable": "Please explain if there are contraindications or any other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient\u2019s diagnosis?",
+                "answer": ""
+            },
+            {
+                "name": "CB119z",
+                "page": 3,
+                "field_lable": "Enbrel (etanercept)",
+                "answer": "No"
+            },
+            {
+                "name": "CB120z",
+                "page": 3,
+                "field_lable": "Humira (adalimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB121z",
+                "page": 3,
+                "field_lable": "Idacio (adalimumab-aacf)",
+                "answer": "No"
+            },
+            {
+                "name": "CB122z",
+                "page": 3,
+                "field_lable": "Rinvoq (upadacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "CB123z",
+                "page": 3,
+                "field_lable": "Tyenne SC (tocilizumab-aazg)",
+                "answer": "No"
+            },
+            {
+                "name": "CB124z",
+                "page": 3,
+                "field_lable": "Xeljanz/Xeljanz XR (tofacitinib)",
+                "answer": "No"
+            },
+            {
+                "name": "CB96.4.0",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB98",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB99.0",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB100.0",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB101.0",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB102.0",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB103",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB104",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB104a",
+                "page": 3,
+                "field_lable": "Wegener granulomatosis",
+                "answer": "No"
+            },
+            {
+                "name": "CB104b",
+                "page": 3,
+                "field_lable": "Churg-Strauss syndrome",
+                "answer": "No"
+            },
+            {
+                "name": "CB104c",
+                "page": 3,
+                "field_lable": "microscopic polyangiitis",
+                "answer": "No"
+            },
+            {
+                "name": "CB104d",
+                "page": 3,
+                "field_lable": "pauci-immune glomerulonephritis",
+                "answer": "No"
+            },
+            {
+                "name": "CB105",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB106",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB106a",
+                "page": 3,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB107",
+                "page": 3,
+                "field_lable": "pemphigus vulgaris",
+                "answer": "No"
+            },
+            {
+                "name": "CB108",
+                "page": 3,
+                "field_lable": "pemphigus folliaceus",
+                "answer": "No"
+            },
+            {
+                "name": "CB109",
+                "page": 3,
+                "field_lable": "bullous pemphigoid",
+                "answer": "No"
+            },
+            {
+                "name": "CB110",
+                "page": 3,
+                "field_lable": "cicatricial pemphigoid",
+                "answer": "No"
+            },
+            {
+                "name": "CB111",
+                "page": 3,
+                "field_lable": "epidermolysis bullosa acquisita",
+                "answer": "No"
+            },
+            {
+                "name": "CB112",
+                "page": 3,
+                "field_lable": "paraneoplastic pemphigus",
+                "answer": "No"
+            },
+            {
+                "name": "CB113",
+                "page": 3,
+                "field_lable": "None of the above",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB106b",
+                "page": 3,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB114",
+                "page": 3,
+                "field_lable": "AIDS-related B-cell lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB115",
+                "page": 3,
+                "field_lable": "Burkitt lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB116",
+                "page": 3,
+                "field_lable": "Diffuse large B-cell lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB117",
+                "page": 3,
+                "field_lable": "Follicular lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB118",
+                "page": 3,
+                "field_lable": "Gastric MALT lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB119",
+                "page": 3,
+                "field_lable": "High-grade B-Cell lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB120",
+                "page": 3,
+                "field_lable": "Mantle cell lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB121",
+                "page": 3,
+                "field_lable": "Nodal marginal zone lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB122",
+                "page": 3,
+                "field_lable": "Nongastric MALT lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB123",
+                "page": 3,
+                "field_lable": "Primary cutaneous B-cell lymphomas",
+                "answer": "No"
+            },
+            {
+                "name": "CB124",
+                "page": 3,
+                "field_lable": "Splenic marginal zone lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB125",
+                "page": 3,
+                "field_lable": "Other:",
+                "answer": "No"
+            },
+            {
+                "name": "T126",
+                "page": 3,
+                "field_lable": "Other:",
+                "answer": ""
+            },
+            {
+                "name": "T12",
+                "page": 4,
+                "field_lable": "Patient First Name",
+                "answer": "Shakh"
+            },
+            {
+                "name": "T13",
+                "page": 4,
+                "field_lable": "Patient Last Name",
+                "answer": "Abdulla"
+            },
+            {
+                "name": "T19",
+                "page": 4,
+                "field_lable": "Patient Phone",
+                "answer": "865-395-3958"
+            },
+            {
+                "name": "T14",
+                "page": 4,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "04/01/2001"
+            },
+            {
+                "name": "CB127",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB128",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB129",
+                "page": 4,
+                "field_lable": "leptomeningeal metastases from lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB130",
+                "page": 4,
+                "field_lable": "primary CNS lymphoma",
+                "answer": "No"
+            },
+            {
+                "name": "CB131",
+                "page": 4,
+                "field_lable": "none of the above",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB132",
+                "page": 4,
+                "field_lable": "chronic lymphocytic leukemia (CLL)",
+                "answer": "No"
+            },
+            {
+                "name": "CB133",
+                "page": 4,
+                "field_lable": "small lymphocytic leukemia",
+                "answer": "No"
+            },
+            {
+                "name": "CB134",
+                "page": 4,
+                "field_lable": "none of the above",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB135",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB136",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB139",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB140",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB144",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB145",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB141",
+                "page": 4,
+                "field_lable": "relapsed hairy cell leukemia",
+                "answer": "No"
+            },
+            {
+                "name": "CB142",
+                "page": 4,
+                "field_lable": "refractory hairy cell leukemia",
+                "answer": "No"
+            },
+            {
+                "name": "CB143",
+                "page": 4,
+                "field_lable": "none of the above",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB137",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB146",
+                "page": 4,
+                "field_lable": "heart transplant recipient",
+                "answer": "No"
+            },
+            {
+                "name": "CB147",
+                "page": 4,
+                "field_lable": "other solid organ transplant recipient",
+                "answer": "No"
+            },
+            {
+                "name": "CB138",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB148",
+                "page": 4,
+                "field_lable": "Bavencio (avelumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB149",
+                "page": 4,
+                "field_lable": "Imfinzi (durvalumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB150",
+                "page": 4,
+                "field_lable": "Keytruda (pembrolizumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB151",
+                "page": 4,
+                "field_lable": "Opdivo (nivolumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB152",
+                "page": 4,
+                "field_lable": "Tecentriq (atezolizumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB153",
+                "page": 4,
+                "field_lable": "Yervoy (ipilimumab)",
+                "answer": "No"
+            },
+            {
+                "name": "CB154",
+                "page": 4,
+                "field_lable": "Other:",
+                "answer": "No"
+            },
+            {
+                "name": "T155",
+                "page": 4,
+                "field_lable": "Other:",
+                "answer": ""
+            },
+            {
+                "name": "CB156",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB158",
+                "page": 4,
+                "field_lable": "refractory immune thrombocytopenic purpura",
+                "answer": "No"
+            },
+            {
+                "name": "CB159",
+                "page": 4,
+                "field_lable": "idiopathic thrombocytopenic purpura (ITP)",
+                "answer": "No"
+            },
+            {
+                "name": "CB157",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB160",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB161",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB162",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB163",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB164",
+                "page": 4,
+                "field_lable": "Relapsing-remitting MS (RRMS)",
+                "answer": ""
+            },
+            {
+                "name": "CB165",
+                "page": 4,
+                "field_lable": "Secondary-progressive MS (SPMS)",
+                "answer": ""
+            },
+            {
+                "name": "CB166",
+                "page": 4,
+                "field_lable": "Primary-progressive MS (PPMS)",
+                "answer": ""
+            },
+            {
+                "name": "CB167",
+                "page": 4,
+                "field_lable": "Progressive-relapsing MS (PRMS)",
+                "answer": ""
+            },
+            {
+                "name": "CB168",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB169",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB170",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB172",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB173",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB171",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB174",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB175",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB176",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB177",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB178",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB179",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB180",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "T189",
+                "page": 4,
+                "field_lable": "Medication:",
+                "answer": ""
+            },
+            {
+                "name": "T190",
+                "page": 4,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T191",
+                "page": 4,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T192",
+                "page": 4,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T193",
+                "page": 4,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T194",
+                "page": 4,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T195",
+                "page": 4,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T196",
+                "page": 4,
+                "field_lable": "Medication:",
+                "answer": ""
+            },
+            {
+                "name": "T197",
+                "page": 4,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T198",
+                "page": 4,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T199",
+                "page": 4,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T200",
+                "page": 4,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T201",
+                "page": 4,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T202",
+                "page": 4,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "CB181",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB203",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB204",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB205",
+                "page": 4,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB206",
+                "page": 4,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "T12",
+                "page": 5,
+                "field_lable": "Patient First Name",
+                "answer": "Shakh"
+            },
+            {
+                "name": "T13",
+                "page": 5,
+                "field_lable": "Patient Last Name",
+                "answer": "Abdulla"
+            },
+            {
+                "name": "T19",
+                "page": 5,
+                "field_lable": "Patient Phone",
+                "answer": "865-395-3958"
+            },
+            {
+                "name": "T14",
+                "page": 5,
+                "field_lable": "Patient DOB (MM/DD/YYYY)",
+                "answer": "04/01/2001"
+            },
+            {
+                "name": "CB207",
+                "page": 5,
+                "field_lable": "Mild",
+                "answer": "No"
+            },
+            {
+                "name": "CB208",
+                "page": 5,
+                "field_lable": "Moderate",
+                "answer": "No"
+            },
+            {
+                "name": "CB209",
+                "page": 5,
+                "field_lable": "Severe",
+                "answer": "No"
+            },
+            {
+                "name": "CB210",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB211",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB212",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB213",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB214",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB216",
+                "page": 5,
+                "field_lable": "ineffective",
+                "answer": "No"
+            },
+            {
+                "name": "CB217",
+                "page": 5,
+                "field_lable": "not tolerated",
+                "answer": "No"
+            },
+            {
+                "name": "CB218",
+                "page": 5,
+                "field_lable": "contraindicated",
+                "answer": "No"
+            },
+            {
+                "name": "CB215",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB223",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB225",
+                "page": 5,
+                "field_lable": "azathioprine",
+                "answer": "No"
+            },
+            {
+                "name": "CB226",
+                "page": 5,
+                "field_lable": "cyclosporine",
+                "answer": "No"
+            },
+            {
+                "name": "CB227",
+                "page": 5,
+                "field_lable": "hydroxychloroquine",
+                "answer": "No"
+            },
+            {
+                "name": "CB228",
+                "page": 5,
+                "field_lable": "leflunomide",
+                "answer": "No"
+            },
+            {
+                "name": "CB229",
+                "page": 5,
+                "field_lable": "sulfasalazine",
+                "answer": "No"
+            },
+            {
+                "name": "CB224",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB281",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB282",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB283",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "T285",
+                "page": 5,
+                "field_lable": "Medication:",
+                "answer": ""
+            },
+            {
+                "name": "T286",
+                "page": 5,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T287",
+                "page": 5,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T288",
+                "page": 5,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T289",
+                "page": 5,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T290",
+                "page": 5,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T291",
+                "page": 5,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T292",
+                "page": 5,
+                "field_lable": "Medication:",
+                "answer": ""
+            },
+            {
+                "name": "T293",
+                "page": 5,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T294",
+                "page": 5,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T295",
+                "page": 5,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "T296",
+                "page": 5,
+                "field_lable": "Date: (MM)",
+                "answer": ""
+            },
+            {
+                "name": "T297",
+                "page": 5,
+                "field_lable": "Date: (DD)",
+                "answer": ""
+            },
+            {
+                "name": "T298",
+                "page": 5,
+                "field_lable": "Date: (YYYY)",
+                "answer": ""
+            },
+            {
+                "name": "CB284",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB299",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB300",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB301",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB302",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "CB303",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": "No"
+            },
+            {
+                "name": "CB304",
+                "page": 5,
+                "field_lable": "No",
+                "answer": "Yes"
+            },
+            {
+                "name": "T305",
+                "page": 5,
+                "field_lable": "Please indicate the length of time on Rituxan (rituximab):",
+                "answer": "Ongoing since 05/23/2024"
+            },
+            {
+                "name": "CB310",
+                "page": 5,
+                "field_lable": "Mild",
+                "answer": "No"
+            },
+            {
+                "name": "CB311",
+                "page": 5,
+                "field_lable": "Moderate",
+                "answer": "No"
+            },
+            {
+                "name": "CB312",
+                "page": 5,
+                "field_lable": "Severe",
+                "answer": "No"
+            },
+            {
+                "name": "CB306",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "CB307",
+                "page": 5,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "CB308",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "CB309",
+                "page": 5,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "CB313",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "CB314",
+                "page": 5,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "CB315",
+                "page": 5,
+                "field_lable": "Yes",
+                "answer": ""
+            },
+            {
+                "name": "CB316",
+                "page": 5,
+                "field_lable": "No",
+                "answer": ""
+            },
+            {
+                "name": "T317",
+                "page": 5,
+                "field_lable": "Date: (MM)",
+                "answer": "05"
+            },
+            {
+                "name": "T318",
+                "page": 5,
+                "field_lable": "Date: (DD)",
+                "answer": "22"
+            },
+            {
+                "name": "T319",
+                "page": 5,
+                "field_lable": "Date: (YYYY)",
+                "answer": "2024"
+            }
+        ],
+        "left_blank": [
+            {
+                "name": "T20",
+                "page": 2,
+                "context": "Secondary contact field in the A. PATIENT INFORMATION section, for patient contact during business hours.",
+                "reason": "Information not found in the referral packet."
+            },
+            {
+                "name": "T22",
+                "page": 2,
+                "context": "Secondary contact field in the A. PATIENT INFORMATION section, for electronic patient communication.",
+                "reason": "Information not found in the referral packet."
+            },
+            {
+                "name": "T24",
+                "page": 2,
+                "context": "Primary clinical field in the A. PATIENT INFORMATION section, relevant for medication dosing and safety calculations.",
+                "reason": "Patient's weight in pounds is not specified in the referral packet."
+            },
+            {
+                "name": "T25",
+                "page": 2,
+                "context": "Primary clinical field in the A. PATIENT INFORMATION section, relevant for medication dosing and safety calculations.",
+                "reason": "Patient's weight in kilograms is not specified in the referral packet."
+            },
+            {
+                "name": "T26",
+                "page": 2,
+                "context": "Primary clinical field in the A. PATIENT INFORMATION section, relevant for body surface area calculations for dosing.",
+                "reason": "Patient's height in inches is not specified in the referral packet."
+            },
+            {
+                "name": "T27",
+                "page": 2,
+                "context": "Primary clinical field in the A. PATIENT INFORMATION section, relevant for body surface area calculations for dosing.",
+                "reason": "Patient's height in centimeters is not specified in the referral packet."
+            },
+            {
+                "name": "T54",
+                "page": 2,
+                "context": "Primary identification field in C. PRESCRIBER INFORMATION, for verifying the prescriber's professional licensure.",
+                "reason": "Prescriber's State License number not found in the referral packet."
+            },
+            {
+                "name": "T56",
+                "page": 2,
+                "context": "Primary identification field in C. PRESCRIBER INFORMATION, required for prescribing controlled substances.",
+                "reason": "Prescriber's DEA number not found in the referral packet."
+            },
+            {
+                "name": "T57",
+                "page": 2,
+                "context": "Primary identification field in C. PRESCRIBER INFORMATION, an older identifier previously used by Medicare.",
+                "reason": "Prescriber's UPIN not found in the referral packet."
+            },
+            {
+                "name": "T58.0",
+                "page": 2,
+                "context": "Secondary contact field in C. PRESCRIBER INFORMATION, for electronic communication with the prescriber.",
+                "reason": "Prescriber's email address not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.11A",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the location details for administration.",
+                "reason": "The referral packet provides conflicting information regarding the place of administration (Golden Gate Infusion Center in Ohio vs. a local Knoxville facility mentioned for future setup). A specific street address for the chosen facility is not provided."
+            },
+            {
+                "name": "Provider Admin T.13",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the city details for administration.",
+                "reason": "The referral packet provides conflicting information regarding the place of administration (Golden Gate Infusion Center in Ohio vs. a local Knoxville facility mentioned for future setup). A specific city for the chosen facility is not definitively stated as the primary administration location."
+            },
+            {
+                "name": "Provider Admin T.14",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the state details for administration.",
+                "reason": "The referral packet provides conflicting information regarding the place of administration (Golden Gate Infusion Center in Ohio vs. a local Knoxville facility mentioned for future setup). A specific state for the chosen facility is not definitively stated as the primary administration location."
+            },
+            {
+                "name": "Provider Admin T.15",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the ZIP code details for administration.",
+                "reason": "The referral packet provides conflicting information regarding the place of administration (Golden Gate Infusion Center in Ohio vs. a local Knoxville facility mentioned for future setup). A specific ZIP code for the chosen facility is not provided."
+            },
+            {
+                "name": "Provider Admin T.18",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, required for billing and tax purposes.",
+                "reason": "TIN for the place of administration not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.19",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, a proprietary provider identifier.",
+                "reason": "PIN for the place of administration not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.20",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, essential for electronic health transactions.",
+                "reason": "NPI for the place of administration not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.29a",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the location details for the dispenser.",
+                "reason": "A specific address for the dispensing entity (Golden Gate Infusion Center) is not provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.30a",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the city details for the dispenser.",
+                "reason": "A specific city for the dispensing entity (Golden Gate Infusion Center) is not provided in the referral packet, only area code implies location."
+            },
+            {
+                "name": "Provider Admin T.31",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the state details for the dispenser.",
+                "reason": "A specific state for the dispensing entity (Golden Gate Infusion Center) is not provided in the referral packet, only area code implies location."
+            },
+            {
+                "name": "Provider Admin T.32",
+                "page": 2,
+                "context": "Contact field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, capturing the ZIP code details for the dispenser.",
+                "reason": "A specific ZIP code for the dispensing entity (Golden Gate Infusion Center) is not provided in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.35",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, required for billing and tax purposes for the dispenser.",
+                "reason": "TIN for the dispensing provider/pharmacy not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.36",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, a proprietary provider identifier for the dispenser.",
+                "reason": "PIN for the dispensing provider/pharmacy not found in the referral packet."
+            },
+            {
+                "name": "Provider Admin T.37",
+                "page": 2,
+                "context": "Identification field in D. DISPENSING PROVIDER/ADMINISTRATION INFORMATION, essential for electronic health transactions for the dispenser.",
+                "reason": "NPI for the dispensing provider/pharmacy not found in the referral packet."
+            },
+            {
+                "name": "T66",
+                "page": 2,
+                "context": "Primary field in E. PRODUCT INFORMATION, for billing and identification of medical procedures/services, crucial for claims processing.",
+                "reason": "HCPCS code for the requested medication not found in the referral packet."
+            },
+            {
+                "name": "CB164",
+                "page": 4,
+                "context": "Part of a group of checkboxes for Multiple Sclerosis, specifying the type of MS diagnosis.",
+                "reason": "The specific type of Multiple Sclerosis (e.g., Relapsing-remitting, Secondary-progressive) is not specified beyond 'atypical pediatric MS' in the referral packet."
+            },
+            {
+                "name": "CB165",
+                "page": 4,
+                "context": "Part of a group of checkboxes for Multiple Sclerosis, specifying the type of MS diagnosis.",
+                "reason": "The specific type of Multiple Sclerosis (e.g., Relapsing-remitting, Secondary-progressive) is not specified beyond 'atypical pediatric MS' in the referral packet."
+            },
+            {
+                "name": "CB166",
+                "page": 4,
+                "context": "Part of a group of checkboxes for Multiple Sclerosis, specifying the type of MS diagnosis.",
+                "reason": "The specific type of Multiple Sclerosis (e.g., Relapsing-remitting, Secondary-progressive) is not specified beyond 'atypical pediatric MS' in the referral packet."
+            },
+            {
+                "name": "CB167",
+                "page": 4,
+                "context": "Part of a group of checkboxes for Multiple Sclerosis, specifying the type of MS diagnosis.",
+                "reason": "The specific type of Multiple Sclerosis (e.g., Relapsing-remitting, Secondary-progressive) is not specified beyond 'atypical pediatric MS' in the referral packet."
+            },
+            {
+                "name": "CB306",
+                "page": 5,
+                "context": "Primary clinical question for Rheumatoid Arthritis (Continuation), confirming current disease stability for continued coverage.",
+                "reason": "The patient's diagnosis is Multiple Sclerosis, not Rheumatoid Arthritis. Also, the therapy is newly initiated, and there's no explicit documentation of disease stability on Rituxan yet."
+            },
+            {
+                "name": "CB307",
+                "page": 5,
+                "context": "Primary clinical question for Rheumatoid Arthritis (Continuation), indicating lack of documented disease stability.",
+                "reason": "The patient's diagnosis is Multiple Sclerosis, not Rheumatoid Arthritis. Also, the therapy is newly initiated, and there's no explicit documentation of disease stability on Rituxan yet."
+            },
+            {
+                "name": "CB308",
+                "page": 5,
+                "context": "Primary clinical question for Rheumatoid Arthritis (Continuation), confirming current disease improvement for continued coverage.",
+                "reason": "The patient's diagnosis is Multiple Sclerosis, not Rheumatoid Arthritis. Also, the therapy is newly initiated, and there's no explicit documentation of disease improvement on Rituxan yet."
+            },
+            {
+                "name": "CB309",
+                "page": 5,
+                "context": "Primary clinical question for Rheumatoid Arthritis (Continuation), indicating no documented disease improvement.",
+                "reason": "The patient's diagnosis is Multiple Sclerosis, not Rheumatoid Arthritis. Also, the therapy is newly initiated, and there's no explicit documentation of disease improvement on Rituxan yet."
+            },
+            {
+                "name": "CB313",
+                "page": 5,
+                "context": "Primary clinical question for all other indications (Continuation), confirming current disease stability for continued coverage.",
+                "reason": "The patient has Multiple Sclerosis, and while there's a treatment plan, explicit documentation of disease stability *on Rituxan* for this newly initiated therapy is not provided in the referral packet."
+            },
+            {
+                "name": "CB314",
+                "page": 5,
+                "context": "Primary clinical question for all other indications (Continuation), indicating lack of documented disease stability.",
+                "reason": "The patient has Multiple Sclerosis, and while there's a treatment plan, explicit documentation of disease stability *on Rituxan* for this newly initiated therapy is not provided in the referral packet."
+            },
+            {
+                "name": "CB315",
+                "page": 5,
+                "context": "Primary clinical question for all other indications (Continuation), confirming current disease improvement for continued coverage.",
+                "reason": "The patient has Multiple Sclerosis, and while there's a treatment plan, explicit documentation of disease improvement *on Rituxan* for this newly initiated therapy is not provided in the referral packet."
+            },
+            {
+                "name": "CB316",
+                "page": 5,
+                "context": "Primary clinical question for all other indications (Continuation), indicating no documented disease improvement.",
+                "reason": "The patient has Multiple Sclerosis, and while there's a treatment plan, explicit documentation of disease improvement *on Rituxan* for this newly initiated therapy is not provided in the referral packet."
+            }
+        ]
+    }
+]
