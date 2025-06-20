@@ -56,7 +56,6 @@ async def fill_map(prompt: str) -> json:
     if "$defs" in raw:
         raw["definitions"] = raw.pop("$defs")
 
-
     response = await loop.run_in_executor(
         None,
         lambda: H_CLIENT.models.generate_content(
@@ -71,8 +70,8 @@ async def fill_map(prompt: str) -> json:
             ],
             config={
                 "response_mime_type": "application/json",
-                "response_schema" : ResponseFormat
-                },
+                "response_schema": ResponseFormat,
+            },
         ),
     )
 
@@ -90,14 +89,13 @@ async def fill_map(prompt: str) -> json:
             result = payload["response_dict"]
         except json.JSONDecodeError:
             # if it fails, extract the {...} block via regex
-            m = re.search(r'(\{.*\})', text_blob, re.DOTALL)
+            m = re.search(r"(\{.*\})", text_blob, re.DOTALL)
             if not m:
                 raise RuntimeError("Couldn't find JSON in the model output")
             payload = json.loads(m.group(1))
             result = payload["response_dict"]
 
     return result
-
 
 
 if __name__ == "__main__":
