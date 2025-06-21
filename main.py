@@ -13,7 +13,6 @@ from utilities.FillOutPdfs import prepare_filled_pdf_fields
 from utilities.WriteMarkdown import dict_to_markdown
 
 
-
 load_dotenv()
 INPUT_FOLDER = os.getenv("INPUT_FOLDER")
 OUTPUT_FOLDER = os.getenv("OUTPUT_FOLDER")
@@ -47,15 +46,17 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        structured_data = asyncio.run(
+        num , structured_data = asyncio.run(
             process_patient(
                 patient=cur_patient, pa_path=pa_path, referral_path=referral_path
             )
         )
         print("Writting JSON")
-        with open(f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "w") as f:
+        with open(
+            f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "w"
+        ) as f:
             json.dump(structured_data, f, indent=4)
-
+        # if num == 1 interactive fillin, else static
         # with open(
         #     f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "r"
         # ) as f:
@@ -68,7 +69,6 @@ def controller(input_folder, output_folder):
         #     pa_path=pa_path,
         # )
         # dict_to_markdown(left_blank=left_blank, md_path=f"{output_folder}/{cur_patient}/{cur_patient}_left_blank.md")
-
 
 
 if __name__ == "__main__":

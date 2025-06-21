@@ -13,11 +13,11 @@ def prepare_filled_pdf_fields(filled_out_map, out_path, pa_path):
     for page_fields in extracted_map.values():
         for fld in page_fields:
             ans = answer_map.get((fld["page"], fld["name"]))
-            
+
             if ans is None:
                 continue
             fld["value"] = ans
-            
+
     flat_fields = {}
     for page_fields in extracted_map.values():
         for field in page_fields:

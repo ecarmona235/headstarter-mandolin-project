@@ -1,7 +1,7 @@
 def prompt_generator(prompt_selected: str, args: dict):
     """Generates all prompts needed to run script
     Args:
-        prompt_selected (str): prompt to generate, options: ['referral_prompt','fill_in_map']
+        prompt_selected (str): prompt to generate, options: ['referral_prompt','fill_in_map', 'static_pa_prompt', 'fill_static_map']
         args (dict): Dictionary contains all necessary arguments
         {
             extracted_fields : dictionary containing the extracted fields from fitz
@@ -71,6 +71,33 @@ def prompt_generator(prompt_selected: str, args: dict):
         <PA_Form_Data/>
         """
 
+    def pa_gemini_extraction():
+        return f"""
+            Extract all form fields from the provided PDF. For each field, return the following in a JSON array under the key "fields":
+
+            - **name**: The most concise and accurate label or identifier for the field (e.g., "Full Name", "Date of Birth").
+            - **question**: The explicit question or instruction associated with the field, exactly as it appears on the form (e.g., "Please provide your full legal name:", "Date you wish to begin employment (MM/DD/YYYY):").
+            - **context**: A concise, rich contextual description (maximum 25 words) that clarifies the purpose or usage of the field, especially if not obvious from the name or question (e.g., "Used for official identification purposes.", "Indicates the start date for the proposed project.").
+            - **page**: The 1-based page number where the field is located.
+            - **type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context.
+            - **bbox**: The bounding box of the field in PDF points, formatted as `[x0, y0, x1, y1]`. This should represent the input area of the field, not necessarily just the label.
+
+            **Output should be a single JSON object with a top-level key "fields" containing an array of field objects.** Ensure all text is accurately transcribed and all numerical values are correct. Do not include any additional commentary or markdown outside the JSON.
+
+            ```json
+            {{"fields": [
+            {{
+                "name": "Example Field Name",
+                "question": "Example Question?",
+                "context": "Contextual description of the field's purpose.",
+                "page": 1,
+                "type": "text",
+                "bbox": [100, 200, 300, 250]
+            }}
+            ]}}
+            ```
+    """
+
     def fill_in_map_gemini(referral_markdown: str, map_json: dict):
         return f"""You are an expert medical document processing assistant specializing in Prior Authorization (PA) form analysis and medical documentation. You given a list of PA form fields with their associated context and questions. Your task is to thoroughly analyze a string containing the ocr extracted information from the referral packet and extract all the relevant information to accurately fill out the PA form.         
     
@@ -124,6 +151,14 @@ def prompt_generator(prompt_selected: str, args: dict):
         return fill_in_map_gemini(
             referral_markdown=args["extracted_referral"], map_json=args["map_json"]
         )
+    if prompt_selected == "static_pa_prompt":
+        # need to figure out prompt to have gemini extract form fields from the pa pdf
+        return pa_gemini_extraction()
+    if prompt_selected == "fill_static_map":
+        if "extracted_referral" not in args or "map_json" not in args:
+            print("Forgot something in args dict")
+            return ""
+        # need to add prompt here for gemini to fill in answers for static doc
     else:
         print("Wrong or no prompt option entered")
         return ""
