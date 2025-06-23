@@ -98,33 +98,6 @@ async def fill_map(prompt: str) -> json:
     return result
 
 
-class PAFormStaticAnswer(BaseModel):
-    name: str
-    page: int
-    field_type: str
-    answer: str = Field(
-        description="Answer to the question based on the extracted referral package"
-    )
-    bbox: Tuple[int, int, int, int] = Field(
-        ..., description="Bounding box as (x0,y0,x1,y1) in PDF points")
-
-
-class LeftBlankStatic(BaseModel):
-    name: str
-    page: int
-    context: str = Field(description="Original context information")
-    reason: str = Field(description="Reason why it was left blank")
-
-
-class ResponseDictStatic(BaseModel):
-    fields: List[PAFormStaticAnswer]
-    left_blank: List[LeftBlankStatic]
-
-
-class ResponseFormatStatic(BaseModel):
-    response_dict: ResponseDictStatic
-
-
 async def fill_static_map(prompt: str) -> json:
     """_summary_
 
@@ -135,44 +108,37 @@ async def fill_static_map(prompt: str) -> json:
         json: formats the field with values filled
     """
     loop = asyncio.get_event_loop()
-    raw = ResponseFormat.model_json_schema(
-        ref_template="#/definitions/{model}", mode="validation"
-    )
 
-    if "$defs" in raw:
-        raw["definitions"] = raw.pop("$defs")
-
-    response = await loop.run_in_executor(
-        None,
-        lambda: H_CLIENT.models.generate_content(
-            model=MODEL,
-            contents=[
-                {
-                    "role": "user",
-                    "parts": [
-                        {"text": prompt},
-                    ],
-                }
-            ],
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": ResponseFormatStatic,
-            },
+    response = (
+        await loop.run_in_executor(
+            None,
+            lambda: H_CLIENT.models.generate_content(
+                model=MODEL,
+                contents=[
+                    {
+                        "role": "user",
+                        "parts": [
+                            {"text": prompt},
+                        ],
+                    }
+                ],
+            ),
         ),
     )
 
-    candidate = response.candidates[0]
+    print(response)
+    candidate = response[0].candidates[0]
     parts = candidate.content.parts[0]
     if parts.function_call:
         args = candidate.function_call.args
         response_dict = args["response_dict"]
-        result = ResponseFormatStatic(**{"response_dict": response_dict})
+        result = ResponseFormat(**{"response_dict": response_dict})
     else:
-        text_blob = parts.text
+        text_blob = parts.text.split("```json")[1].split("```")[0]
         try:
             # try to load raw
             payload = json.loads(text_blob)
-            result = payload["response_dict"]
+            result = payload
         except json.JSONDecodeError:
             # if it fails, extract the {...} block via regex
             m = re.search(r"(\{.*\})", text_blob, re.DOTALL)
@@ -182,6 +148,7 @@ async def fill_static_map(prompt: str) -> json:
             result = payload["response_dict"]
 
     return result
+
 
 if __name__ == "__main__":
     pass

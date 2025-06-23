@@ -71,30 +71,67 @@ def prompt_generator(prompt_selected: str, args: dict):
         <PA_Form_Data/>
         """
 
-    def pa_gemini_extraction():
+    def pa_static_gemini_map():
         return f"""
-            Extract all form fields from the provided PDF. For each field, return the following in a JSON array under the key "fields":
+            Extract all distinct input areas from the provided PDF where data can be filled in. For each input area, return the following in a JSON array under the key "fields":
 
-            - **name**: The most concise and accurate label or identifier for the field (e.g., "Full Name", "Date of Birth").
-            - **question**: The explicit question or instruction associated with the field, exactly as it appears on the form (e.g., "Please provide your full legal name:", "Date you wish to begin employment (MM/DD/YYYY):").
-            - **context**: A concise, rich contextual description (maximum 25 words) that clarifies the purpose or usage of the field, especially if not obvious from the name or question (e.g., "Used for official identification purposes.", "Indicates the start date for the proposed project.").
-            - **page**: The 1-based page number where the field is located.
-            - **type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context.
-            - **bbox**: The bounding box of the field in PDF points, formatted as `[x0, y0, x1, y1]`. This should represent the input area of the field, not necessarily just the label.
+            - **page**: The 1-based page number where the input area is located.
+            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page. Ensure bottom-left corner points to the start of the input area where text will be filled into.
+            - **field_type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context. 
+            
 
-            **Output should be a single JSON object with a top-level key "fields" containing an array of field objects.** Ensure all text is accurately transcribed and all numerical values are correct. Do not include any additional commentary or markdown outside the JSON.
+            An "input area" refers to any region on the form where a user would typically enter text, select an option (like a checkbox or radio button), sign, or interact to provide information. This includes text fields, checkboxes, radio buttons, dropdowns, signature lines, etc. If an input area contains subfields (e.g., a date with separate fields for month, day, and year), ensure each subfield is represented as its own input field. Do not merge multiple fields into a single combined input (e.g., avoid combining mm - dd - yyyy into mm/dd/yyyy). Preserve the original structure of separate inputs where applicable.
+
+            **Output should be a single JSON object with a top-level key "fields" containing an array of input area objects.** Ensure all numerical values are correct. Do not include any additional commentary or markdown outside the JSON.
 
             ```json
-            {{"fields": [
             {{
+                "fields": [
+                    {{
+                        "page": 1,
+                        "bbox": [100, 200, 300, 220]
+                        "field_type": "text"
+                    }},
+                    {{
+                        "page": 1,
+                        "bbox": [150, 250, 170, 270]
+                        "field_type": "text",
+                    }}
+                ]
+            }}
+            ```
+    """
+
+    def add_context_to_static_gemini(map_json: dict):
+        return f"""
+            Given the provided Prior Authorization form pdf and the specified bounding boxes, identify the input fields located within this bounding box. Then, extract the following information about the specific fields:
+
+            - **name**: The most concise and accurate label or identifier for the field (e.g., "Full Name", "Date of Birth").
+            - **page**: The 1-based page number where the input area is located.
+            - **question**: The explicit question or instruction associated with the field, exactly as it appears on the form (e.g., "Please provide your full legal name:", "Date you wish to begin employment (MM/DD/YYYY):").
+            - **context**: A concise, rich contextual description (maximum 25 words) that clarifies the purpose or usage of the field, especially if not obvious from the name or question (e.g., "Used for official identification purposes.", "Indicates the start date for the proposed project.").
+            - **field_type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context.
+            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page. Ensure bottom-left corner points to the start of the input area where text will be filled into.
+            Guidelines:
+                -  In the case you run in to a field in the map that is incorrect such as the bbox point to the wrong place in the pdf or not point to a input field, update it if it can be updated else remove it. 
+                -  If an input area contains subfields (e.g., a date with separate fields for month, day, and year), ensure each subfield is represented as its own input field. Do not merge multiple fields into a single combined input (e.g., avoid combining mm - dd - yyyy into mm/dd/yyyy). Preserve the original structure of separate inputs where applicable. 
+             
+
+             <PA Form fields>
+                {map_json}
+            <PA Form fields/>
+
+            **Output should be a single JSON object for the extracted fields names fields.** Do not include any additional commentary or markdown outside the JSON.
+
+            ```json
+            "fields":  {{
                 "name": "Example Field Name",
+                "page": 1,
                 "question": "Example Question?",
                 "context": "Contextual description of the field's purpose.",
-                "page": 1,
-                "type": "text",
-                "bbox": [100, 200, 300, 250]
+                "field_type": "text",
+                "bbox" : [x0,y0,x1,y1]
             }}
-            ]}}
             ```
     """
 
@@ -125,7 +162,7 @@ def prompt_generator(prompt_selected: str, args: dict):
                 {{
                     "name": "CB1",
                     "page" : 2,
-                    "field_label" : "Start of Treatment"
+                    "field_label" : "Start of Treatment",
                     "Answer" : "Answer to the question based on the extracted referral package" or ""
                 }}
             Example left_blank object structure:
@@ -134,6 +171,52 @@ def prompt_generator(prompt_selected: str, args: dict):
                     "page" : 2,
                     "context" : "Original context information".
                     "reason" : "Reason why it was left blank".
+                    
+                }}
+        </Output Requirements>   
+        Note: Ensure strict adherence to this format. Do not include any additional fields or commentary outside the JSON
+        """
+
+    def fill_in_static_map_gemini(referral_markdown: str, map_json: dict):
+        return f"""You are an expert medical document processing assistant specializing in Prior Authorization (PA) form analysis and medical documentation. You given a list of PA form fields of a static form with their associated context, questions and bbox. Your task is to thoroughly analyze a string containing the ocr extracted information from the referral packet and extract all the relevant information to accurately fill out the PA form. 
+    
+        <Extracted Referral Packet>
+            {referral_markdown}
+        <Extracted Referral Packet/>
+        
+        
+        <PA Form fields>
+            {map_json}
+        <PA Form fields/>
+        
+        <Guidelines>
+            Please follow the below guidelines:
+                1. Carefully review each field in the pa form and understand its requirements.
+                2. Match extracted information to the corresponding PA form fields.
+                3. If the information is missing or unclear leave the answer as an empty string.
+                    - indicate the field that was left empty in the JSON object left_blank along with its reason for being left empty. 
+                4. Use exact values and terminology from source documents when possible. 
+        <Guidelines/>
+        <Output Requirements>
+            Return a JSON response_dict containing two object: 
+        "response_dict": {{
+                - "fields": array of fields only containing -- name, page, answer, field_type, bbox in the following format
+            Example fields object structure:
+                {{
+                    "name": "Start of Treatment",
+                    "page" : 2,
+                    "field_type": "text" or "checkbox"
+                    "answer" : "Answer to the question based on the extracted referral package" or "",
+                    "bbox" : [x0,y0,x1,y1]
+                }}
+                - "left_blank": array of fields only containing -- name, page, context, reason in the following format
+            Example left_blank object structure:
+                {{
+                    "name": "Start of Treatment",
+                    "page" : 2,
+                    "context" : "Original context information".
+                    "reason" : "Reason why it was left blank".
+                }}
                 }}
         </Output Requirements>   
         Note: Ensure strict adherence to this format. Do not include any additional fields or commentary outside the JSON
@@ -153,12 +236,19 @@ def prompt_generator(prompt_selected: str, args: dict):
         )
     if prompt_selected == "static_pa_prompt":
         # need to figure out prompt to have gemini extract form fields from the pa pdf
-        return pa_gemini_extraction()
-    if prompt_selected == "fill_static_map":
-        if "extracted_referral" not in args or "map_json" not in args:
+        return pa_static_gemini_map()
+    if prompt_selected == "static_pa_context_prompt":
+        if "map_json" not in args:
             print("Forgot something in args dict")
             return ""
-        # need to add prompt here for gemini to fill in answers for static doc
+        return add_context_to_static_gemini(map_json=args["map_json"])
+    if prompt_selected == "fill_static_map":
+        if "extracted_referral" not in args and "map_json" not in args:
+            print("Forgot something in args dict")
+            return ""
+        return fill_in_static_map_gemini(
+            referral_markdown=args["extracted_referral"], map_json=args["map_json"]
+        )
     else:
         print("Wrong or no prompt option entered")
         return ""

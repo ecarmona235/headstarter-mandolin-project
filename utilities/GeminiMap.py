@@ -24,6 +24,8 @@ async def format_map(prompt: str, pdf_file: str) -> json:
         json: formats the field extracted from fitz
     """
     file_path = pathlib.Path(pdf_file)
+    with file_path.open("rb") as f:
+        file_bytes = f.read()
     loop = asyncio.get_event_loop()
     response = await loop.run_in_executor(
         None,
@@ -31,12 +33,13 @@ async def format_map(prompt: str, pdf_file: str) -> json:
             model=MODEL,
             contents=[
                 types.Part.from_bytes(
-                    data=file_path.read_bytes(), mime_type="application/pdf"
+                    data=file_bytes, mime_type="application/pdf"
                 ),
                 prompt,
             ],
         ),
     )
+
     candidate = response.candidates[0]
     parts = candidate.content.parts[0]
     text_blob = parts.text

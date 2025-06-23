@@ -9,7 +9,7 @@ import logging
 from pydantic import BaseModel, Field
 from utilities.ExtractFields import extract_map
 from utilities.ProcessPatient import process_patient
-from utilities.FillOutPdfs import prepare_filled_pdf_fields
+from utilities.FillOutPdfs import prepare_interactive_pdfs, prepare_static_pdfs
 from utilities.WriteMarkdown import dict_to_markdown
 
 
@@ -46,29 +46,40 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        num , structured_data = asyncio.run(
+        num = 2
+        num, structured_data = asyncio.run(
             process_patient(
                 patient=cur_patient, pa_path=pa_path, referral_path=referral_path
             )
         )
-        print("Writting JSON")
-        with open(
-            f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "w"
-        ) as f:
+        if type(structured_data) == list:
+            structured_data = structured_data.pop()
+        if "response_dict" in structured_data:
+            structured_data = structured_data["response_dict"]
+        print("...Writting PDFs and Markdown...")
+        with open(f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.json", "w") as f:
             json.dump(structured_data, f, indent=4)
-        # if num == 1 interactive fillin, else static
-        # with open(
-        #     f"{output_folder}/{cur_patient}/{cur_patient}_fillmap.json", "r"
-        # ) as f:
-        #     all_data = json.load(f)[0]
-        # fields = all_data["fields"]
-        # left_blank = all_data["left_blank"]
-        # prepare_filled_pdf_fields(
-        #     filled_out_map=fields,
-        #     out_path=f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.pdf",
-        #     pa_path=pa_path,
-        # )
-        # dict_to_markdown(left_blank=left_blank, md_path=f"{output_folder}/{cur_patient}/{cur_patient}_left_blank.md")
+        fields = structured_data["fields"]
+        left_blank = structured_data["left_blank"]
+        with open(f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.json", 'r') as f:
+            structured_data = json.load(f)
+        if num == 2:
+            prepare_static_pdfs(
+                filled_out_map=fields,
+                out_path=f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.pdf",
+                pa_path=pa_path,
+            )
+        else:
+            prepare_interactive_pdfs(
+                filled_out_map=fields,
+                out_path=f"{output_folder}/{cur_patient}/{cur_patient}_filled_pa.pdf",
+                pa_path=pa_path,
+            )
+
+        dict_to_markdown(
+            left_blank=left_blank,
+            md_path=f"{output_folder}/{cur_patient}/{cur_patient}_left_blank.md",
+        )
 
 
 if __name__ == "__main__":

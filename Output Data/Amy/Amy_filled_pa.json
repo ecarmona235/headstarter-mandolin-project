@@ -1,0 +1,1134 @@
+{
+    "fields": [
+        {
+            "name": "Member Last Name",
+            "page": 1,
+            "question": "Last name:",
+            "field_type": "text",
+            "answer": "Chen",
+            "bbox": [
+                83,
+                298,
+                477,
+                318
+            ]
+        },
+        {
+            "name": "Member First Name",
+            "page": 1,
+            "question": "First name:",
+            "field_type": "text",
+            "answer": "Amy",
+            "bbox": [
+                498,
+                298,
+                892,
+                318
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 1",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                56,
+                332,
+                75,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 2",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                77,
+                332,
+                95,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 3",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                116,
+                332,
+                134,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 4",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                137,
+                332,
+                155,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 5",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                176,
+                332,
+                194,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 6",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                197,
+                332,
+                215,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 7",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                236,
+                332,
+                254,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 8",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                257,
+                332,
+                275,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 9",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                296,
+                332,
+                314,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 10",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                317,
+                332,
+                335,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 11",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                338,
+                332,
+                356,
+                349
+            ]
+        },
+        {
+            "name": "Medicaid ID Digit 12",
+            "page": 1,
+            "question": "Medicaid ID number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                359,
+                332,
+                377,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Month Digit 1",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "0",
+            "bbox": [
+                500,
+                332,
+                517,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Month Digit 2",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "5",
+            "bbox": [
+                520,
+                332,
+                538,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Day Digit 1",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "2",
+            "bbox": [
+                559,
+                332,
+                577,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Day Digit 2",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "3",
+            "bbox": [
+                580,
+                332,
+                598,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Year Digit 1",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "1",
+            "bbox": [
+                601,
+                332,
+                619,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Year Digit 2",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "9",
+            "bbox": [
+                622,
+                332,
+                640,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Year Digit 3",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "8",
+            "bbox": [
+                643,
+                332,
+                661,
+                349
+            ]
+        },
+        {
+            "name": "Date of Birth Year Digit 4",
+            "page": 1,
+            "question": "Date of birth:",
+            "field_type": "date",
+            "answer": "3",
+            "bbox": [
+                664,
+                332,
+                682,
+                349
+            ]
+        },
+        {
+            "name": "Weight in Kilograms",
+            "page": 1,
+            "question": "Weight in kilograms:",
+            "field_type": "text",
+            "answer": "50.9",
+            "bbox": [
+                56,
+                381,
+                335,
+                401
+            ]
+        },
+        {
+            "name": "Prescriber Last Name",
+            "page": 1,
+            "question": "Last name:",
+            "field_type": "text",
+            "answer": "Nicole",
+            "bbox": [
+                56,
+                499,
+                477,
+                519
+            ]
+        },
+        {
+            "name": "Prescriber First Name",
+            "page": 1,
+            "question": "First name:",
+            "field_type": "text",
+            "answer": "Angela",
+            "bbox": [
+                498,
+                499,
+                892,
+                519
+            ]
+        },
+        {
+            "name": "NPI Number Digit 1",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                56,
+                532,
+                75,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 2",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                77,
+                532,
+                95,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 3",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                116,
+                532,
+                134,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 4",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                137,
+                532,
+                155,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 5",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                176,
+                532,
+                194,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 6",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                197,
+                532,
+                215,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 7",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                236,
+                532,
+                254,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 8",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                257,
+                532,
+                275,
+                549
+            ]
+        },
+        {
+            "name": "NPI Number Digit 9",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                296,
+                532,
+                314,
+                349
+            ]
+        },
+        {
+            "name": "NPI Number Digit 10",
+            "page": 1,
+            "question": "NPI number:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                317,
+                532,
+                335,
+                349
+            ]
+        },
+        {
+            "name": "Prescriber Phone Number Area Code",
+            "page": 1,
+            "question": "Phone number:",
+            "field_type": "phone number",
+            "answer": "421",
+            "bbox": [
+                56,
+                582,
+                107,
+                599
+            ]
+        },
+        {
+            "name": "Prescriber Phone Number Prefix",
+            "page": 1,
+            "question": "Phone number:",
+            "field_type": "phone number",
+            "answer": "771",
+            "bbox": [
+                125,
+                582,
+                176,
+                599
+            ]
+        },
+        {
+            "name": "Prescriber Phone Number Line Number",
+            "page": 1,
+            "question": "Phone number:",
+            "field_type": "phone number",
+            "answer": "9001",
+            "bbox": [
+                194,
+                582,
+                260,
+                599
+            ]
+        },
+        {
+            "name": "Prescriber Fax Number Area Code",
+            "page": 1,
+            "question": "Fax number:",
+            "field_type": "phone number",
+            "answer": "421",
+            "bbox": [
+                500,
+                582,
+                551,
+                599
+            ]
+        },
+        {
+            "name": "Prescriber Fax Number Prefix",
+            "page": 1,
+            "question": "Fax number:",
+            "field_type": "phone number",
+            "answer": "771",
+            "bbox": [
+                569,
+                582,
+                620,
+                599
+            ]
+        },
+        {
+            "name": "Prescriber Fax Number Line Number",
+            "page": 1,
+            "question": "Fax number:",
+            "field_type": "phone number",
+            "answer": "843",
+            "bbox": [
+                638,
+                582,
+                704,
+                599
+            ]
+        },
+        {
+            "name": "Drug Name",
+            "page": 1,
+            "question": "Drug name:",
+            "field_type": "text",
+            "answer": "eptinezumab-jjmr (VYEPTI)",
+            "bbox": [
+                206,
+                778,
+                477,
+                798
+            ]
+        },
+        {
+            "name": "Drug Form",
+            "page": 1,
+            "question": "Drug form:",
+            "field_type": "text",
+            "answer": "solution, intravenous",
+            "bbox": [
+                658,
+                778,
+                892,
+                798
+            ]
+        },
+        {
+            "name": "Drug Strength",
+            "page": 1,
+            "question": "Drug strength:",
+            "field_type": "text",
+            "answer": "100 mg/mL",
+            "bbox": [
+                206,
+                750,
+                477,
+                770
+            ]
+        },
+        {
+            "name": "Dosing Frequency",
+            "page": 1,
+            "question": "Dosing frequency:",
+            "field_type": "text",
+            "answer": "once for 1 dose",
+            "bbox": [
+                658,
+                750,
+                892,
+                770
+            ]
+        },
+        {
+            "name": "Length of Therapy",
+            "page": 1,
+            "question": "Length of therapy:",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                206,
+                722,
+                477,
+                742
+            ]
+        },
+        {
+            "name": "Quantity",
+            "page": 1,
+            "question": "Quantity:",
+            "field_type": "text",
+            "answer": "1 mL",
+            "bbox": [
+                658,
+                722,
+                892,
+                742
+            ]
+        },
+        {
+            "name": "Member Last Name (Page 2)",
+            "page": 2,
+            "question": "Member's last name:",
+            "field_type": "text",
+            "answer": "Chen",
+            "bbox": [
+                83,
+                116,
+                477,
+                136
+            ]
+        },
+        {
+            "name": "Member First Name (Page 2)",
+            "page": 2,
+            "question": "Member's first name:",
+            "field_type": "text",
+            "answer": "Amy",
+            "bbox": [
+                498,
+                116,
+                892,
+                136
+            ]
+        },
+        {
+            "name": "Reason Preferred Agents Cannot Be Used",
+            "page": 2,
+            "question": "Identify why the preferred agents cannot be used:",
+            "field_type": "text",
+            "answer": "Patient has a longstanding history of chronic migraines and has tried multiple prophylactic medications including Propranolol, Verapamil, Topiramate, Nortriptyline, Venlafaxine, Gabapentin, nerve blocks, and others with inadequate response, and continues to experience chronic daily headaches despite these interventions. She was also off Aimovig (a CGRP inhibitor) since December, and desires Vyepti as an alternative to Botox for prevention due to ongoing chronic daily headaches.",
+            "bbox": [
+                56,
+                350,
+                892,
+                368
+            ]
+        },
+        {
+            "name": "Diagnosis of Migraine (ICHD-III) Yes",
+            "page": 2,
+            "question": "Does the member have a diagnosis of migraine with or without aura based on International Classification of Headache Disorders (ICHD-III) diagnostic criteria? AND",
+            "field_type": "checkbox",
+            "answer": "Yes",
+            "bbox": [
+                118,
+                549,
+                130,
+                562
+            ]
+        },
+        {
+            "name": "Diagnosis of Migraine (ICHD-III) No",
+            "page": 2,
+            "question": "Does the member have a diagnosis of migraine with or without aura based on International Classification of Headache Disorders (ICHD-III) diagnostic criteria? AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                185,
+                549,
+                197,
+                562
+            ]
+        },
+        {
+            "name": "Member Age 18 or Older Yes",
+            "page": 2,
+            "question": "Is the member \u2265 18 years of age? AND",
+            "field_type": "checkbox",
+            "answer": "Yes",
+            "bbox": [
+                118,
+                403,
+                130,
+                416
+            ]
+        },
+        {
+            "name": "Member Age 18 or Older No",
+            "page": 2,
+            "question": "Is the member \u2265 18 years of age? AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                185,
+                403,
+                197,
+                416
+            ]
+        },
+        {
+            "name": "Utilizing Prophylactic Intervention Modalities Yes",
+            "page": 2,
+            "question": "Has the member been utilizing prophylactic intervention modalities (for example, pharmacotherapy, behavioral therapy, physical therapy, etc.)? AND",
+            "field_type": "checkbox",
+            "answer": "Yes",
+            "bbox": [
+                118,
+                271,
+                130,
+                284
+            ]
+        },
+        {
+            "name": "Utilizing Prophylactic Intervention Modalities No",
+            "page": 2,
+            "question": "Has the member been utilizing prophylactic intervention modalities (for example, pharmacotherapy, behavioral therapy, physical therapy, etc.)? AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                185,
+                271,
+                197,
+                284
+            ]
+        },
+        {
+            "name": "Inadequate Response to Preferred CGRP Options Yes",
+            "page": 2,
+            "question": "Member had an inadequate response (or unable to tolerate) a minimum trial of at least two preferred self-injectable CGRP options; OR",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                204,
+                118,
+                217,
+                131
+            ]
+        },
+        {
+            "name": "Inadequate Response to Preferred CGRP Options No",
+            "page": 2,
+            "question": "Member had an inadequate response (or unable to tolerate) a minimum trial of at least two preferred self-injectable CGRP options; OR",
+            "field_type": "checkbox",
+            "answer": "No",
+            "bbox": [
+                295,
+                118,
+                308,
+                131
+            ]
+        },
+        {
+            "name": "Member Last Name (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "field_type": "text",
+            "answer": "Chen",
+            "bbox": [
+                83,
+                116,
+                477,
+                136
+            ]
+        },
+        {
+            "name": "Member First Name (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "field_type": "text",
+            "answer": "Amy",
+            "bbox": [
+                498,
+                116,
+                892,
+                136
+            ]
+        },
+        {
+            "name": "Medication Overuse Headache Ruled Out Yes",
+            "page": 3,
+            "question": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                243,
+                246,
+                256,
+                259
+            ]
+        },
+        {
+            "name": "Medication Overuse Headache Ruled Out No",
+            "page": 3,
+            "question": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                310,
+                246,
+                323,
+                259
+            ]
+        },
+        {
+            "name": "Vyepti Not Used With Prophylactic CGRP Inhibitors Yes",
+            "page": 3,
+            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                120,
+                209,
+                133,
+                222
+            ]
+        },
+        {
+            "name": "Vyepti Not Used With Prophylactic CGRP Inhibitors No",
+            "page": 3,
+            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
+            "field_type": "checkbox",
+            "answer": "No",
+            "bbox": [
+                187,
+                209,
+                200,
+                222
+            ]
+        },
+        {
+            "name": "Renewal Initial Criteria Met Yes",
+            "page": 3,
+            "question": "Does the member continue to meet the initial criteria? AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                120,
+                376,
+                133,
+                389
+            ]
+        },
+        {
+            "name": "Renewal Initial Criteria Met No",
+            "page": 3,
+            "question": "Does the member continue to meet the initial criteria? AND",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                187,
+                376,
+                200,
+                389
+            ]
+        },
+        {
+            "name": "Renewal Absence of Unacceptable Toxicity Yes",
+            "page": 3,
+            "question": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                120,
+                304,
+                133,
+                317
+            ]
+        },
+        {
+            "name": "Renewal Absence of Unacceptable Toxicity No",
+            "page": 3,
+            "question": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                187,
+                304,
+                200,
+                317
+            ]
+        },
+        {
+            "name": "Renewal Clinical Response Yes",
+            "page": 3,
+            "question": "Has the member experienced a clinical response as evidenced by:",
+            "field_type": "checkbox",
+            "answer": null,
+            "bbox": [
+                120,
+                150,
+                133,
+                163
+            ]
+        },
+        {
+            "name": "Renewal Clinical Response No",
+            "page": 3,
+            "question": "Has the member experienced a clinical response as evidenced by:",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                187,
+                150,
+                200,
+                163
+            ]
+        },
+        {
+            "name": "Prescriber Signature",
+            "page": 3,
+            "question": "Prescriber signature (required)",
+            "field_type": "signature",
+            "answer": "",
+            "bbox": [
+                56,
+                626,
+                360,
+                646
+            ]
+        },
+        {
+            "name": "Signature Date",
+            "page": 3,
+            "question": "Date",
+            "field_type": "date",
+            "answer": "04/01/2023",
+            "bbox": [
+                690,
+                626,
+                892,
+                646
+            ]
+        }
+    ],
+    "left_blank": [
+        {
+            "name": "Medicaid ID Digit 1",
+            "page": 1,
+            "context": "First digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 2",
+            "page": 1,
+            "context": "Second digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 3",
+            "page": 1,
+            "context": "Third digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 4",
+            "page": 1,
+            "context": "Fourth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 5",
+            "page": 1,
+            "context": "Fifth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 6",
+            "page": 1,
+            "context": "Sixth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 7",
+            "page": 1,
+            "context": "Seventh digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 8",
+            "page": 1,
+            "context": "Eighth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 9",
+            "page": 1,
+            "context": "Ninth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 10",
+            "page": 1,
+            "context": "Tenth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 11",
+            "page": 1,
+            "context": "Eleventh digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "Medicaid ID Digit 12",
+            "page": 1,
+            "context": "Twelfth digit of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 1",
+            "page": 1,
+            "context": "First digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 2",
+            "page": 1,
+            "context": "Second digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 3",
+            "page": 1,
+            "context": "Third digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 4",
+            "page": 1,
+            "context": "Fourth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 5",
+            "page": 1,
+            "context": "Fifth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 6",
+            "page": 1,
+            "context": "Sixth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 7",
+            "page": 1,
+            "context": "Seventh digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 8",
+            "page": 1,
+            "context": "Eighth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 9",
+            "page": 1,
+            "context": "Ninth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "NPI Number Digit 10",
+            "page": 1,
+            "context": "Tenth digit of the prescriber's NPI for identification.",
+            "reason": "NPI number for the prescriber not found in the document."
+        },
+        {
+            "name": "Length of Therapy",
+            "page": 1,
+            "context": "The duration for which the drug therapy is prescribed.",
+            "reason": "The document explicitly states 'once for 1 dose' and provides a single start/end date for Vyepti, but does not specify the intended long-term length of therapy for prior authorization."
+        },
+        {
+            "name": "Medication Overuse Headache Ruled Out Yes",
+            "page": 3,
+            "context": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
+            "reason": "Information about medication overuse headache being ruled out by specific criteria (trial and failure of titrating off acute migraine treatments) is not explicitly stated in the document."
+        },
+        {
+            "name": "Medication Overuse Headache Ruled Out No",
+            "page": 3,
+            "context": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
+            "reason": "Information about medication overuse headache being ruled out by specific criteria (trial and failure of titrating off acute migraine treatments) is not explicitly stated in the document."
+        },
+        {
+            "name": "Renewal Initial Criteria Met Yes",
+            "page": 3,
+            "context": "Does the member continue to meet the initial criteria? AND",
+            "reason": "This appears to be an initial request for Vyepti, not a renewal, so renewal criteria are not applicable."
+        },
+        {
+            "name": "Renewal Initial Criteria Met No",
+            "page": 3,
+            "context": "Does the member continue to meet the initial criteria? AND",
+            "reason": "This appears to be an initial request for Vyepti, not a renewal, so renewal criteria are not applicable."
+        },
+        {
+            "name": "Renewal Absence of Unacceptable Toxicity Yes",
+            "page": 3,
+            "context": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess for unacceptable toxicity."
+        },
+        {
+            "name": "Renewal Absence of Unacceptable Toxicity No",
+            "page": 3,
+            "context": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess for unacceptable toxicity."
+        },
+        {
+            "name": "Renewal Clinical Response Yes",
+            "page": 3,
+            "context": "Has the member experienced a clinical response as evidenced by:",
+            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess clinical response."
+        },
+        {
+            "name": "Renewal Clinical Response No",
+            "page": 3,
+            "context": "Has the member experienced a clinical response as evidenced by:",
+            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess clinical response."
+        },
+        {
+            "name": "Prescriber Signature",
+            "page": 3,
+            "context": "Required signature of the prescribing physician to confirm accuracy of information.",
+            "reason": "Prescriber's signature image is not available in the OCR extracted text."
+        }
+    ]
+}
