@@ -31,8 +31,8 @@ def controller(input_folder, output_folder):
         referral_pdf = ""
         subfolder_path = os.path.join(input_folder, subfolder)
         cur_patient = subfolder
-        if cur_patient != "Amy":
-            continue
+        # if cur_patient != "Amy":
+        #     continue
         if not os.path.exists(f"{output_folder}/{cur_patient}"):
             os.makedirs(f"{output_folder}/{cur_patient}")
         if os.path.isdir(subfolder_path):  # Ensure it's a subfolder
@@ -46,7 +46,6 @@ def controller(input_folder, output_folder):
                         referral_pdf = file_name
         pa_path = f"{input_folder}/{cur_patient}/{pa_form}"
         referral_path = f"{input_folder}/{cur_patient}/{referral_pdf}"
-        num = 2
         num, structured_data = asyncio.run(
             process_patient(
                 patient=cur_patient, pa_path=pa_path, referral_path=referral_path

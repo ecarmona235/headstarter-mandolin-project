@@ -76,7 +76,7 @@ def prompt_generator(prompt_selected: str, args: dict):
             Extract all distinct input areas from the provided PDF where data can be filled in. For each input area, return the following in a JSON array under the key "fields":
 
             - **page**: The 1-based page number where the input area is located.
-            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page. Ensure bottom-left corner points to the start of the input area where text will be filled into.
+            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page, represent (x0, y0) as the bottom-left corner of input field, (x1, y1) is the top-right corner of input field.
             - **field_type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context. 
             
 
@@ -111,7 +111,7 @@ def prompt_generator(prompt_selected: str, args: dict):
             - **question**: The explicit question or instruction associated with the field, exactly as it appears on the form (e.g., "Please provide your full legal name:", "Date you wish to begin employment (MM/DD/YYYY):").
             - **context**: A concise, rich contextual description (maximum 25 words) that clarifies the purpose or usage of the field, especially if not obvious from the name or question (e.g., "Used for official identification purposes.", "Indicates the start date for the proposed project.").
             - **field_type**: The most appropriate field type (e.g., "text", "checkbox", "radio", "dropdown", "date", "signature", "address", "phone number", "email"). If a standard type isn't suitable, use "other" and specify in the context.
-            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page. Ensure bottom-left corner points to the start of the input area where text will be filled into.
+            - **bbox**: The bounding box of the input area, formatted as `[x0, y0, x1, y1] expressed in PDF points and **not pixels** (0,0) is bottom left corner of the page, represent (x0, y0) as the bottom-left corner of input field, (x1, y1) is the top-right corner of input field.
             Guidelines:
                 -  In the case you run in to a field in the map that is incorrect such as the bbox point to the wrong place in the pdf or not point to a input field, update it if it can be updated else remove it. 
                 -  If an input area contains subfields (e.g., a date with separate fields for month, day, and year), ensure each subfield is represented as its own input field. Do not merge multiple fields into a single combined input (e.g., avoid combining mm - dd - yyyy into mm/dd/yyyy). Preserve the original structure of separate inputs where applicable. 

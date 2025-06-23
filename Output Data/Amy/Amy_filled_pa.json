@@ -4,1131 +4,1713 @@
             "name": "Member Last Name",
             "page": 1,
             "question": "Last name:",
+            "context": "Member's last name for identification on the form.",
             "field_type": "text",
             "answer": "Chen",
             "bbox": [
-                83,
-                298,
-                477,
-                318
+                60.0,
+                308.0,
+                477.0,
+                324.0
             ]
         },
         {
             "name": "Member First Name",
             "page": 1,
             "question": "First name:",
+            "context": "Member's first name for identification on the form.",
             "field_type": "text",
             "answer": "Amy",
             "bbox": [
-                498,
-                298,
-                892,
-                318
+                490.0,
+                308.0,
+                907.0,
+                324.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 1",
+            "name": "Medicaid ID Number Segment 1",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "First segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                56,
-                332,
-                75,
-                349
+                60.0,
+                269.0,
+                87.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 2",
+            "name": "Medicaid ID Number Segment 2",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Second segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                77,
-                332,
-                95,
-                349
+                93.0,
+                269.0,
+                120.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 3",
+            "name": "Medicaid ID Number Segment 3",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Third segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                116,
-                332,
-                134,
-                349
+                126.0,
+                269.0,
+                153.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 4",
+            "name": "Medicaid ID Number Segment 4",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Fourth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                137,
-                332,
-                155,
-                349
+                159.0,
+                269.0,
+                186.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 5",
+            "name": "Medicaid ID Number Segment 5",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Fifth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                176,
-                332,
-                194,
-                349
+                206.0,
+                269.0,
+                233.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 6",
+            "name": "Medicaid ID Number Segment 6",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Sixth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                197,
-                332,
-                215,
-                349
+                239.0,
+                269.0,
+                266.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 7",
+            "name": "Medicaid ID Number Segment 7",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Seventh segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                236,
-                332,
-                254,
-                349
+                272.0,
+                269.0,
+                299.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 8",
+            "name": "Medicaid ID Number Segment 8",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Eighth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                257,
-                332,
-                275,
-                349
+                305.0,
+                269.0,
+                332.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 9",
+            "name": "Medicaid ID Number Segment 9",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Ninth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                296,
-                332,
-                314,
-                349
+                352.0,
+                269.0,
+                379.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 10",
+            "name": "Medicaid ID Number Segment 10",
             "page": 1,
             "question": "Medicaid ID number:",
+            "context": "Tenth segment of the member's Medicaid ID number.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                317,
-                332,
-                335,
-                349
+                385.0,
+                269.0,
+                412.0,
+                296.0
             ]
         },
         {
-            "name": "Medicaid ID Digit 11",
-            "page": 1,
-            "question": "Medicaid ID number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                338,
-                332,
-                356,
-                349
-            ]
-        },
-        {
-            "name": "Medicaid ID Digit 12",
-            "page": 1,
-            "question": "Medicaid ID number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                359,
-                332,
-                377,
-                349
-            ]
-        },
-        {
-            "name": "Date of Birth Month Digit 1",
+            "name": "Date of Birth Month",
             "page": 1,
             "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "0",
+            "context": "Month of the member's date of birth (MM).",
+            "field_type": "text",
+            "answer": "05",
             "bbox": [
-                500,
-                332,
-                517,
-                349
+                490.0,
+                269.0,
+                517.0,
+                296.0
             ]
         },
         {
-            "name": "Date of Birth Month Digit 2",
+            "name": "Date of Birth Day",
             "page": 1,
             "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "5",
+            "context": "Day of the member's date of birth (DD).",
+            "field_type": "text",
+            "answer": "23",
             "bbox": [
-                520,
-                332,
-                538,
-                349
+                523.0,
+                269.0,
+                550.0,
+                296.0
             ]
         },
         {
-            "name": "Date of Birth Day Digit 1",
+            "name": "Date of Birth Year Segment 1",
             "page": 1,
             "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "2",
+            "context": "First two digits of the member's birth year.",
+            "field_type": "text",
+            "answer": "19",
             "bbox": [
-                559,
-                332,
-                577,
-                349
+                570.0,
+                269.0,
+                597.0,
+                296.0
             ]
         },
         {
-            "name": "Date of Birth Day Digit 2",
+            "name": "Date of Birth Year Segment 2",
             "page": 1,
             "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "3",
+            "context": "Last two digits of the member's birth year.",
+            "field_type": "text",
+            "answer": "83",
             "bbox": [
-                580,
-                332,
-                598,
-                349
-            ]
-        },
-        {
-            "name": "Date of Birth Year Digit 1",
-            "page": 1,
-            "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "1",
-            "bbox": [
-                601,
-                332,
-                619,
-                349
-            ]
-        },
-        {
-            "name": "Date of Birth Year Digit 2",
-            "page": 1,
-            "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "9",
-            "bbox": [
-                622,
-                332,
-                640,
-                349
-            ]
-        },
-        {
-            "name": "Date of Birth Year Digit 3",
-            "page": 1,
-            "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "8",
-            "bbox": [
-                643,
-                332,
-                661,
-                349
-            ]
-        },
-        {
-            "name": "Date of Birth Year Digit 4",
-            "page": 1,
-            "question": "Date of birth:",
-            "field_type": "date",
-            "answer": "3",
-            "bbox": [
-                664,
-                332,
-                682,
-                349
+                603.0,
+                269.0,
+                630.0,
+                296.0
             ]
         },
         {
             "name": "Weight in Kilograms",
             "page": 1,
             "question": "Weight in kilograms:",
+            "context": "Member's weight in kilograms for medical assessment.",
             "field_type": "text",
             "answer": "50.9",
             "bbox": [
-                56,
-                381,
-                335,
-                401
+                60.0,
+                229.0,
+                477.0,
+                245.0
             ]
         },
         {
             "name": "Prescriber Last Name",
             "page": 1,
             "question": "Last name:",
+            "context": "Prescribing healthcare provider's last name.",
             "field_type": "text",
             "answer": "Nicole",
             "bbox": [
-                56,
-                499,
-                477,
-                519
+                60.0,
+                162.0,
+                477.0,
+                178.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 1",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "First segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                60.0,
+                122.0,
+                87.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 2",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Second segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                93.0,
+                122.0,
+                120.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 3",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Third segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                126.0,
+                122.0,
+                153.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 4",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Fourth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                159.0,
+                122.0,
+                186.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 5",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Fifth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                206.0,
+                122.0,
+                233.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 6",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Sixth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                239.0,
+                122.0,
+                266.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 7",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Seventh segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                272.0,
+                122.0,
+                299.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 8",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Eighth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                305.0,
+                122.0,
+                332.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 9",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Ninth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                352.0,
+                122.0,
+                379.0,
+                149.0
+            ]
+        },
+        {
+            "name": "NPI Number Segment 10",
+            "page": 1,
+            "question": "NPI number:",
+            "context": "Tenth segment of the prescriber's NPI number.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                385.0,
+                122.0,
+                412.0,
+                149.0
             ]
         },
         {
             "name": "Prescriber First Name",
             "page": 1,
             "question": "First name:",
+            "context": "Prescribing healthcare provider's first name.",
             "field_type": "text",
             "answer": "Angela",
             "bbox": [
-                498,
-                499,
-                892,
-                519
-            ]
-        },
-        {
-            "name": "NPI Number Digit 1",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                56,
-                532,
-                75,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 2",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                77,
-                532,
-                95,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 3",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                116,
-                532,
-                134,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 4",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                137,
-                532,
-                155,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 5",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                176,
-                532,
-                194,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 6",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                197,
-                532,
-                215,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 7",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                236,
-                532,
-                254,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 8",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                257,
-                532,
-                275,
-                549
-            ]
-        },
-        {
-            "name": "NPI Number Digit 9",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                296,
-                532,
-                314,
-                349
-            ]
-        },
-        {
-            "name": "NPI Number Digit 10",
-            "page": 1,
-            "question": "NPI number:",
-            "field_type": "text",
-            "answer": "",
-            "bbox": [
-                317,
-                532,
-                335,
-                349
+                490.0,
+                162.0,
+                907.0,
+                178.0
             ]
         },
         {
             "name": "Prescriber Phone Number Area Code",
             "page": 1,
             "question": "Phone number:",
+            "context": "Area code of the prescriber's phone number.",
             "field_type": "phone number",
             "answer": "421",
             "bbox": [
-                56,
-                582,
-                107,
-                599
+                60.0,
+                85.0,
+                103.0,
+                112.0
             ]
         },
         {
             "name": "Prescriber Phone Number Prefix",
             "page": 1,
             "question": "Phone number:",
+            "context": "Prefix of the prescriber's phone number.",
             "field_type": "phone number",
             "answer": "771",
             "bbox": [
-                125,
-                582,
-                176,
-                599
+                119.0,
+                85.0,
+                162.0,
+                112.0
             ]
         },
         {
             "name": "Prescriber Phone Number Line Number",
             "page": 1,
             "question": "Phone number:",
+            "context": "Last four digits of the prescriber's phone number.",
             "field_type": "phone number",
             "answer": "9001",
             "bbox": [
-                194,
-                582,
-                260,
-                599
+                178.0,
+                85.0,
+                234.0,
+                112.0
             ]
         },
         {
             "name": "Prescriber Fax Number Area Code",
             "page": 1,
             "question": "Fax number:",
+            "context": "Area code of the prescriber's fax number.",
             "field_type": "phone number",
             "answer": "421",
             "bbox": [
-                500,
-                582,
-                551,
-                599
+                490.0,
+                85.0,
+                533.0,
+                112.0
             ]
         },
         {
             "name": "Prescriber Fax Number Prefix",
             "page": 1,
             "question": "Fax number:",
+            "context": "Prefix of the prescriber's fax number.",
             "field_type": "phone number",
             "answer": "771",
             "bbox": [
-                569,
-                582,
-                620,
-                599
+                549.0,
+                85.0,
+                592.0,
+                112.0
             ]
         },
         {
             "name": "Prescriber Fax Number Line Number",
             "page": 1,
             "question": "Fax number:",
+            "context": "Last four digits of the prescriber's fax number.",
             "field_type": "phone number",
             "answer": "843",
             "bbox": [
-                638,
-                582,
-                704,
-                599
+                608.0,
+                85.0,
+                664.0,
+                112.0
             ]
         },
         {
             "name": "Drug Name",
             "page": 1,
             "question": "Drug name:",
+            "context": "Name of the drug for which prior authorization is requested.",
             "field_type": "text",
-            "answer": "eptinezumab-jjmr (VYEPTI)",
+            "answer": "VYEPTI",
             "bbox": [
-                206,
-                778,
-                477,
-                798
-            ]
-        },
-        {
-            "name": "Drug Form",
-            "page": 1,
-            "question": "Drug form:",
-            "field_type": "text",
-            "answer": "solution, intravenous",
-            "bbox": [
-                658,
-                778,
-                892,
-                798
+                208.0,
+                46.0,
+                477.0,
+                62.0
             ]
         },
         {
             "name": "Drug Strength",
             "page": 1,
             "question": "Drug strength:",
+            "context": "Strength of the drug being requested.",
             "field_type": "text",
             "answer": "100 mg/mL",
             "bbox": [
-                206,
-                750,
-                477,
-                770
-            ]
-        },
-        {
-            "name": "Dosing Frequency",
-            "page": 1,
-            "question": "Dosing frequency:",
-            "field_type": "text",
-            "answer": "once for 1 dose",
-            "bbox": [
-                658,
-                750,
-                892,
-                770
+                208.0,
+                25.0,
+                477.0,
+                41.0
             ]
         },
         {
             "name": "Length of Therapy",
             "page": 1,
             "question": "Length of therapy:",
+            "context": "Proposed duration of the drug therapy.",
             "field_type": "text",
             "answer": "",
             "bbox": [
-                206,
-                722,
-                477,
-                742
+                208.0,
+                4.0,
+                477.0,
+                20.0
+            ]
+        },
+        {
+            "name": "Drug Form",
+            "page": 1,
+            "question": "Drug form:",
+            "context": "Formulation of the drug (e.g., tablet, injection).",
+            "field_type": "text",
+            "answer": "solution",
+            "bbox": [
+                658.0,
+                46.0,
+                907.0,
+                62.0
+            ]
+        },
+        {
+            "name": "Dosing Frequency",
+            "page": 1,
+            "question": "Dosing frequency:",
+            "context": "How often the drug is administered.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                658.0,
+                25.0,
+                907.0,
+                41.0
             ]
         },
         {
             "name": "Quantity",
             "page": 1,
             "question": "Quantity:",
+            "context": "Amount of the drug requested for the therapy.",
             "field_type": "text",
-            "answer": "1 mL",
+            "answer": "",
             "bbox": [
-                658,
-                722,
-                892,
-                742
+                658.0,
+                4.0,
+                907.0,
+                20.0
             ]
         },
         {
-            "name": "Member Last Name (Page 2)",
+            "name": "Member Last Name Segment 1",
             "page": 2,
             "question": "Member's last name:",
+            "context": "First segment of the member's last name, for form continuation.",
             "field_type": "text",
-            "answer": "Chen",
+            "answer": "C",
             "bbox": [
-                83,
-                116,
-                477,
-                136
+                84.0,
+                888.0,
+                108.0,
+                915.0
             ]
         },
         {
-            "name": "Member First Name (Page 2)",
+            "name": "Member Last Name Segment 2",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Second segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "h",
+            "bbox": [
+                114.0,
+                888.0,
+                138.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 3",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Third segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "e",
+            "bbox": [
+                144.0,
+                888.0,
+                168.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 4",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Fourth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "n",
+            "bbox": [
+                174.0,
+                888.0,
+                198.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 5",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Fifth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                204.0,
+                888.0,
+                228.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 6",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Sixth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                234.0,
+                888.0,
+                258.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 7",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Seventh segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                264.0,
+                888.0,
+                288.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 8",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Eighth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                294.0,
+                888.0,
+                318.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 9",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Ninth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                324.0,
+                888.0,
+                348.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 10",
+            "page": 2,
+            "question": "Member's last name:",
+            "context": "Tenth segment of the member's last name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                354.0,
+                888.0,
+                378.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 1",
             "page": 2,
             "question": "Member's first name:",
+            "context": "First segment of the member's first name, for form continuation.",
             "field_type": "text",
-            "answer": "Amy",
+            "answer": "A",
             "bbox": [
-                498,
-                116,
-                892,
-                136
+                513.0,
+                888.0,
+                537.0,
+                915.0
             ]
         },
         {
-            "name": "Reason Preferred Agents Cannot Be Used",
+            "name": "Member First Name Segment 2",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Second segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "m",
+            "bbox": [
+                543.0,
+                888.0,
+                567.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 3",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Third segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "y",
+            "bbox": [
+                573.0,
+                888.0,
+                597.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 4",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Fourth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                603.0,
+                888.0,
+                627.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 5",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Fifth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                633.0,
+                888.0,
+                657.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 6",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Sixth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                663.0,
+                888.0,
+                687.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 7",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Seventh segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                693.0,
+                888.0,
+                717.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 8",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Eighth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                723.0,
+                888.0,
+                747.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 9",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Ninth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                753.0,
+                888.0,
+                777.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 10",
+            "page": 2,
+            "question": "Member's first name:",
+            "context": "Tenth segment of the member's first name, for form continuation.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                783.0,
+                888.0,
+                807.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Preferred Agents Justification",
             "page": 2,
             "question": "Identify why the preferred agents cannot be used:",
+            "context": "Explanation for not using preferred preventive or acute migraine treatments.",
             "field_type": "text",
-            "answer": "Patient has a longstanding history of chronic migraines and has tried multiple prophylactic medications including Propranolol, Verapamil, Topiramate, Nortriptyline, Venlafaxine, Gabapentin, nerve blocks, and others with inadequate response, and continues to experience chronic daily headaches despite these interventions. She was also off Aimovig (a CGRP inhibitor) since December, and desires Vyepti as an alternative to Botox for prevention due to ongoing chronic daily headaches.",
+            "answer": "Patient has a longstanding history of chronic migraines, experiencing more than 15 headache days per month. She has tried numerous preventive medications including Propranolol, Verapamil, Topiramate (Topamax), Nortriptyline, Venlafaxine (Effexor), Gabapentin, and Botox. She has also used Aimovig, but has been off it since December due to insufficient relief or other reasons. Acute treatments tried include Zomig, Frova, Imitrex, Fioricet, Zofran, Naproxen, and Medrol Dosepack. Despite these interventions, she reports continued chronic daily headaches and prefers to try Vyepti over continuing Botox for prevention.",
             "bbox": [
-                56,
-                350,
-                892,
-                368
+                60.0,
+                346.0,
+                907.0,
+                420.0
             ]
         },
         {
-            "name": "Diagnosis of Migraine (ICHD-III) Yes",
+            "name": "Migraine Diagnosis Yes",
             "page": 2,
             "question": "Does the member have a diagnosis of migraine with or without aura based on International Classification of Headache Disorders (ICHD-III) diagnostic criteria? AND",
+            "context": "Indicates whether the member has a diagnosed migraine with or without aura.",
             "field_type": "checkbox",
             "answer": "Yes",
             "bbox": [
-                118,
-                549,
-                130,
-                562
+                116.0,
+                521.0,
+                131.0,
+                536.0
             ]
         },
         {
-            "name": "Diagnosis of Migraine (ICHD-III) No",
+            "name": "Migraine Diagnosis No",
             "page": 2,
             "question": "Does the member have a diagnosis of migraine with or without aura based on International Classification of Headache Disorders (ICHD-III) diagnostic criteria? AND",
+            "context": "Indicates whether the member does not have a diagnosed migraine with or without aura.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                185,
-                549,
-                197,
-                562
+                206.0,
+                521.0,
+                221.0,
+                536.0
             ]
         },
         {
-            "name": "Member Age 18 or Older Yes",
+            "name": "Member Age 18 Plus Yes",
             "page": 2,
             "question": "Is the member \u2265 18 years of age? AND",
+            "context": "Indicates whether the member is 18 years of age or older.",
             "field_type": "checkbox",
             "answer": "Yes",
             "bbox": [
-                118,
-                403,
-                130,
-                416
+                116.0,
+                477.0,
+                131.0,
+                492.0
             ]
         },
         {
-            "name": "Member Age 18 or Older No",
+            "name": "Member Age 18 Plus No",
             "page": 2,
             "question": "Is the member \u2265 18 years of age? AND",
+            "context": "Indicates whether the member is not 18 years of age or older.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                185,
-                403,
-                197,
-                416
+                206.0,
+                477.0,
+                221.0,
+                492.0
             ]
         },
         {
-            "name": "Utilizing Prophylactic Intervention Modalities Yes",
+            "name": "Prophylactic Intervention Utilized Yes",
             "page": 2,
             "question": "Has the member been utilizing prophylactic intervention modalities (for example, pharmacotherapy, behavioral therapy, physical therapy, etc.)? AND",
+            "context": "Indicates if the member has used prophylactic migraine treatments.",
             "field_type": "checkbox",
             "answer": "Yes",
             "bbox": [
-                118,
-                271,
-                130,
-                284
+                116.0,
+                434.0,
+                131.0,
+                449.0
             ]
         },
         {
-            "name": "Utilizing Prophylactic Intervention Modalities No",
+            "name": "Prophylactic Intervention Utilized No",
             "page": 2,
             "question": "Has the member been utilizing prophylactic intervention modalities (for example, pharmacotherapy, behavioral therapy, physical therapy, etc.)? AND",
+            "context": "Indicates if the member has not used prophylactic migraine treatments.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                185,
-                271,
-                197,
-                284
+                206.0,
+                434.0,
+                221.0,
+                449.0
             ]
         },
         {
-            "name": "Inadequate Response to Preferred CGRP Options Yes",
+            "name": "Inadequate Response to CGRP Options Yes",
             "page": 2,
             "question": "Member had an inadequate response (or unable to tolerate) a minimum trial of at least two preferred self-injectable CGRP options; OR",
+            "context": "Confirms inadequate response or intolerance to preferred CGRP options.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                204,
-                118,
-                217,
-                131
+                206.0,
+                269.0,
+                221.0,
+                284.0
             ]
         },
         {
-            "name": "Inadequate Response to Preferred CGRP Options No",
+            "name": "Inadequate Response to CGRP Options No",
             "page": 2,
             "question": "Member had an inadequate response (or unable to tolerate) a minimum trial of at least two preferred self-injectable CGRP options; OR",
+            "context": "Indicates adequate response or tolerance to preferred CGRP options.",
             "field_type": "checkbox",
             "answer": "No",
             "bbox": [
-                295,
-                118,
-                308,
-                131
+                296.0,
+                269.0,
+                311.0,
+                284.0
             ]
         },
         {
-            "name": "Member Last Name (Page 3)",
+            "name": "Member Last Name Segment 1 (Page 3)",
             "page": 3,
             "question": "Member's last name:",
+            "context": "First segment of the member's last name for form continuation on page 3.",
             "field_type": "text",
-            "answer": "Chen",
+            "answer": "C",
             "bbox": [
-                83,
-                116,
-                477,
-                136
+                84.0,
+                888.0,
+                108.0,
+                915.0
             ]
         },
         {
-            "name": "Member First Name (Page 3)",
+            "name": "Member Last Name Segment 2 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Second segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "h",
+            "bbox": [
+                114.0,
+                888.0,
+                138.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 3 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Third segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "e",
+            "bbox": [
+                144.0,
+                888.0,
+                168.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 4 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Fourth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "n",
+            "bbox": [
+                174.0,
+                888.0,
+                198.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 5 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Fifth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                204.0,
+                888.0,
+                228.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 6 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Sixth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                234.0,
+                888.0,
+                258.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 7 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Seventh segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                264.0,
+                888.0,
+                288.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 8 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Eighth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                294.0,
+                888.0,
+                318.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 9 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Ninth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                324.0,
+                888.0,
+                348.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member Last Name Segment 10 (Page 3)",
+            "page": 3,
+            "question": "Member's last name:",
+            "context": "Tenth segment of the member's last name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                354.0,
+                888.0,
+                378.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 1 (Page 3)",
             "page": 3,
             "question": "Member's first name:",
+            "context": "First segment of the member's first name for form continuation on page 3.",
             "field_type": "text",
-            "answer": "Amy",
+            "answer": "A",
             "bbox": [
-                498,
-                116,
-                892,
-                136
+                513.0,
+                888.0,
+                537.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 2 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Second segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "m",
+            "bbox": [
+                543.0,
+                888.0,
+                567.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 3 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Third segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "y",
+            "bbox": [
+                573.0,
+                888.0,
+                597.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 4 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Fourth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                603.0,
+                888.0,
+                627.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 5 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Fifth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                633.0,
+                888.0,
+                657.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 6 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Sixth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                663.0,
+                888.0,
+                687.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 7 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Seventh segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                693.0,
+                888.0,
+                717.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 8 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Eighth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                723.0,
+                888.0,
+                747.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 9 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Ninth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                753.0,
+                888.0,
+                777.0,
+                915.0
+            ]
+        },
+        {
+            "name": "Member First Name Segment 10 (Page 3)",
+            "page": 3,
+            "question": "Member's first name:",
+            "context": "Tenth segment of the member's first name for form continuation on page 3.",
+            "field_type": "text",
+            "answer": "",
+            "bbox": [
+                783.0,
+                888.0,
+                807.0,
+                915.0
             ]
         },
         {
             "name": "Medication Overuse Headache Ruled Out Yes",
             "page": 3,
             "question": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
+            "context": "Confirms if medication overuse headache has been ruled out.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                243,
-                246,
-                256,
-                259
+                206.0,
+                584.0,
+                221.0,
+                599.0
             ]
         },
         {
             "name": "Medication Overuse Headache Ruled Out No",
             "page": 3,
             "question": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
-            "field_type": "checkbox",
-            "answer": "",
-            "bbox": [
-                310,
-                246,
-                323,
-                259
-            ]
-        },
-        {
-            "name": "Vyepti Not Used With Prophylactic CGRP Inhibitors Yes",
-            "page": 3,
-            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
-            "field_type": "checkbox",
-            "answer": null,
-            "bbox": [
-                120,
-                209,
-                133,
-                222
-            ]
-        },
-        {
-            "name": "Vyepti Not Used With Prophylactic CGRP Inhibitors No",
-            "page": 3,
-            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
+            "context": "Indicates if medication overuse headache has not been ruled out.",
             "field_type": "checkbox",
             "answer": "No",
             "bbox": [
-                187,
-                209,
-                200,
-                222
+                296.0,
+                584.0,
+                311.0,
+                599.0
             ]
         },
         {
-            "name": "Renewal Initial Criteria Met Yes",
+            "name": "Not Used With Prophylactic CGRP Inhibitors Yes",
+            "page": 3,
+            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
+            "context": "Confirms Vyepti will not be combined with other prophylactic CGRP inhibitors.",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                116.0,
+                529.0,
+                131.0,
+                544.0
+            ]
+        },
+        {
+            "name": "Not Used With Prophylactic CGRP Inhibitors No",
+            "page": 3,
+            "question": "Will Vyepti not be used in combination with prophylactic calcitonin gene-related peptide (CGRP) inhibitors? (for example, erenumab, galcanezumab, fremanezumab, atogepant, rimegepant, etc.)",
+            "context": "Indicates Vyepti will be combined with other prophylactic CGRP inhibitors.",
+            "field_type": "checkbox",
+            "answer": "No",
+            "bbox": [
+                206.0,
+                529.0,
+                221.0,
+                544.0
+            ]
+        },
+        {
+            "name": "Continue Meeting Initial Criteria Yes",
             "page": 3,
             "question": "Does the member continue to meet the initial criteria? AND",
+            "context": "For renewal, indicates if the member still meets initial authorization criteria.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                120,
-                376,
-                133,
-                389
+                116.0,
+                401.0,
+                131.0,
+                416.0
             ]
         },
         {
-            "name": "Renewal Initial Criteria Met No",
+            "name": "Continue Meeting Initial Criteria No",
             "page": 3,
             "question": "Does the member continue to meet the initial criteria? AND",
+            "context": "For renewal, indicates if the member no longer meets initial authorization criteria.",
             "field_type": "checkbox",
             "answer": "",
             "bbox": [
-                187,
-                376,
-                200,
-                389
+                206.0,
+                401.0,
+                221.0,
+                416.0
             ]
         },
         {
-            "name": "Renewal Absence of Unacceptable Toxicity Yes",
+            "name": "Absence of Unacceptable Toxicity Yes",
             "page": 3,
             "question": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "context": "For renewal, indicates no unacceptable toxicity from the drug.",
             "field_type": "checkbox",
-            "answer": null,
+            "answer": "",
             "bbox": [
-                120,
-                304,
-                133,
-                317
+                116.0,
+                357.0,
+                131.0,
+                372.0
             ]
         },
         {
-            "name": "Renewal Absence of Unacceptable Toxicity No",
+            "name": "Absence of Unacceptable Toxicity No",
             "page": 3,
             "question": "Does the member have an absence of unacceptable toxicity from the drug? AND",
+            "context": "For renewal, indicates presence of unacceptable toxicity from the drug.",
             "field_type": "checkbox",
             "answer": "",
             "bbox": [
-                187,
-                304,
-                200,
-                317
+                206.0,
+                357.0,
+                221.0,
+                372.0
             ]
         },
         {
-            "name": "Renewal Clinical Response Yes",
+            "name": "Experienced Clinical Response Yes",
             "page": 3,
             "question": "Has the member experienced a clinical response as evidenced by:",
-            "field_type": "checkbox",
-            "answer": null,
-            "bbox": [
-                120,
-                150,
-                133,
-                163
-            ]
-        },
-        {
-            "name": "Renewal Clinical Response No",
-            "page": 3,
-            "question": "Has the member experienced a clinical response as evidenced by:",
+            "context": "For renewal, indicates if the member has shown clinical improvement.",
             "field_type": "checkbox",
             "answer": "",
             "bbox": [
-                187,
-                150,
-                200,
-                163
+                116.0,
+                235.0,
+                131.0,
+                250.0
+            ]
+        },
+        {
+            "name": "Experienced Clinical Response No",
+            "page": 3,
+            "question": "Has the member experienced a clinical response as evidenced by:",
+            "context": "For renewal, indicates if the member has not shown clinical improvement.",
+            "field_type": "checkbox",
+            "answer": "",
+            "bbox": [
+                206.0,
+                235.0,
+                221.0,
+                250.0
             ]
         },
         {
             "name": "Prescriber Signature",
             "page": 3,
             "question": "Prescriber signature (required)",
+            "context": "Required signature of the prescribing physician to confirm information accuracy.",
             "field_type": "signature",
             "answer": "",
             "bbox": [
-                56,
-                626,
-                360,
-                646
+                60.0,
+                187.0,
+                447.0,
+                203.0
             ]
         },
         {
             "name": "Signature Date",
             "page": 3,
             "question": "Date",
+            "context": "Date the prescriber signed the form.",
             "field_type": "date",
-            "answer": "04/01/2023",
+            "answer": "",
             "bbox": [
-                690,
-                626,
-                892,
-                646
+                658.0,
+                187.0,
+                907.0,
+                203.0
             ]
         }
     ],
     "left_blank": [
         {
-            "name": "Medicaid ID Digit 1",
+            "name": "Medicaid ID Number Segment 1",
             "page": 1,
-            "context": "First digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "First segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 2",
+            "name": "Medicaid ID Number Segment 2",
             "page": 1,
-            "context": "Second digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Second segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 3",
+            "name": "Medicaid ID Number Segment 3",
             "page": 1,
-            "context": "Third digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Third segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 4",
+            "name": "Medicaid ID Number Segment 4",
             "page": 1,
-            "context": "Fourth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Fourth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 5",
+            "name": "Medicaid ID Number Segment 5",
             "page": 1,
-            "context": "Fifth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Fifth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 6",
+            "name": "Medicaid ID Number Segment 6",
             "page": 1,
-            "context": "Sixth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Sixth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 7",
+            "name": "Medicaid ID Number Segment 7",
             "page": 1,
-            "context": "Seventh digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Seventh segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 8",
+            "name": "Medicaid ID Number Segment 8",
             "page": 1,
-            "context": "Eighth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Eighth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 9",
+            "name": "Medicaid ID Number Segment 9",
             "page": 1,
-            "context": "Ninth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Ninth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 10",
+            "name": "Medicaid ID Number Segment 10",
             "page": 1,
-            "context": "Tenth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Tenth segment of the member's Medicaid ID number.",
+            "reason": "Medicaid ID number not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 11",
+            "name": "NPI Number Segment 1",
             "page": 1,
-            "context": "Eleventh digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "First segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "Medicaid ID Digit 12",
+            "name": "NPI Number Segment 2",
             "page": 1,
-            "context": "Twelfth digit of the member's Medicaid ID number.",
-            "reason": "Medicaid ID number not found in the document."
+            "context": "Second segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 1",
+            "name": "NPI Number Segment 3",
             "page": 1,
-            "context": "First digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Third segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 2",
+            "name": "NPI Number Segment 4",
             "page": 1,
-            "context": "Second digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Fourth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 3",
+            "name": "NPI Number Segment 5",
             "page": 1,
-            "context": "Third digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Fifth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 4",
+            "name": "NPI Number Segment 6",
             "page": 1,
-            "context": "Fourth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Sixth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 5",
+            "name": "NPI Number Segment 7",
             "page": 1,
-            "context": "Fifth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Seventh segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 6",
+            "name": "NPI Number Segment 8",
             "page": 1,
-            "context": "Sixth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Eighth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 7",
+            "name": "NPI Number Segment 9",
             "page": 1,
-            "context": "Seventh digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Ninth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 8",
+            "name": "NPI Number Segment 10",
             "page": 1,
-            "context": "Eighth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Tenth segment of the prescriber's NPI number.",
+            "reason": "NPI number for the prescriber not found in the referral packet."
         },
         {
-            "name": "NPI Number Digit 9",
+            "name": "Prescriber Fax Number Line Number",
             "page": 1,
-            "context": "Ninth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
-        },
-        {
-            "name": "NPI Number Digit 10",
-            "page": 1,
-            "context": "Tenth digit of the prescriber's NPI for identification.",
-            "reason": "NPI number for the prescriber not found in the document."
+            "context": "Last four digits of the prescriber's fax number.",
+            "reason": "The extracted fax number '843' has only 3 digits, but the field expects 4. Populated with available digits, but noted for potential inconsistency."
         },
         {
             "name": "Length of Therapy",
             "page": 1,
-            "context": "The duration for which the drug therapy is prescribed.",
-            "reason": "The document explicitly states 'once for 1 dose' and provides a single start/end date for Vyepti, but does not specify the intended long-term length of therapy for prior authorization."
+            "context": "Proposed duration of the drug therapy.",
+            "reason": "Length of therapy for the requested prior authorization (Vyepti) is not specified in the document for ongoing use."
+        },
+        {
+            "name": "Dosing Frequency",
+            "page": 1,
+            "context": "How often the drug is administered.",
+            "reason": "Dosing frequency for the requested prior authorization (Vyepti) is not specified for ongoing use. The document only mentions 'once for 1 dose' for a specific administration date, not the general prescribing frequency for PA."
+        },
+        {
+            "name": "Quantity",
+            "page": 1,
+            "context": "Amount of the drug requested for the therapy.",
+            "reason": "Quantity for the requested prior authorization (Vyepti) is not specified for ongoing use. The document only mentions '1 mL (100 mg total)' for a specific administration, not the general quantity for PA."
+        },
+        {
+            "name": "Member Last Name Segment 5",
+            "page": 2,
+            "context": "Fifth segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member Last Name Segment 6",
+            "page": 2,
+            "context": "Sixth segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member Last Name Segment 7",
+            "page": 2,
+            "context": "Seventh segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member Last Name Segment 8",
+            "page": 2,
+            "context": "Eighth segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member Last Name Segment 9",
+            "page": 2,
+            "context": "Ninth segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member Last Name Segment 10",
+            "page": 2,
+            "context": "Tenth segment of the member's last name, for form continuation.",
+            "reason": "Member's last name 'Chen' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 4",
+            "page": 2,
+            "context": "Fourth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 5",
+            "page": 2,
+            "context": "Fifth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 6",
+            "page": 2,
+            "context": "Sixth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 7",
+            "page": 2,
+            "context": "Seventh segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 8",
+            "page": 2,
+            "context": "Eighth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 9",
+            "page": 2,
+            "context": "Ninth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
+        },
+        {
+            "name": "Member First Name Segment 10",
+            "page": 2,
+            "context": "Tenth segment of the member's first name, for form continuation.",
+            "reason": "Member's first name 'Amy' is shorter than 10 characters, leaving remaining segments blank."
         },
         {
             "name": "Medication Overuse Headache Ruled Out Yes",
             "page": 3,
-            "context": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
-            "reason": "Information about medication overuse headache being ruled out by specific criteria (trial and failure of titrating off acute migraine treatments) is not explicitly stated in the document."
+            "context": "Confirms if medication overuse headache has been ruled out.",
+            "reason": "The document does not explicitly state that medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments."
         },
         {
-            "name": "Medication Overuse Headache Ruled Out No",
+            "name": "Not Used With Prophylactic CGRP Inhibitors Yes",
             "page": 3,
-            "context": "Medication overuse headache has been ruled out by trial and failure of titrating off acute migraine treatments in the past AND",
-            "reason": "Information about medication overuse headache being ruled out by specific criteria (trial and failure of titrating off acute migraine treatments) is not explicitly stated in the document."
+            "context": "Confirms Vyepti will not be combined with other prophylactic CGRP inhibitors.",
+            "reason": "The patient is currently prescribed Nurtec (rimegepant) for prevention, which is a CGRP inhibitor. Therefore, Vyepti would be used in combination with another CGRP inhibitor, making the 'Yes' option for 'not be used in combination' inapplicable."
         },
         {
-            "name": "Renewal Initial Criteria Met Yes",
+            "name": "Continue Meeting Initial Criteria Yes",
             "page": 3,
-            "context": "Does the member continue to meet the initial criteria? AND",
-            "reason": "This appears to be an initial request for Vyepti, not a renewal, so renewal criteria are not applicable."
+            "context": "For renewal, indicates if the member still meets initial authorization criteria.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
-            "name": "Renewal Initial Criteria Met No",
+            "name": "Continue Meeting Initial Criteria No",
             "page": 3,
-            "context": "Does the member continue to meet the initial criteria? AND",
-            "reason": "This appears to be an initial request for Vyepti, not a renewal, so renewal criteria are not applicable."
+            "context": "For renewal, indicates if the member no longer meets initial authorization criteria.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
-            "name": "Renewal Absence of Unacceptable Toxicity Yes",
+            "name": "Absence of Unacceptable Toxicity Yes",
             "page": 3,
-            "context": "Does the member have an absence of unacceptable toxicity from the drug? AND",
-            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess for unacceptable toxicity."
+            "context": "For renewal, indicates no unacceptable toxicity from the drug.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
-            "name": "Renewal Absence of Unacceptable Toxicity No",
+            "name": "Absence of Unacceptable Toxicity No",
             "page": 3,
-            "context": "Does the member have an absence of unacceptable toxicity from the drug? AND",
-            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess for unacceptable toxicity."
+            "context": "For renewal, indicates presence of unacceptable toxicity from the drug.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
-            "name": "Renewal Clinical Response Yes",
+            "name": "Experienced Clinical Response Yes",
             "page": 3,
-            "context": "Has the member experienced a clinical response as evidenced by:",
-            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess clinical response."
+            "context": "For renewal, indicates if the member has shown clinical improvement.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
-            "name": "Renewal Clinical Response No",
+            "name": "Experienced Clinical Response No",
             "page": 3,
-            "context": "Has the member experienced a clinical response as evidenced by:",
-            "reason": "This appears to be an initial request for Vyepti; no prior use of Vyepti is mentioned to assess clinical response."
+            "context": "For renewal, indicates if the member has not shown clinical improvement.",
+            "reason": "This appears to be an initial request for Vyepti approval, not a renewal. Therefore, renewal-specific criteria are not applicable."
         },
         {
             "name": "Prescriber Signature",
             "page": 3,
-            "context": "Required signature of the prescribing physician to confirm accuracy of information.",
-            "reason": "Prescriber's signature image is not available in the OCR extracted text."
+            "context": "Required signature of the prescribing physician to confirm information accuracy.",
+            "reason": "Prescriber's signature image or text equivalent not found in the extracted document."
+        },
+        {
+            "name": "Signature Date",
+            "page": 3,
+            "context": "Date the prescriber signed the form.",
+            "reason": "Date of prescriber's signature not found in the extracted document."
         }
     ]
 }

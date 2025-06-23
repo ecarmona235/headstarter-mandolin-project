@@ -66,8 +66,8 @@ def prepare_static_pdfs(filled_out_map, out_path, pa_path):
             print(x0  < x1 and y0 < y1)
 
             if field_type == "checkbox":
-                if (type(answer) == bool
-                    and answer is not None
+                if ((type(answer) == bool
+                    and answer is not None)
                     or answer.lower() in ["yes", "true", "checked", "1", "x"]
                 ):
                     # Draw an X in the box
@@ -76,7 +76,7 @@ def prepare_static_pdfs(filled_out_map, out_path, pa_path):
             else:
                 # Use insert_textbox to place text inside the box
                 # page_height = page.rect.height
-                # # Convert from top-left origin system to bottom-left:
+                # Convert from top-left origin system to bottom-left:
                 # converted_y0 = page_height - y1
                 page.insert_text(
                     fitz.Point(x=x0, y=y0),
